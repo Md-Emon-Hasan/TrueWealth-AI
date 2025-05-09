@@ -1,0 +1,1247 @@
+2025-05-09 16:41:58,828 [WARNING] USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 16:41:59,651 [INFO] Starting Financial Advisor Bot
+2025-05-09 16:42:18,424 [INFO] NumExpr defaulting to 8 threads.
+2025-05-09 16:42:34,354 [WARNING] From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 16:42:35,044 [INFO] PyTorch version 2.7.0 available.
+2025-05-09 16:42:35,049 [INFO] TensorFlow version 2.18.0 available.
+2025-05-09 16:42:35,730 [INFO] Use pytorch device_name: cpu
+2025-05-09 16:42:35,730 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 16:42:40,749 [INFO] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 16:44:04,843 [INFO] Running planner node.
+2025-05-09 16:44:04,873 [INFO] Recalling memory.
+2025-05-09 16:44:04,875 [INFO] Querying LLM with client question.
+2025-05-09 16:44:05,928 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-09 16:44:05,975 [INFO] Generating final response from source: llm_knowledge
+2025-05-09 16:44:05,976 [INFO] Storing memory.
+2025-05-09 16:50:49,100 [INFO] Running planner node.
+2025-05-09 16:50:49,101 [INFO] Recalling memory.
+2025-05-09 16:50:49,102 [INFO] Querying LLM with client question.
+2025-05-09 16:50:49,996 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-09 16:50:49,999 [INFO] Generating final response from source: llm_knowledge
+2025-05-09 16:50:50,001 [INFO] Storing memory.
+2025-05-09 17:18:15,848 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:18:38,017 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:18:55,186 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:18:56,080 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:18:56,084 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:18:56,696 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:18:56,696 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:19:01,817 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:21:38,568 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:21:56,265 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:22:08,557 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:22:09,028 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:22:09,029 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:22:09,524 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:22:09,524 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:22:13,455 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:25:21,189 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:25:35,154 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:25:46,027 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:25:46,263 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:25:46,500 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:25:46,501 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:25:46,728 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:25:46,728 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:25:50,386 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:26:13,192 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:26:46,956 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:26:48,934 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:26:48,937 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:26:49,900 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:26:49,901 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:26:55,203 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:27:45,157 - INFO - Starting FastAPI server on http://localhost:8000
+2025-05-09 17:27:47,305 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:27:56,257 - INFO - 2 changes detected
+2025-05-09 17:28:05,679 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:28:18,934 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:28:19,575 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:28:19,577 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:28:19,949 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:28:19,949 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:28:25,891 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:28:45,623 - INFO - 1 change detected
+2025-05-09 17:28:45,976 - INFO - 1 change detected
+2025-05-09 17:28:46,331 - INFO - 1 change detected
+2025-05-09 17:28:46,690 - INFO - 1 change detected
+2025-05-09 17:28:47,047 - INFO - 1 change detected
+2025-05-09 17:28:47,408 - INFO - 1 change detected
+2025-05-09 17:28:47,762 - INFO - 1 change detected
+2025-05-09 17:28:48,121 - INFO - 1 change detected
+2025-05-09 17:28:48,480 - INFO - 1 change detected
+2025-05-09 17:28:48,841 - INFO - 1 change detected
+2025-05-09 17:28:49,196 - INFO - 1 change detected
+2025-05-09 17:28:49,556 - INFO - 1 change detected
+2025-05-09 17:28:49,915 - INFO - 1 change detected
+2025-05-09 17:28:50,274 - INFO - 1 change detected
+2025-05-09 17:28:50,631 - INFO - 1 change detected
+2025-05-09 17:28:50,990 - INFO - 1 change detected
+2025-05-09 17:28:51,348 - INFO - 1 change detected
+2025-05-09 17:28:51,706 - INFO - 1 change detected
+2025-05-09 17:28:52,067 - INFO - 1 change detected
+2025-05-09 17:28:52,426 - INFO - 1 change detected
+2025-05-09 17:28:52,784 - INFO - 1 change detected
+2025-05-09 17:28:53,144 - INFO - 1 change detected
+2025-05-09 17:28:53,507 - INFO - 1 change detected
+2025-05-09 17:28:53,866 - INFO - 1 change detected
+2025-05-09 17:28:54,223 - INFO - 1 change detected
+2025-05-09 17:28:54,583 - INFO - 1 change detected
+2025-05-09 17:28:54,942 - INFO - 1 change detected
+2025-05-09 17:28:55,304 - INFO - 1 change detected
+2025-05-09 17:28:55,664 - INFO - 1 change detected
+2025-05-09 17:28:56,023 - INFO - 1 change detected
+2025-05-09 17:28:56,383 - INFO - 1 change detected
+2025-05-09 17:28:56,747 - INFO - 1 change detected
+2025-05-09 17:28:57,103 - INFO - 1 change detected
+2025-05-09 17:28:57,463 - INFO - 1 change detected
+2025-05-09 17:28:57,826 - INFO - 1 change detected
+2025-05-09 17:28:58,183 - INFO - 1 change detected
+2025-05-09 17:28:58,545 - INFO - 1 change detected
+2025-05-09 17:28:58,906 - INFO - 1 change detected
+2025-05-09 17:28:59,265 - INFO - 1 change detected
+2025-05-09 17:28:59,624 - INFO - 1 change detected
+2025-05-09 17:28:59,984 - INFO - 1 change detected
+2025-05-09 17:29:00,340 - INFO - 1 change detected
+2025-05-09 17:29:00,696 - INFO - 1 change detected
+2025-05-09 17:29:01,056 - INFO - 1 change detected
+2025-05-09 17:29:01,419 - INFO - 1 change detected
+2025-05-09 17:29:01,776 - INFO - 1 change detected
+2025-05-09 17:29:02,137 - INFO - 1 change detected
+2025-05-09 17:29:02,495 - INFO - 1 change detected
+2025-05-09 17:29:02,855 - INFO - 1 change detected
+2025-05-09 17:29:03,219 - INFO - 1 change detected
+2025-05-09 17:29:03,575 - INFO - 1 change detected
+2025-05-09 17:29:03,933 - INFO - 1 change detected
+2025-05-09 17:29:04,291 - INFO - 1 change detected
+2025-05-09 17:29:04,651 - INFO - 1 change detected
+2025-05-09 17:29:05,013 - INFO - 1 change detected
+2025-05-09 17:29:05,377 - INFO - 1 change detected
+2025-05-09 17:29:05,740 - INFO - 1 change detected
+2025-05-09 17:29:06,103 - INFO - 1 change detected
+2025-05-09 17:29:06,464 - INFO - 1 change detected
+2025-05-09 17:29:06,825 - INFO - 1 change detected
+2025-05-09 17:29:07,188 - INFO - 1 change detected
+2025-05-09 17:29:07,550 - INFO - 1 change detected
+2025-05-09 17:29:07,908 - INFO - 1 change detected
+2025-05-09 17:29:08,270 - INFO - 1 change detected
+2025-05-09 17:29:08,632 - INFO - 1 change detected
+2025-05-09 17:29:08,998 - INFO - 1 change detected
+2025-05-09 17:29:09,358 - INFO - 1 change detected
+2025-05-09 17:29:09,751 - INFO - 1 change detected
+2025-05-09 17:29:10,112 - INFO - 1 change detected
+2025-05-09 17:29:10,474 - INFO - 1 change detected
+2025-05-09 17:29:10,834 - INFO - 1 change detected
+2025-05-09 17:29:11,195 - INFO - 1 change detected
+2025-05-09 17:29:11,555 - INFO - 1 change detected
+2025-05-09 17:29:11,915 - INFO - 1 change detected
+2025-05-09 17:29:12,273 - INFO - 1 change detected
+2025-05-09 17:29:12,633 - INFO - 1 change detected
+2025-05-09 17:29:12,995 - INFO - 1 change detected
+2025-05-09 17:29:13,347 - INFO - 1 change detected
+2025-05-09 17:29:13,705 - INFO - 1 change detected
+2025-05-09 17:29:14,068 - INFO - 1 change detected
+2025-05-09 17:29:14,429 - INFO - 1 change detected
+2025-05-09 17:29:14,790 - INFO - 1 change detected
+2025-05-09 17:29:15,144 - INFO - 1 change detected
+2025-05-09 17:29:15,500 - INFO - 1 change detected
+2025-05-09 17:29:15,856 - INFO - 1 change detected
+2025-05-09 17:29:16,222 - INFO - 2 changes detected
+2025-05-09 17:29:16,590 - INFO - 2 changes detected
+2025-05-09 17:29:16,951 - INFO - 2 changes detected
+2025-05-09 17:29:17,303 - INFO - 2 changes detected
+2025-05-09 17:29:17,661 - INFO - 2 changes detected
+2025-05-09 17:29:18,063 - INFO - 2 changes detected
+2025-05-09 17:29:18,429 - INFO - 1 change detected
+2025-05-09 17:29:18,832 - INFO - 5 changes detected
+2025-05-09 17:29:19,198 - INFO - 1 change detected
+2025-05-09 17:29:19,555 - INFO - 1 change detected
+2025-05-09 17:29:19,910 - INFO - 1 change detected
+2025-05-09 17:29:20,271 - INFO - 1 change detected
+2025-05-09 17:29:20,622 - INFO - 1 change detected
+2025-05-09 17:29:20,981 - INFO - 1 change detected
+2025-05-09 17:29:21,340 - INFO - 1 change detected
+2025-05-09 17:29:21,701 - INFO - 1 change detected
+2025-05-09 17:29:22,063 - INFO - 1 change detected
+2025-05-09 17:29:22,422 - INFO - 1 change detected
+2025-05-09 17:29:22,787 - INFO - 1 change detected
+2025-05-09 17:29:23,158 - INFO - 1 change detected
+2025-05-09 17:29:23,514 - INFO - 1 change detected
+2025-05-09 17:29:23,870 - INFO - 1 change detected
+2025-05-09 17:29:24,225 - INFO - 1 change detected
+2025-05-09 17:29:24,582 - INFO - 1 change detected
+2025-05-09 17:29:24,951 - INFO - 1 change detected
+2025-05-09 17:29:25,309 - INFO - 1 change detected
+2025-05-09 17:29:25,667 - INFO - 1 change detected
+2025-05-09 17:29:26,028 - INFO - 1 change detected
+2025-05-09 17:29:26,387 - INFO - 1 change detected
+2025-05-09 17:29:26,747 - INFO - 1 change detected
+2025-05-09 17:29:27,105 - INFO - 1 change detected
+2025-05-09 17:29:27,461 - INFO - 1 change detected
+2025-05-09 17:29:27,813 - INFO - 1 change detected
+2025-05-09 17:29:28,180 - INFO - 1 change detected
+2025-05-09 17:29:28,440 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:29:28,440 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:29:28,532 - INFO - 1 change detected
+2025-05-09 17:29:28,884 - INFO - 1 change detected
+2025-05-09 17:29:29,243 - INFO - 1 change detected
+2025-05-09 17:29:29,600 - INFO - 1 change detected
+2025-05-09 17:29:29,967 - INFO - 1 change detected
+2025-05-09 17:29:30,322 - INFO - 1 change detected
+2025-05-09 17:29:30,682 - INFO - 1 change detected
+2025-05-09 17:29:31,041 - INFO - 1 change detected
+2025-05-09 17:29:31,403 - INFO - 1 change detected
+2025-05-09 17:29:31,762 - INFO - 1 change detected
+2025-05-09 17:29:32,115 - INFO - 1 change detected
+2025-05-09 17:29:32,474 - INFO - 1 change detected
+2025-05-09 17:29:32,836 - INFO - 1 change detected
+2025-05-09 17:29:33,188 - INFO - 1 change detected
+2025-05-09 17:29:33,547 - INFO - 1 change detected
+2025-05-09 17:29:33,900 - INFO - 1 change detected
+2025-05-09 17:29:34,263 - INFO - 1 change detected
+2025-05-09 17:29:34,621 - INFO - 1 change detected
+2025-05-09 17:29:34,984 - INFO - 1 change detected
+2025-05-09 17:29:35,345 - INFO - 1 change detected
+2025-05-09 17:29:35,701 - INFO - 1 change detected
+2025-05-09 17:29:36,055 - INFO - 1 change detected
+2025-05-09 17:29:36,410 - INFO - 1 change detected
+2025-05-09 17:29:36,766 - INFO - 1 change detected
+2025-05-09 17:29:37,130 - INFO - 1 change detected
+2025-05-09 17:29:37,485 - INFO - 1 change detected
+2025-05-09 17:29:37,847 - INFO - 1 change detected
+2025-05-09 17:29:38,209 - INFO - 1 change detected
+2025-05-09 17:29:38,571 - INFO - 1 change detected
+2025-05-09 17:29:38,936 - INFO - 1 change detected
+2025-05-09 17:29:39,290 - INFO - 1 change detected
+2025-05-09 17:29:39,656 - INFO - 1 change detected
+2025-05-09 17:29:40,014 - INFO - 1 change detected
+2025-05-09 17:29:40,369 - INFO - 1 change detected
+2025-05-09 17:29:40,735 - INFO - 1 change detected
+2025-05-09 17:29:41,103 - INFO - 1 change detected
+2025-05-09 17:29:41,469 - INFO - 1 change detected
+2025-05-09 17:29:41,831 - INFO - 1 change detected
+2025-05-09 17:29:42,189 - INFO - 1 change detected
+2025-05-09 17:29:42,553 - INFO - 1 change detected
+2025-05-09 17:29:42,909 - INFO - 1 change detected
+2025-05-09 17:29:43,262 - INFO - 1 change detected
+2025-05-09 17:29:43,626 - INFO - 1 change detected
+2025-05-09 17:29:43,988 - INFO - 1 change detected
+2025-05-09 17:29:44,352 - INFO - 1 change detected
+2025-05-09 17:29:44,709 - INFO - 1 change detected
+2025-05-09 17:29:45,070 - INFO - 1 change detected
+2025-05-09 17:29:45,427 - INFO - 1 change detected
+2025-05-09 17:29:45,791 - INFO - 1 change detected
+2025-05-09 17:29:46,152 - INFO - 1 change detected
+2025-05-09 17:29:46,514 - INFO - 1 change detected
+2025-05-09 17:29:46,877 - INFO - 1 change detected
+2025-05-09 17:29:47,231 - INFO - 1 change detected
+2025-05-09 17:29:47,600 - INFO - 1 change detected
+2025-05-09 17:29:47,961 - INFO - 1 change detected
+2025-05-09 17:29:48,314 - INFO - 1 change detected
+2025-05-09 17:29:48,674 - INFO - 1 change detected
+2025-05-09 17:29:49,036 - INFO - 1 change detected
+2025-05-09 17:29:49,397 - INFO - 1 change detected
+2025-05-09 17:29:49,756 - INFO - 1 change detected
+2025-05-09 17:29:50,115 - INFO - 1 change detected
+2025-05-09 17:29:50,478 - INFO - 1 change detected
+2025-05-09 17:29:50,834 - INFO - 1 change detected
+2025-05-09 17:29:51,194 - INFO - 1 change detected
+2025-05-09 17:29:51,559 - INFO - 1 change detected
+2025-05-09 17:29:51,921 - INFO - 1 change detected
+2025-05-09 17:29:52,279 - INFO - 1 change detected
+2025-05-09 17:29:52,640 - INFO - 1 change detected
+2025-05-09 17:29:53,000 - INFO - 1 change detected
+2025-05-09 17:29:53,360 - INFO - 1 change detected
+2025-05-09 17:29:53,719 - INFO - 1 change detected
+2025-05-09 17:29:54,078 - INFO - 1 change detected
+2025-05-09 17:29:54,437 - INFO - 1 change detected
+2025-05-09 17:29:54,799 - INFO - 1 change detected
+2025-05-09 17:29:55,162 - INFO - 1 change detected
+2025-05-09 17:29:55,524 - INFO - 1 change detected
+2025-05-09 17:29:55,884 - INFO - 1 change detected
+2025-05-09 17:29:56,245 - INFO - 1 change detected
+2025-05-09 17:29:56,607 - INFO - 1 change detected
+2025-05-09 17:29:56,971 - INFO - 1 change detected
+2025-05-09 17:29:57,332 - INFO - 1 change detected
+2025-05-09 17:29:57,693 - INFO - 1 change detected
+2025-05-09 17:29:58,050 - INFO - 1 change detected
+2025-05-09 17:29:58,410 - INFO - 1 change detected
+2025-05-09 17:29:58,770 - INFO - 1 change detected
+2025-05-09 17:29:59,133 - INFO - 1 change detected
+2025-05-09 17:29:59,492 - INFO - 1 change detected
+2025-05-09 17:29:59,855 - INFO - 1 change detected
+2025-05-09 17:30:00,216 - INFO - 1 change detected
+2025-05-09 17:30:00,573 - INFO - 1 change detected
+2025-05-09 17:30:00,936 - INFO - 1 change detected
+2025-05-09 17:30:01,295 - INFO - 1 change detected
+2025-05-09 17:30:01,655 - INFO - 1 change detected
+2025-05-09 17:30:02,015 - INFO - 1 change detected
+2025-05-09 17:30:02,378 - INFO - 1 change detected
+2025-05-09 17:30:02,783 - INFO - 1 change detected
+2025-05-09 17:30:03,138 - INFO - 1 change detected
+2025-05-09 17:30:03,495 - INFO - 1 change detected
+2025-05-09 17:30:03,858 - INFO - 1 change detected
+2025-05-09 17:30:04,218 - INFO - 1 change detected
+2025-05-09 17:30:04,581 - INFO - 1 change detected
+2025-05-09 17:30:04,939 - INFO - 1 change detected
+2025-05-09 17:30:05,301 - INFO - 1 change detected
+2025-05-09 17:30:05,658 - INFO - 1 change detected
+2025-05-09 17:30:06,023 - INFO - 1 change detected
+2025-05-09 17:30:06,385 - INFO - 1 change detected
+2025-05-09 17:30:06,744 - INFO - 1 change detected
+2025-05-09 17:30:07,105 - INFO - 1 change detected
+2025-05-09 17:30:07,466 - INFO - 1 change detected
+2025-05-09 17:30:07,828 - INFO - 1 change detected
+2025-05-09 17:30:08,190 - INFO - 1 change detected
+2025-05-09 17:30:08,550 - INFO - 1 change detected
+2025-05-09 17:30:08,910 - INFO - 1 change detected
+2025-05-09 17:30:09,274 - INFO - 1 change detected
+2025-05-09 17:30:09,636 - INFO - 1 change detected
+2025-05-09 17:30:09,998 - INFO - 1 change detected
+2025-05-09 17:30:10,357 - INFO - 1 change detected
+2025-05-09 17:30:10,716 - INFO - 1 change detected
+2025-05-09 17:30:11,079 - INFO - 1 change detected
+2025-05-09 17:30:11,440 - INFO - 1 change detected
+2025-05-09 17:30:11,805 - INFO - 1 change detected
+2025-05-09 17:30:12,169 - INFO - 1 change detected
+2025-05-09 17:30:12,531 - INFO - 1 change detected
+2025-05-09 17:30:12,895 - INFO - 1 change detected
+2025-05-09 17:30:13,253 - INFO - 1 change detected
+2025-05-09 17:30:13,613 - INFO - 1 change detected
+2025-05-09 17:30:13,974 - INFO - 1 change detected
+2025-05-09 17:30:14,337 - INFO - 1 change detected
+2025-05-09 17:30:14,696 - INFO - 1 change detected
+2025-05-09 17:30:15,050 - INFO - 1 change detected
+2025-05-09 17:30:15,411 - INFO - 1 change detected
+2025-05-09 17:30:15,773 - INFO - 1 change detected
+2025-05-09 17:30:16,133 - INFO - 1 change detected
+2025-05-09 17:30:16,493 - INFO - 1 change detected
+2025-05-09 17:30:16,855 - INFO - 1 change detected
+2025-05-09 17:30:17,215 - INFO - 1 change detected
+2025-05-09 17:30:17,576 - INFO - 1 change detected
+2025-05-09 17:30:17,938 - INFO - 1 change detected
+2025-05-09 17:30:18,298 - INFO - 1 change detected
+2025-05-09 17:30:18,656 - INFO - 1 change detected
+2025-05-09 17:30:19,015 - INFO - 1 change detected
+2025-05-09 17:30:19,377 - INFO - 1 change detected
+2025-05-09 17:30:19,735 - INFO - 1 change detected
+2025-05-09 17:30:20,098 - INFO - 1 change detected
+2025-05-09 17:30:20,458 - INFO - 1 change detected
+2025-05-09 17:30:20,818 - INFO - 1 change detected
+2025-05-09 17:30:21,180 - INFO - 2 changes detected
+2025-05-09 17:30:21,539 - INFO - 1 change detected
+2025-05-09 17:30:21,897 - INFO - 1 change detected
+2025-05-09 17:30:22,252 - INFO - 1 change detected
+2025-05-09 17:30:22,612 - INFO - 1 change detected
+2025-05-09 17:30:23,021 - INFO - 2 changes detected
+2025-05-09 17:30:23,377 - INFO - 3 changes detected
+2025-05-09 17:30:23,732 - INFO - 3 changes detected
+2025-05-09 17:30:24,089 - INFO - 1 change detected
+2025-05-09 17:30:24,448 - INFO - 1 change detected
+2025-05-09 17:30:24,806 - INFO - 1 change detected
+2025-05-09 17:30:25,164 - INFO - 1 change detected
+2025-05-09 17:30:25,522 - INFO - 1 change detected
+2025-05-09 17:30:25,884 - INFO - 1 change detected
+2025-05-09 17:30:26,238 - INFO - 1 change detected
+2025-05-09 17:30:26,591 - INFO - 1 change detected
+2025-05-09 17:30:26,948 - INFO - 1 change detected
+2025-05-09 17:30:27,304 - INFO - 1 change detected
+2025-05-09 17:30:27,662 - INFO - 1 change detected
+2025-05-09 17:30:28,018 - INFO - 1 change detected
+2025-05-09 17:30:28,372 - INFO - 1 change detected
+2025-05-09 17:30:28,730 - INFO - 1 change detected
+2025-05-09 17:30:29,087 - INFO - 1 change detected
+2025-05-09 17:30:29,447 - INFO - 1 change detected
+2025-05-09 17:30:29,803 - INFO - 1 change detected
+2025-05-09 17:30:30,160 - INFO - 1 change detected
+2025-05-09 17:30:30,516 - INFO - 1 change detected
+2025-05-09 17:30:30,875 - INFO - 1 change detected
+2025-05-09 17:30:31,234 - INFO - 1 change detected
+2025-05-09 17:30:31,592 - INFO - 1 change detected
+2025-05-09 17:30:31,949 - INFO - 1 change detected
+2025-05-09 17:30:32,304 - INFO - 1 change detected
+2025-05-09 17:30:32,661 - INFO - 1 change detected
+2025-05-09 17:30:33,015 - INFO - 1 change detected
+2025-05-09 17:30:33,373 - INFO - 1 change detected
+2025-05-09 17:30:33,730 - INFO - 1 change detected
+2025-05-09 17:30:34,088 - INFO - 1 change detected
+2025-05-09 17:30:34,448 - INFO - 1 change detected
+2025-05-09 17:30:34,805 - INFO - 1 change detected
+2025-05-09 17:30:35,161 - INFO - 1 change detected
+2025-05-09 17:30:35,517 - INFO - 1 change detected
+2025-05-09 17:30:35,876 - INFO - 1 change detected
+2025-05-09 17:30:36,233 - INFO - 1 change detected
+2025-05-09 17:30:36,592 - INFO - 1 change detected
+2025-05-09 17:30:36,950 - INFO - 1 change detected
+2025-05-09 17:30:37,305 - INFO - 1 change detected
+2025-05-09 17:30:37,662 - INFO - 1 change detected
+2025-05-09 17:30:38,018 - INFO - 1 change detected
+2025-05-09 17:30:38,377 - INFO - 1 change detected
+2025-05-09 17:30:38,734 - INFO - 1 change detected
+2025-05-09 17:30:39,087 - INFO - 1 change detected
+2025-05-09 17:30:39,446 - INFO - 1 change detected
+2025-05-09 17:30:39,801 - INFO - 1 change detected
+2025-05-09 17:30:40,156 - INFO - 1 change detected
+2025-05-09 17:30:40,514 - INFO - 1 change detected
+2025-05-09 17:30:40,873 - INFO - 1 change detected
+2025-05-09 17:30:41,230 - INFO - 1 change detected
+2025-05-09 17:30:41,586 - INFO - 1 change detected
+2025-05-09 17:30:41,945 - INFO - 1 change detected
+2025-05-09 17:30:42,302 - INFO - 1 change detected
+2025-05-09 17:30:42,669 - INFO - 1 change detected
+2025-05-09 17:30:43,024 - INFO - 1 change detected
+2025-05-09 17:30:43,378 - INFO - 1 change detected
+2025-05-09 17:30:43,735 - INFO - 1 change detected
+2025-05-09 17:30:44,091 - INFO - 1 change detected
+2025-05-09 17:30:44,445 - INFO - 1 change detected
+2025-05-09 17:30:44,804 - INFO - 1 change detected
+2025-05-09 17:30:45,158 - INFO - 1 change detected
+2025-05-09 17:30:45,513 - INFO - 1 change detected
+2025-05-09 17:30:45,870 - INFO - 1 change detected
+2025-05-09 17:30:46,244 - INFO - 1 change detected
+2025-05-09 17:30:46,603 - INFO - 1 change detected
+2025-05-09 17:30:46,955 - INFO - 1 change detected
+2025-05-09 17:30:47,310 - INFO - 1 change detected
+2025-05-09 17:30:47,667 - INFO - 1 change detected
+2025-05-09 17:30:48,023 - INFO - 1 change detected
+2025-05-09 17:30:48,380 - INFO - 1 change detected
+2025-05-09 17:30:48,738 - INFO - 1 change detected
+2025-05-09 17:30:49,094 - INFO - 1 change detected
+2025-05-09 17:30:49,452 - INFO - 1 change detected
+2025-05-09 17:30:49,807 - INFO - 1 change detected
+2025-05-09 17:30:50,165 - INFO - 1 change detected
+2025-05-09 17:30:50,523 - INFO - 1 change detected
+2025-05-09 17:30:50,881 - INFO - 1 change detected
+2025-05-09 17:30:51,238 - INFO - 1 change detected
+2025-05-09 17:30:51,595 - INFO - 1 change detected
+2025-05-09 17:30:51,951 - INFO - 1 change detected
+2025-05-09 17:30:52,309 - INFO - 1 change detected
+2025-05-09 17:30:52,666 - INFO - 1 change detected
+2025-05-09 17:30:53,021 - INFO - 1 change detected
+2025-05-09 17:30:53,380 - INFO - 1 change detected
+2025-05-09 17:30:53,737 - INFO - 1 change detected
+2025-05-09 17:30:54,094 - INFO - 1 change detected
+2025-05-09 17:30:54,450 - INFO - 1 change detected
+2025-05-09 17:30:54,805 - INFO - 1 change detected
+2025-05-09 17:30:55,163 - INFO - 1 change detected
+2025-05-09 17:30:55,523 - INFO - 1 change detected
+2025-05-09 17:30:55,877 - INFO - 1 change detected
+2025-05-09 17:30:56,235 - INFO - 1 change detected
+2025-05-09 17:30:56,593 - INFO - 1 change detected
+2025-05-09 17:30:56,949 - INFO - 1 change detected
+2025-05-09 17:30:57,307 - INFO - 1 change detected
+2025-05-09 17:30:57,666 - INFO - 1 change detected
+2025-05-09 17:30:58,020 - INFO - 1 change detected
+2025-05-09 17:30:58,376 - INFO - 1 change detected
+2025-05-09 17:30:58,732 - INFO - 1 change detected
+2025-05-09 17:30:59,090 - INFO - 1 change detected
+2025-05-09 17:30:59,448 - INFO - 1 change detected
+2025-05-09 17:30:59,807 - INFO - 1 change detected
+2025-05-09 17:31:00,162 - INFO - 1 change detected
+2025-05-09 17:31:00,524 - INFO - 1 change detected
+2025-05-09 17:31:00,879 - INFO - 1 change detected
+2025-05-09 17:31:01,234 - INFO - 1 change detected
+2025-05-09 17:31:01,593 - INFO - 1 change detected
+2025-05-09 17:31:01,950 - INFO - 1 change detected
+2025-05-09 17:31:02,310 - INFO - 1 change detected
+2025-05-09 17:31:02,665 - INFO - 1 change detected
+2025-05-09 17:31:03,024 - INFO - 1 change detected
+2025-05-09 17:31:03,380 - INFO - 1 change detected
+2025-05-09 17:31:03,738 - INFO - 1 change detected
+2025-05-09 17:31:04,099 - INFO - 1 change detected
+2025-05-09 17:31:04,455 - INFO - 1 change detected
+2025-05-09 17:31:04,810 - INFO - 1 change detected
+2025-05-09 17:31:05,166 - INFO - 1 change detected
+2025-05-09 17:31:05,524 - INFO - 1 change detected
+2025-05-09 17:31:05,880 - INFO - 1 change detected
+2025-05-09 17:31:06,240 - INFO - 1 change detected
+2025-05-09 17:31:06,597 - INFO - 1 change detected
+2025-05-09 17:31:06,955 - INFO - 1 change detected
+2025-05-09 17:31:07,313 - INFO - 1 change detected
+2025-05-09 17:31:07,669 - INFO - 1 change detected
+2025-05-09 17:31:08,025 - INFO - 1 change detected
+2025-05-09 17:31:08,381 - INFO - 1 change detected
+2025-05-09 17:31:08,735 - INFO - 1 change detected
+2025-05-09 17:31:09,092 - INFO - 1 change detected
+2025-05-09 17:31:09,450 - INFO - 1 change detected
+2025-05-09 17:31:09,807 - INFO - 1 change detected
+2025-05-09 17:31:10,165 - INFO - 1 change detected
+2025-05-09 17:31:10,518 - INFO - 1 change detected
+2025-05-09 17:31:10,877 - INFO - 1 change detected
+2025-05-09 17:31:11,233 - INFO - 1 change detected
+2025-05-09 17:31:11,592 - INFO - 1 change detected
+2025-05-09 17:31:11,949 - INFO - 1 change detected
+2025-05-09 17:31:12,303 - INFO - 1 change detected
+2025-05-09 17:31:12,662 - INFO - 1 change detected
+2025-05-09 17:31:13,018 - INFO - 1 change detected
+2025-05-09 17:31:13,376 - INFO - 1 change detected
+2025-05-09 17:31:13,734 - INFO - 1 change detected
+2025-05-09 17:31:14,090 - INFO - 1 change detected
+2025-05-09 17:31:14,446 - INFO - 1 change detected
+2025-05-09 17:31:14,804 - INFO - 1 change detected
+2025-05-09 17:31:15,160 - INFO - 1 change detected
+2025-05-09 17:31:15,517 - INFO - 1 change detected
+2025-05-09 17:31:15,877 - INFO - 1 change detected
+2025-05-09 17:31:16,239 - INFO - 1 change detected
+2025-05-09 17:31:16,600 - INFO - 1 change detected
+2025-05-09 17:31:16,963 - INFO - 1 change detected
+2025-05-09 17:31:17,321 - INFO - 1 change detected
+2025-05-09 17:31:17,682 - INFO - 1 change detected
+2025-05-09 17:31:18,044 - INFO - 1 change detected
+2025-05-09 17:31:18,405 - INFO - 1 change detected
+2025-05-09 17:31:18,760 - INFO - 1 change detected
+2025-05-09 17:31:19,116 - INFO - 1 change detected
+2025-05-09 17:31:19,476 - INFO - 1 change detected
+2025-05-09 17:31:19,832 - INFO - 1 change detected
+2025-05-09 17:31:20,190 - INFO - 1 change detected
+2025-05-09 17:31:20,549 - INFO - 1 change detected
+2025-05-09 17:31:20,907 - INFO - 1 change detected
+2025-05-09 17:31:21,264 - INFO - 1 change detected
+2025-05-09 17:31:21,621 - INFO - 1 change detected
+2025-05-09 17:31:21,981 - INFO - 1 change detected
+2025-05-09 17:31:22,337 - INFO - 1 change detected
+2025-05-09 17:31:22,692 - INFO - 1 change detected
+2025-05-09 17:31:23,049 - INFO - 1 change detected
+2025-05-09 17:31:23,405 - INFO - 1 change detected
+2025-05-09 17:31:23,760 - INFO - 1 change detected
+2025-05-09 17:31:24,116 - INFO - 1 change detected
+2025-05-09 17:31:24,472 - INFO - 1 change detected
+2025-05-09 17:31:24,832 - INFO - 1 change detected
+2025-05-09 17:31:25,190 - INFO - 1 change detected
+2025-05-09 17:31:25,546 - INFO - 1 change detected
+2025-05-09 17:31:25,901 - INFO - 1 change detected
+2025-05-09 17:31:26,257 - INFO - 1 change detected
+2025-05-09 17:31:26,615 - INFO - 1 change detected
+2025-05-09 17:31:26,972 - INFO - 1 change detected
+2025-05-09 17:31:27,332 - INFO - 1 change detected
+2025-05-09 17:31:27,690 - INFO - 1 change detected
+2025-05-09 17:31:28,047 - INFO - 1 change detected
+2025-05-09 17:31:28,406 - INFO - 1 change detected
+2025-05-09 17:31:28,762 - INFO - 1 change detected
+2025-05-09 17:31:29,120 - INFO - 1 change detected
+2025-05-09 17:31:29,476 - INFO - 1 change detected
+2025-05-09 17:31:29,834 - INFO - 1 change detected
+2025-05-09 17:31:30,192 - INFO - 1 change detected
+2025-05-09 17:31:30,549 - INFO - 1 change detected
+2025-05-09 17:31:30,906 - INFO - 1 change detected
+2025-05-09 17:31:31,265 - INFO - 1 change detected
+2025-05-09 17:31:31,619 - INFO - 1 change detected
+2025-05-09 17:31:31,976 - INFO - 1 change detected
+2025-05-09 17:31:32,333 - INFO - 1 change detected
+2025-05-09 17:31:32,691 - INFO - 1 change detected
+2025-05-09 17:31:33,049 - INFO - 1 change detected
+2025-05-09 17:31:33,405 - INFO - 1 change detected
+2025-05-09 17:31:33,760 - INFO - 1 change detected
+2025-05-09 17:31:34,112 - INFO - 1 change detected
+2025-05-09 17:31:34,469 - INFO - 1 change detected
+2025-05-09 17:31:34,827 - INFO - 1 change detected
+2025-05-09 17:31:35,183 - INFO - 1 change detected
+2025-05-09 17:31:35,540 - INFO - 1 change detected
+2025-05-09 17:31:35,899 - INFO - 1 change detected
+2025-05-09 17:31:36,256 - INFO - 1 change detected
+2025-05-09 17:31:36,612 - INFO - 1 change detected
+2025-05-09 17:31:36,980 - INFO - 1 change detected
+2025-05-09 17:31:37,345 - INFO - 1 change detected
+2025-05-09 17:31:37,703 - INFO - 1 change detected
+2025-05-09 17:31:38,058 - INFO - 1 change detected
+2025-05-09 17:31:38,415 - INFO - 1 change detected
+2025-05-09 17:31:38,772 - INFO - 1 change detected
+2025-05-09 17:31:39,128 - INFO - 1 change detected
+2025-05-09 17:31:39,485 - INFO - 1 change detected
+2025-05-09 17:31:39,842 - INFO - 1 change detected
+2025-05-09 17:31:40,200 - INFO - 1 change detected
+2025-05-09 17:31:40,558 - INFO - 1 change detected
+2025-05-09 17:31:40,915 - INFO - 1 change detected
+2025-05-09 17:31:41,272 - INFO - 1 change detected
+2025-05-09 17:31:41,630 - INFO - 1 change detected
+2025-05-09 17:31:41,990 - INFO - 1 change detected
+2025-05-09 17:31:42,345 - INFO - 1 change detected
+2025-05-09 17:31:42,701 - INFO - 1 change detected
+2025-05-09 17:31:43,056 - INFO - 1 change detected
+2025-05-09 17:31:43,415 - INFO - 1 change detected
+2025-05-09 17:31:43,773 - INFO - 1 change detected
+2025-05-09 17:31:44,130 - INFO - 1 change detected
+2025-05-09 17:31:44,488 - INFO - 1 change detected
+2025-05-09 17:31:44,846 - INFO - 1 change detected
+2025-05-09 17:31:45,201 - INFO - 1 change detected
+2025-05-09 17:31:45,556 - INFO - 1 change detected
+2025-05-09 17:31:45,915 - INFO - 1 change detected
+2025-05-09 17:31:46,272 - INFO - 1 change detected
+2025-05-09 17:31:46,629 - INFO - 1 change detected
+2025-05-09 17:31:46,986 - INFO - 1 change detected
+2025-05-09 17:31:47,342 - INFO - 1 change detected
+2025-05-09 17:31:47,700 - INFO - 1 change detected
+2025-05-09 17:31:48,058 - INFO - 1 change detected
+2025-05-09 17:31:48,410 - INFO - 1 change detected
+2025-05-09 17:31:48,764 - INFO - 1 change detected
+2025-05-09 17:31:49,122 - INFO - 1 change detected
+2025-05-09 17:31:49,479 - INFO - 1 change detected
+2025-05-09 17:31:49,836 - INFO - 1 change detected
+2025-05-09 17:31:50,196 - INFO - 1 change detected
+2025-05-09 17:31:50,549 - INFO - 1 change detected
+2025-05-09 17:31:50,909 - INFO - 1 change detected
+2025-05-09 17:31:51,263 - INFO - 1 change detected
+2025-05-09 17:31:51,618 - INFO - 1 change detected
+2025-05-09 17:31:51,976 - INFO - 1 change detected
+2025-05-09 17:31:52,332 - INFO - 1 change detected
+2025-05-09 17:31:52,691 - INFO - 1 change detected
+2025-05-09 17:31:53,049 - INFO - 1 change detected
+2025-05-09 17:31:53,407 - INFO - 1 change detected
+2025-05-09 17:31:53,763 - INFO - 1 change detected
+2025-05-09 17:31:54,119 - INFO - 1 change detected
+2025-05-09 17:31:54,477 - INFO - 1 change detected
+2025-05-09 17:31:54,836 - INFO - 1 change detected
+2025-05-09 17:31:55,196 - INFO - 1 change detected
+2025-05-09 17:31:55,555 - INFO - 1 change detected
+2025-05-09 17:31:55,909 - INFO - 1 change detected
+2025-05-09 17:31:56,266 - INFO - 1 change detected
+2025-05-09 17:31:56,624 - INFO - 1 change detected
+2025-05-09 17:31:56,980 - INFO - 1 change detected
+2025-05-09 17:31:57,340 - INFO - 1 change detected
+2025-05-09 17:31:57,699 - INFO - 1 change detected
+2025-05-09 17:31:58,054 - INFO - 1 change detected
+2025-05-09 17:31:58,413 - INFO - 1 change detected
+2025-05-09 17:31:58,768 - INFO - 1 change detected
+2025-05-09 17:31:59,123 - INFO - 1 change detected
+2025-05-09 17:31:59,480 - INFO - 1 change detected
+2025-05-09 17:31:59,837 - INFO - 1 change detected
+2025-05-09 17:32:00,195 - INFO - 1 change detected
+2025-05-09 17:32:00,554 - INFO - 1 change detected
+2025-05-09 17:32:00,912 - INFO - 1 change detected
+2025-05-09 17:32:01,270 - INFO - 1 change detected
+2025-05-09 17:32:01,627 - INFO - 1 change detected
+2025-05-09 17:32:01,986 - INFO - 1 change detected
+2025-05-09 17:32:02,342 - INFO - 1 change detected
+2025-05-09 17:32:02,702 - INFO - 1 change detected
+2025-05-09 17:32:03,061 - INFO - 1 change detected
+2025-05-09 17:32:03,425 - INFO - 1 change detected
+2025-05-09 17:32:03,783 - INFO - 1 change detected
+2025-05-09 17:32:04,155 - INFO - 1 change detected
+2025-05-09 17:32:04,512 - INFO - 1 change detected
+2025-05-09 17:32:04,871 - INFO - 1 change detected
+2025-05-09 17:32:05,229 - INFO - 1 change detected
+2025-05-09 17:32:05,586 - INFO - 1 change detected
+2025-05-09 17:32:05,941 - INFO - 1 change detected
+2025-05-09 17:32:06,298 - INFO - 1 change detected
+2025-05-09 17:32:06,657 - INFO - 1 change detected
+2025-05-09 17:32:07,014 - INFO - 1 change detected
+2025-05-09 17:32:07,371 - INFO - 1 change detected
+2025-05-09 17:32:07,726 - INFO - 1 change detected
+2025-05-09 17:32:08,084 - INFO - 1 change detected
+2025-05-09 17:32:08,443 - INFO - 1 change detected
+2025-05-09 17:32:08,801 - INFO - 1 change detected
+2025-05-09 17:32:09,158 - INFO - 1 change detected
+2025-05-09 17:32:09,516 - INFO - 1 change detected
+2025-05-09 17:32:09,875 - INFO - 1 change detected
+2025-05-09 17:32:10,232 - INFO - 1 change detected
+2025-05-09 17:32:10,589 - INFO - 1 change detected
+2025-05-09 17:32:10,951 - INFO - 1 change detected
+2025-05-09 17:32:11,308 - INFO - 1 change detected
+2025-05-09 17:32:11,665 - INFO - 1 change detected
+2025-05-09 17:32:12,019 - INFO - 1 change detected
+2025-05-09 17:32:12,378 - INFO - 1 change detected
+2025-05-09 17:32:12,734 - INFO - 1 change detected
+2025-05-09 17:32:13,088 - INFO - 1 change detected
+2025-05-09 17:32:13,447 - INFO - 1 change detected
+2025-05-09 17:32:13,806 - INFO - 1 change detected
+2025-05-09 17:32:14,162 - INFO - 1 change detected
+2025-05-09 17:32:14,521 - INFO - 1 change detected
+2025-05-09 17:32:14,878 - INFO - 1 change detected
+2025-05-09 17:32:15,235 - INFO - 1 change detected
+2025-05-09 17:32:15,595 - INFO - 1 change detected
+2025-05-09 17:32:15,953 - INFO - 1 change detected
+2025-05-09 17:32:16,307 - INFO - 1 change detected
+2025-05-09 17:32:16,665 - INFO - 1 change detected
+2025-05-09 17:32:17,021 - INFO - 1 change detected
+2025-05-09 17:32:17,378 - INFO - 1 change detected
+2025-05-09 17:32:17,733 - INFO - 1 change detected
+2025-05-09 17:32:18,092 - INFO - 1 change detected
+2025-05-09 17:32:18,449 - INFO - 1 change detected
+2025-05-09 17:32:18,806 - INFO - 1 change detected
+2025-05-09 17:32:19,164 - INFO - 1 change detected
+2025-05-09 17:32:19,522 - INFO - 1 change detected
+2025-05-09 17:32:19,881 - INFO - 1 change detected
+2025-05-09 17:32:20,239 - INFO - 1 change detected
+2025-05-09 17:32:20,596 - INFO - 1 change detected
+2025-05-09 17:32:20,957 - INFO - 1 change detected
+2025-05-09 17:32:21,315 - INFO - 1 change detected
+2025-05-09 17:32:21,671 - INFO - 1 change detected
+2025-05-09 17:32:22,028 - INFO - 1 change detected
+2025-05-09 17:32:22,381 - INFO - 1 change detected
+2025-05-09 17:32:22,736 - INFO - 1 change detected
+2025-05-09 17:32:23,094 - INFO - 1 change detected
+2025-05-09 17:32:23,455 - INFO - 1 change detected
+2025-05-09 17:32:23,809 - INFO - 1 change detected
+2025-05-09 17:32:24,166 - INFO - 1 change detected
+2025-05-09 17:32:24,521 - INFO - 1 change detected
+2025-05-09 17:32:24,878 - INFO - 1 change detected
+2025-05-09 17:32:25,233 - INFO - 1 change detected
+2025-05-09 17:32:25,589 - INFO - 1 change detected
+2025-05-09 17:32:25,948 - INFO - 1 change detected
+2025-05-09 17:32:26,306 - INFO - 1 change detected
+2025-05-09 17:32:26,661 - INFO - 1 change detected
+2025-05-09 17:32:27,016 - INFO - 1 change detected
+2025-05-09 17:32:27,373 - INFO - 1 change detected
+2025-05-09 17:32:27,728 - INFO - 1 change detected
+2025-05-09 17:32:28,084 - INFO - 1 change detected
+2025-05-09 17:32:28,444 - INFO - 1 change detected
+2025-05-09 17:32:28,801 - INFO - 1 change detected
+2025-05-09 17:32:29,157 - INFO - 1 change detected
+2025-05-09 17:32:29,514 - INFO - 1 change detected
+2025-05-09 17:32:29,869 - INFO - 1 change detected
+2025-05-09 17:32:30,223 - INFO - 1 change detected
+2025-05-09 17:32:30,575 - INFO - 1 change detected
+2025-05-09 17:32:30,932 - INFO - 1 change detected
+2025-05-09 17:32:31,291 - INFO - 1 change detected
+2025-05-09 17:32:31,647 - INFO - 1 change detected
+2025-05-09 17:32:32,007 - INFO - 1 change detected
+2025-05-09 17:32:32,367 - INFO - 1 change detected
+2025-05-09 17:32:32,724 - INFO - 1 change detected
+2025-05-09 17:32:33,084 - INFO - 1 change detected
+2025-05-09 17:32:33,442 - INFO - 1 change detected
+2025-05-09 17:32:33,797 - INFO - 1 change detected
+2025-05-09 17:32:34,155 - INFO - 1 change detected
+2025-05-09 17:32:34,513 - INFO - 1 change detected
+2025-05-09 17:32:34,867 - INFO - 1 change detected
+2025-05-09 17:32:35,223 - INFO - 1 change detected
+2025-05-09 17:32:35,578 - INFO - 1 change detected
+2025-05-09 17:32:35,935 - INFO - 1 change detected
+2025-05-09 17:32:36,289 - INFO - 1 change detected
+2025-05-09 17:32:36,650 - INFO - 1 change detected
+2025-05-09 17:32:37,002 - INFO - 1 change detected
+2025-05-09 17:32:37,360 - INFO - 1 change detected
+2025-05-09 17:32:37,719 - INFO - 1 change detected
+2025-05-09 17:32:38,078 - INFO - 1 change detected
+2025-05-09 17:32:38,435 - INFO - 1 change detected
+2025-05-09 17:32:38,789 - INFO - 1 change detected
+2025-05-09 17:32:39,144 - INFO - 1 change detected
+2025-05-09 17:32:39,502 - INFO - 1 change detected
+2025-05-09 17:32:39,860 - INFO - 1 change detected
+2025-05-09 17:32:40,218 - INFO - 1 change detected
+2025-05-09 17:32:40,572 - INFO - 1 change detected
+2025-05-09 17:32:40,930 - INFO - 1 change detected
+2025-05-09 17:32:41,286 - INFO - 1 change detected
+2025-05-09 17:32:41,644 - INFO - 1 change detected
+2025-05-09 17:32:41,998 - INFO - 1 change detected
+2025-05-09 17:32:42,354 - INFO - 1 change detected
+2025-05-09 17:32:42,711 - INFO - 1 change detected
+2025-05-09 17:32:43,064 - INFO - 1 change detected
+2025-05-09 17:32:43,423 - INFO - 1 change detected
+2025-05-09 17:32:43,780 - INFO - 1 change detected
+2025-05-09 17:32:44,138 - INFO - 1 change detected
+2025-05-09 17:32:44,496 - INFO - 1 change detected
+2025-05-09 17:32:44,851 - INFO - 1 change detected
+2025-05-09 17:32:45,210 - INFO - 1 change detected
+2025-05-09 17:32:45,565 - INFO - 1 change detected
+2025-05-09 17:32:45,925 - INFO - 1 change detected
+2025-05-09 17:32:46,280 - INFO - 1 change detected
+2025-05-09 17:32:46,635 - INFO - 1 change detected
+2025-05-09 17:32:46,989 - INFO - 1 change detected
+2025-05-09 17:32:47,345 - INFO - 1 change detected
+2025-05-09 17:32:47,704 - INFO - 1 change detected
+2025-05-09 17:32:48,059 - INFO - 1 change detected
+2025-05-09 17:32:48,416 - INFO - 1 change detected
+2025-05-09 17:32:48,771 - INFO - 1 change detected
+2025-05-09 17:32:49,127 - INFO - 1 change detected
+2025-05-09 17:32:49,480 - INFO - 1 change detected
+2025-05-09 17:32:49,836 - INFO - 1 change detected
+2025-05-09 17:32:50,190 - INFO - 1 change detected
+2025-05-09 17:32:50,548 - INFO - 1 change detected
+2025-05-09 17:32:50,912 - INFO - 1 change detected
+2025-05-09 17:32:51,279 - INFO - 1 change detected
+2025-05-09 17:32:51,633 - INFO - 1 change detected
+2025-05-09 17:32:51,994 - INFO - 1 change detected
+2025-05-09 17:32:52,350 - INFO - 1 change detected
+2025-05-09 17:32:52,707 - INFO - 1 change detected
+2025-05-09 17:32:53,064 - INFO - 1 change detected
+2025-05-09 17:32:53,422 - INFO - 1 change detected
+2025-05-09 17:32:53,776 - INFO - 1 change detected
+2025-05-09 17:32:54,133 - INFO - 1 change detected
+2025-05-09 17:32:54,489 - INFO - 1 change detected
+2025-05-09 17:32:54,848 - INFO - 1 change detected
+2025-05-09 17:32:55,205 - INFO - 1 change detected
+2025-05-09 17:32:55,559 - INFO - 1 change detected
+2025-05-09 17:32:55,914 - INFO - 1 change detected
+2025-05-09 17:32:56,269 - INFO - 1 change detected
+2025-05-09 17:32:56,625 - INFO - 1 change detected
+2025-05-09 17:32:56,984 - INFO - 1 change detected
+2025-05-09 17:32:57,340 - INFO - 1 change detected
+2025-05-09 17:32:57,692 - INFO - 1 change detected
+2025-05-09 17:32:58,043 - INFO - 1 change detected
+2025-05-09 17:32:58,399 - INFO - 1 change detected
+2025-05-09 17:32:58,766 - INFO - 1 change detected
+2025-05-09 17:32:59,128 - INFO - 1 change detected
+2025-05-09 17:32:59,486 - INFO - 1 change detected
+2025-05-09 17:32:59,843 - INFO - 1 change detected
+2025-05-09 17:33:00,201 - INFO - 1 change detected
+2025-05-09 17:33:00,556 - INFO - 1 change detected
+2025-05-09 17:33:00,915 - INFO - 1 change detected
+2025-05-09 17:33:01,273 - INFO - 1 change detected
+2025-05-09 17:33:01,631 - INFO - 1 change detected
+2025-05-09 17:33:01,984 - INFO - 1 change detected
+2025-05-09 17:33:02,342 - INFO - 1 change detected
+2025-05-09 17:33:02,698 - INFO - 1 change detected
+2025-05-09 17:33:03,052 - INFO - 1 change detected
+2025-05-09 17:33:03,413 - INFO - 1 change detected
+2025-05-09 17:33:03,770 - INFO - 1 change detected
+2025-05-09 17:33:04,126 - INFO - 1 change detected
+2025-05-09 17:33:04,482 - INFO - 1 change detected
+2025-05-09 17:33:04,838 - INFO - 1 change detected
+2025-05-09 17:33:05,196 - INFO - 1 change detected
+2025-05-09 17:33:05,556 - INFO - 1 change detected
+2025-05-09 17:33:05,910 - INFO - 1 change detected
+2025-05-09 17:33:06,267 - INFO - 1 change detected
+2025-05-09 17:33:06,621 - INFO - 1 change detected
+2025-05-09 17:33:06,978 - INFO - 1 change detected
+2025-05-09 17:33:07,335 - INFO - 1 change detected
+2025-05-09 17:33:07,693 - INFO - 1 change detected
+2025-05-09 17:33:08,049 - INFO - 1 change detected
+2025-05-09 17:33:08,407 - INFO - 1 change detected
+2025-05-09 17:33:08,762 - INFO - 1 change detected
+2025-05-09 17:33:09,122 - INFO - 1 change detected
+2025-05-09 17:33:09,479 - INFO - 1 change detected
+2025-05-09 17:33:09,836 - INFO - 1 change detected
+2025-05-09 17:33:10,196 - INFO - 1 change detected
+2025-05-09 17:33:10,552 - INFO - 1 change detected
+2025-05-09 17:33:10,911 - INFO - 1 change detected
+2025-05-09 17:33:11,269 - INFO - 1 change detected
+2025-05-09 17:33:11,625 - INFO - 1 change detected
+2025-05-09 17:33:11,980 - INFO - 1 change detected
+2025-05-09 17:33:12,337 - INFO - 1 change detected
+2025-05-09 17:33:12,695 - INFO - 1 change detected
+2025-05-09 17:33:13,052 - INFO - 1 change detected
+2025-05-09 17:33:13,409 - INFO - 1 change detected
+2025-05-09 17:33:13,764 - INFO - 1 change detected
+2025-05-09 17:33:14,119 - INFO - 1 change detected
+2025-05-09 17:33:14,477 - INFO - 1 change detected
+2025-05-09 17:33:14,831 - INFO - 1 change detected
+2025-05-09 17:33:15,186 - INFO - 1 change detected
+2025-05-09 17:33:15,543 - INFO - 1 change detected
+2025-05-09 17:33:15,901 - INFO - 1 change detected
+2025-05-09 17:33:16,259 - INFO - 1 change detected
+2025-05-09 17:33:16,617 - INFO - 1 change detected
+2025-05-09 17:33:16,973 - INFO - 1 change detected
+2025-05-09 17:33:17,331 - INFO - 1 change detected
+2025-05-09 17:33:17,691 - INFO - 1 change detected
+2025-05-09 17:33:18,048 - INFO - 1 change detected
+2025-05-09 17:33:18,405 - INFO - 1 change detected
+2025-05-09 17:33:18,763 - INFO - 1 change detected
+2025-05-09 17:33:19,118 - INFO - 1 change detected
+2025-05-09 17:33:19,475 - INFO - 1 change detected
+2025-05-09 17:33:19,832 - INFO - 1 change detected
+2025-05-09 17:33:20,196 - INFO - 1 change detected
+2025-05-09 17:33:20,549 - INFO - 1 change detected
+2025-05-09 17:33:20,909 - INFO - 1 change detected
+2025-05-09 17:33:21,269 - INFO - 1 change detected
+2025-05-09 17:33:21,625 - INFO - 1 change detected
+2025-05-09 17:33:21,981 - INFO - 1 change detected
+2025-05-09 17:33:22,342 - INFO - 1 change detected
+2025-05-09 17:33:22,698 - INFO - 1 change detected
+2025-05-09 17:33:23,053 - INFO - 1 change detected
+2025-05-09 17:33:23,409 - INFO - 1 change detected
+2025-05-09 17:33:23,764 - INFO - 1 change detected
+2025-05-09 17:33:24,125 - INFO - 1 change detected
+2025-05-09 17:33:24,483 - INFO - 1 change detected
+2025-05-09 17:33:24,838 - INFO - 1 change detected
+2025-05-09 17:33:25,195 - INFO - 1 change detected
+2025-05-09 17:33:25,552 - INFO - 1 change detected
+2025-05-09 17:33:25,908 - INFO - 1 change detected
+2025-05-09 17:33:26,265 - INFO - 1 change detected
+2025-05-09 17:33:26,623 - INFO - 1 change detected
+2025-05-09 17:33:26,978 - INFO - 1 change detected
+2025-05-09 17:33:27,334 - INFO - 1 change detected
+2025-05-09 17:33:27,691 - INFO - 1 change detected
+2025-05-09 17:33:28,047 - INFO - 1 change detected
+2025-05-09 17:33:28,402 - INFO - 1 change detected
+2025-05-09 17:33:28,760 - INFO - 1 change detected
+2025-05-09 17:33:29,115 - INFO - 1 change detected
+2025-05-09 17:33:29,472 - INFO - 1 change detected
+2025-05-09 17:33:29,846 - INFO - 1 change detected
+2025-05-09 17:33:30,199 - INFO - 1 change detected
+2025-05-09 17:33:30,556 - INFO - 1 change detected
+2025-05-09 17:33:30,914 - INFO - 1 change detected
+2025-05-09 17:33:31,270 - INFO - 1 change detected
+2025-05-09 17:33:31,629 - INFO - 1 change detected
+2025-05-09 17:33:31,986 - INFO - 1 change detected
+2025-05-09 17:33:32,342 - INFO - 1 change detected
+2025-05-09 17:33:32,698 - INFO - 1 change detected
+2025-05-09 17:33:33,053 - INFO - 1 change detected
+2025-05-09 17:33:33,411 - INFO - 1 change detected
+2025-05-09 17:33:33,766 - INFO - 1 change detected
+2025-05-09 17:33:34,124 - INFO - 1 change detected
+2025-05-09 17:33:34,482 - INFO - 1 change detected
+2025-05-09 17:33:34,838 - INFO - 1 change detected
+2025-05-09 17:33:35,197 - INFO - 1 change detected
+2025-05-09 17:33:35,552 - INFO - 1 change detected
+2025-05-09 17:33:35,913 - INFO - 1 change detected
+2025-05-09 17:33:36,271 - INFO - 1 change detected
+2025-05-09 17:33:36,626 - INFO - 1 change detected
+2025-05-09 17:33:36,986 - INFO - 1 change detected
+2025-05-09 17:33:37,340 - INFO - 1 change detected
+2025-05-09 17:33:37,696 - INFO - 1 change detected
+2025-05-09 17:33:38,054 - INFO - 1 change detected
+2025-05-09 17:33:38,408 - INFO - 1 change detected
+2025-05-09 17:33:38,767 - INFO - 1 change detected
+2025-05-09 17:33:39,124 - INFO - 1 change detected
+2025-05-09 17:33:39,483 - INFO - 1 change detected
+2025-05-09 17:33:39,842 - INFO - 1 change detected
+2025-05-09 17:33:40,201 - INFO - 1 change detected
+2025-05-09 17:33:40,559 - INFO - 1 change detected
+2025-05-09 17:33:40,915 - INFO - 1 change detected
+2025-05-09 17:33:41,273 - INFO - 1 change detected
+2025-05-09 17:33:41,628 - INFO - 1 change detected
+2025-05-09 17:33:41,986 - INFO - 1 change detected
+2025-05-09 17:33:42,339 - INFO - 1 change detected
+2025-05-09 17:33:42,697 - INFO - 1 change detected
+2025-05-09 17:33:43,050 - INFO - 1 change detected
+2025-05-09 17:33:43,405 - INFO - 1 change detected
+2025-05-09 17:33:43,761 - INFO - 1 change detected
+2025-05-09 17:33:44,116 - INFO - 1 change detected
+2025-05-09 17:33:44,476 - INFO - 1 change detected
+2025-05-09 17:33:44,834 - INFO - 1 change detected
+2025-05-09 17:33:45,191 - INFO - 1 change detected
+2025-05-09 17:33:45,548 - INFO - 1 change detected
+2025-05-09 17:33:45,904 - INFO - 1 change detected
+2025-05-09 17:33:46,260 - INFO - 1 change detected
+2025-05-09 17:33:46,617 - INFO - 1 change detected
+2025-05-09 17:33:46,973 - INFO - 1 change detected
+2025-05-09 17:33:47,330 - INFO - 1 change detected
+2025-05-09 17:33:47,686 - INFO - 1 change detected
+2025-05-09 17:33:48,043 - INFO - 1 change detected
+2025-05-09 17:33:48,400 - INFO - 1 change detected
+2025-05-09 17:33:48,759 - INFO - 1 change detected
+2025-05-09 17:33:49,117 - INFO - 1 change detected
+2025-05-09 17:33:49,470 - INFO - 1 change detected
+2025-05-09 17:33:49,824 - INFO - 1 change detected
+2025-05-09 17:33:50,179 - INFO - 1 change detected
+2025-05-09 17:33:50,534 - INFO - 1 change detected
+2025-05-09 17:33:50,891 - INFO - 1 change detected
+2025-05-09 17:33:51,247 - INFO - 1 change detected
+2025-05-09 17:33:51,604 - INFO - 1 change detected
+2025-05-09 17:33:51,964 - INFO - 1 change detected
+2025-05-09 17:33:52,324 - INFO - 1 change detected
+2025-05-09 17:33:52,680 - INFO - 1 change detected
+2025-05-09 17:33:53,037 - INFO - 1 change detected
+2025-05-09 17:33:53,396 - INFO - 1 change detected
+2025-05-09 17:33:53,754 - INFO - 1 change detected
+2025-05-09 17:33:54,111 - INFO - 1 change detected
+2025-05-09 17:33:54,466 - INFO - 1 change detected
+2025-05-09 17:33:54,823 - INFO - 1 change detected
+2025-05-09 17:33:55,179 - INFO - 1 change detected
+2025-05-09 17:33:55,540 - INFO - 1 change detected
+2025-05-09 17:33:55,893 - INFO - 1 change detected
+2025-05-09 17:33:56,249 - INFO - 1 change detected
+2025-05-09 17:33:56,606 - INFO - 1 change detected
+2025-05-09 17:33:56,962 - INFO - 1 change detected
+2025-05-09 17:33:57,318 - INFO - 1 change detected
+2025-05-09 17:33:57,676 - INFO - 1 change detected
+2025-05-09 17:33:58,031 - INFO - 1 change detected
+2025-05-09 17:33:58,387 - INFO - 1 change detected
+2025-05-09 17:33:58,741 - INFO - 1 change detected
+2025-05-09 17:33:59,105 - INFO - 1 change detected
+2025-05-09 17:33:59,459 - INFO - 1 change detected
+2025-05-09 17:33:59,818 - INFO - 1 change detected
+2025-05-09 17:34:00,172 - INFO - 1 change detected
+2025-05-09 17:34:00,527 - INFO - 1 change detected
+2025-05-09 17:34:00,880 - INFO - 1 change detected
+2025-05-09 17:34:01,236 - INFO - 1 change detected
+2025-05-09 17:34:01,592 - INFO - 1 change detected
+2025-05-09 17:34:01,948 - INFO - 1 change detected
+2025-05-09 17:34:02,302 - INFO - 1 change detected
+2025-05-09 17:34:02,660 - INFO - 1 change detected
+2025-05-09 17:34:03,020 - INFO - 1 change detected
+2025-05-09 17:34:03,379 - INFO - 1 change detected
+2025-05-09 17:34:03,736 - INFO - 1 change detected
+2025-05-09 17:34:04,093 - INFO - 1 change detected
+2025-05-09 17:34:04,451 - INFO - 1 change detected
+2025-05-09 17:34:04,808 - INFO - 1 change detected
+2025-05-09 17:34:05,163 - INFO - 1 change detected
+2025-05-09 17:34:05,522 - INFO - 1 change detected
+2025-05-09 17:34:05,879 - INFO - 1 change detected
+2025-05-09 17:34:06,237 - INFO - 1 change detected
+2025-05-09 17:34:06,599 - INFO - 1 change detected
+2025-05-09 17:34:06,956 - INFO - 1 change detected
+2025-05-09 17:34:07,315 - INFO - 1 change detected
+2025-05-09 17:34:07,673 - INFO - 1 change detected
+2025-05-09 17:34:08,028 - INFO - 1 change detected
+2025-05-09 17:34:08,384 - INFO - 1 change detected
+2025-05-09 17:34:08,739 - INFO - 1 change detected
+2025-05-09 17:34:09,095 - INFO - 1 change detected
+2025-05-09 17:34:09,454 - INFO - 1 change detected
+2025-05-09 17:34:09,813 - INFO - 1 change detected
+2025-05-09 17:34:10,168 - INFO - 1 change detected
+2025-05-09 17:34:10,526 - INFO - 1 change detected
+2025-05-09 17:34:10,886 - INFO - 1 change detected
+2025-05-09 17:34:11,112 - INFO - Running planner node.
+2025-05-09 17:34:11,119 - INFO - Recalling memory.
+2025-05-09 17:34:11,119 - INFO - Querying LLM with client question.
+2025-05-09 17:34:11,242 - INFO - 1 change detected
+2025-05-09 17:34:11,595 - INFO - 1 change detected
+2025-05-09 17:34:11,950 - INFO - 1 change detected
+2025-05-09 17:34:12,286 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-09 17:34:12,305 - INFO - 1 change detected
+2025-05-09 17:34:12,340 - INFO - Generating final response from source: llm_knowledge
+2025-05-09 17:34:12,341 - INFO - Storing memory.
+2025-05-09 17:34:12,341 - INFO - Client Question: What is the best investment strategy in 2025?
+2025-05-09 17:34:12,341 - INFO - Advisor Response: As a trusted financial advisor, I recommend a diversified investment approach in 2025, focusing on a mix of low-risk bonds, dividend-paying stocks, and index funds to balance potential returns with risk management. This strategy can help you navigate the current market landscape, which is characterized by ongoing economic shifts and technological advancements. By spreading your investments across various asset classes, you can potentially mitigate risks and achieve long-term financial growth.
+2025-05-09 17:34:12,662 - INFO - 1 change detected
+2025-05-09 17:34:13,018 - INFO - 1 change detected
+2025-05-09 17:34:13,372 - INFO - 1 change detected
+2025-05-09 17:34:13,725 - INFO - 1 change detected
+2025-05-09 17:34:14,084 - INFO - 1 change detected
+2025-05-09 17:34:14,438 - INFO - 1 change detected
+2025-05-09 17:34:14,799 - INFO - 1 change detected
+2025-05-09 17:34:15,157 - INFO - 1 change detected
+2025-05-09 17:34:15,513 - INFO - 1 change detected
+2025-05-09 17:34:15,871 - INFO - 1 change detected
+2025-05-09 17:34:16,228 - INFO - 1 change detected
+2025-05-09 17:34:16,584 - INFO - 1 change detected
+2025-05-09 17:34:16,943 - INFO - 1 change detected
+2025-05-09 17:34:17,299 - INFO - 1 change detected
+2025-05-09 17:34:17,654 - INFO - 1 change detected
+2025-05-09 17:34:18,013 - INFO - 1 change detected
+2025-05-09 17:34:18,369 - INFO - 1 change detected
+2025-05-09 17:34:18,724 - INFO - 1 change detected
+2025-05-09 17:34:19,081 - INFO - 1 change detected
+2025-05-09 17:34:19,440 - INFO - 1 change detected
+2025-05-09 17:34:19,798 - INFO - 1 change detected
+2025-05-09 17:34:20,153 - INFO - 1 change detected
+2025-05-09 17:34:20,509 - INFO - 1 change detected
+2025-05-09 17:34:20,862 - INFO - 1 change detected
+2025-05-09 17:34:21,222 - INFO - 1 change detected
+2025-05-09 17:34:21,578 - INFO - 1 change detected
+2025-05-09 17:34:21,938 - INFO - 1 change detected
+2025-05-09 17:34:22,299 - INFO - 1 change detected
+2025-05-09 17:34:22,656 - INFO - 1 change detected
+2025-05-09 17:34:23,013 - INFO - 1 change detected
+2025-05-09 17:34:23,370 - INFO - 1 change detected
+2025-05-09 17:34:23,727 - INFO - 1 change detected
+2025-05-09 17:34:24,083 - INFO - 1 change detected
+2025-05-09 17:34:24,443 - INFO - 1 change detected
+2025-05-09 17:34:24,802 - INFO - 1 change detected
+2025-05-09 17:34:25,159 - INFO - 1 change detected
+2025-05-09 17:34:25,517 - INFO - 1 change detected
+2025-05-09 17:34:25,875 - INFO - 1 change detected
+2025-05-09 17:34:26,231 - INFO - 1 change detected
+2025-05-09 17:34:26,588 - INFO - 1 change detected
+2025-05-09 17:34:26,947 - INFO - 1 change detected
+2025-05-09 17:34:27,300 - INFO - 1 change detected
+2025-05-09 17:34:27,658 - INFO - 1 change detected
+2025-05-09 17:34:28,013 - INFO - 1 change detected
+2025-05-09 17:34:28,391 - INFO - 1 change detected
+2025-05-09 17:34:28,746 - INFO - 1 change detected
+2025-05-09 17:34:29,104 - INFO - 1 change detected
+2025-05-09 17:34:29,460 - INFO - 1 change detected
+2025-05-09 17:34:29,817 - INFO - 1 change detected
+2025-05-09 17:34:30,177 - INFO - 1 change detected
+2025-05-09 17:34:30,531 - INFO - 1 change detected
+2025-05-09 17:34:30,887 - INFO - 1 change detected
+2025-05-09 17:34:31,246 - INFO - 1 change detected
+2025-05-09 17:34:31,602 - INFO - 1 change detected
+2025-05-09 17:34:31,961 - INFO - 1 change detected
+2025-05-09 17:34:32,315 - INFO - 1 change detected
+2025-05-09 17:34:32,674 - INFO - 1 change detected
+2025-05-09 17:34:33,034 - INFO - 1 change detected
+2025-05-09 17:34:33,391 - INFO - 1 change detected
+2025-05-09 17:34:33,747 - INFO - 1 change detected
+2025-05-09 17:34:34,106 - INFO - 1 change detected
+2025-05-09 17:34:34,465 - INFO - 1 change detected
+2025-05-09 17:34:34,827 - INFO - 1 change detected
+2025-05-09 17:34:35,182 - INFO - 1 change detected
+2025-05-09 17:34:35,540 - INFO - 1 change detected
+2025-05-09 17:34:35,897 - INFO - 1 change detected
+2025-05-09 17:34:36,253 - INFO - 1 change detected
+2025-05-09 17:34:36,611 - INFO - 1 change detected
+2025-05-09 17:34:36,996 - INFO - 1 change detected
+2025-05-09 17:34:37,354 - INFO - 1 change detected
+2025-05-09 17:34:37,711 - INFO - 1 change detected
+2025-05-09 17:34:38,066 - INFO - 1 change detected
+2025-05-09 17:34:38,422 - INFO - 1 change detected
+2025-05-09 17:34:38,781 - INFO - 1 change detected
+2025-05-09 17:34:39,139 - INFO - 1 change detected
+2025-05-09 17:34:39,495 - INFO - 1 change detected
+2025-05-09 17:34:39,854 - INFO - 1 change detected
+2025-05-09 17:34:40,210 - INFO - 1 change detected
+2025-05-09 17:34:40,571 - INFO - 1 change detected
+2025-05-09 17:34:40,928 - INFO - 1 change detected
+2025-05-09 17:34:41,295 - INFO - 1 change detected
+2025-05-09 17:34:41,657 - INFO - 1 change detected
+2025-05-09 17:34:42,016 - INFO - 1 change detected
+2025-05-09 17:34:42,372 - INFO - 5 changes detected
+2025-05-09 17:34:42,724 - INFO - 1 change detected
+2025-05-09 17:34:43,080 - INFO - 1 change detected
+2025-05-09 17:35:58,233 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:36:17,022 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:36:32,472 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:36:32,936 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:36:32,937 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:36:33,414 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:36:33,414 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:36:37,299 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:38:07,810 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:38:25,410 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:38:38,468 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:38:38,897 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:38:38,900 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:38:39,326 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:38:39,326 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:38:43,712 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:39:46,416 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:40:11,263 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:40:40,375 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:40:41,228 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:40:41,232 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:40:41,882 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:40:41,882 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:40:46,870 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:41:48,542 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:42:05,577 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:42:19,792 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:42:20,236 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:42:20,237 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:42:20,607 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:42:20,607 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:42:25,378 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:50:51,201 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:51:08,372 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:51:21,639 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:51:22,100 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:51:22,101 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:51:22,554 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:51:22,554 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:51:26,456 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:52:26,614 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:52:44,091 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:52:58,180 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:52:58,621 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:52:58,623 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:52:59,017 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:52:59,017 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:53:03,260 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:54:08,257 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:54:26,288 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:54:39,303 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:54:39,704 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:54:39,706 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:54:40,150 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:54:40,150 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:54:44,047 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 17:58:17,252 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 17:58:45,513 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 17:59:06,445 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 17:59:07,090 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 17:59:07,093 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 17:59:07,678 - INFO - Use pytorch device_name: cpu
+2025-05-09 17:59:07,678 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 17:59:11,875 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:00:30,091 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:00:50,621 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:01:07,609 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:01:08,162 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:01:08,165 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:01:08,783 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:01:08,784 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:01:13,116 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:02:16,606 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:02:33,585 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:02:46,253 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:02:46,710 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:02:46,712 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:02:47,144 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:02:47,144 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:02:51,823 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:32:05,732 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:32:25,481 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:32:42,378 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:32:42,827 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:32:42,830 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:32:43,379 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:32:43,379 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:32:48,236 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:33:58,540 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:34:17,282 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:34:33,021 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:34:33,435 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:34:33,436 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:34:33,936 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:34:33,936 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:34:38,703 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:35:45,844 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:36:06,198 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:36:36,202 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:36:36,985 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:36:36,988 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:36:37,814 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:36:37,816 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:36:42,606 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:38:00,443 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:38:18,474 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:38:34,415 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:38:34,950 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:38:34,951 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:38:35,517 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:38:35,517 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:38:39,721 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:39:47,898 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:40:06,854 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:40:20,098 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:40:20,522 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:40:20,524 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:40:20,967 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:40:20,967 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:40:27,083 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:41:23,203 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:41:39,536 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:41:51,335 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:41:51,759 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:41:51,762 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:41:52,170 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:41:52,171 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:41:57,352 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:43:34,606 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:43:51,108 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:44:02,829 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:44:03,089 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:44:03,091 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:44:03,308 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:44:03,308 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:44:06,863 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 18:58:30,742 - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-05-09 18:58:31,542 - INFO - Starting Financial Advisor Bot
+2025-05-09 18:58:49,494 - INFO - NumExpr defaulting to 8 threads.
+2025-05-09 18:59:05,569 - WARNING - From C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-05-09 18:59:06,058 - INFO - PyTorch version 2.7.0 available.
+2025-05-09 18:59:06,062 - INFO - TensorFlow version 2.18.0 available.
+2025-05-09 18:59:06,621 - INFO - Use pytorch device_name: cpu
+2025-05-09 18:59:06,621 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 18:59:11,492 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-05-09 19:00:27,855 - INFO - Running planner node.
+2025-05-09 19:00:27,856 - INFO - Recalling memory.
+2025-05-09 19:00:27,856 - INFO - Querying LLM with client question.
+2025-05-09 19:00:28,301 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-09 19:00:28,326 - INFO - Generating final response from source: llm_knowledge
+2025-05-09 19:00:28,327 - INFO - Storing memory.
