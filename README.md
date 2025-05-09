@@ -1,5 +1,5 @@
 # **💼 TrueWealth AI: Your Smart Path to Financial Freedom**
-
+![Image](https://github.com/user-attachments/assets/4efaac48-4e70-49de-9dfa-f4e5802d31bb)
 ## **Project Overview**
 
 **TrueWealth AI** is an advanced, AI-powered financial advisor that uses cutting-edge technologies in machine learning, natural language processing (NLP), and document retrieval. By leveraging advanced LLMs, real-time data access from financial tools like Yahoo Finance, DuckDuckGo, and dynamic document retrieval systems like LangChain and ChromaDB, it provides personalized financial advice. The system is designed to simulate a real-world financial advisor, offering clear, insightful, and actionable recommendations.
