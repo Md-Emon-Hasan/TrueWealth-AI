@@ -1,10 +1,58 @@
 # **💼 TrueWealth AI: Your Smart Path to Financial Freedom**
-![Image](https://github.com/user-attachments/assets/4efaac48-4e70-49de-9dfa-f4e5802d31bb)
-## **Project Overview**
 
+[![Image](https://github.com/user-attachments/assets/4e411f0e-500a-4e8b-819a-8d6ccf701c3b)](https://github.com/user-attachments/assets/4e411f0e-500a-4e8b-819a-8d6ccf701c3b)
+
+---
+
+## Project Overview
 **TrueWealth AI** is an advanced, AI-powered financial advisor that uses cutting-edge technologies in machine learning, natural language processing (NLP), and document retrieval. By leveraging advanced LLMs, real-time data access from financial tools like Yahoo Finance, DuckDuckGo, and dynamic document retrieval systems like LangChain and ChromaDB, it provides personalized financial advice. The system is designed to simulate a real-world financial advisor, offering clear, insightful, and actionable recommendations.
 
-### 🧱 Project Structure
+---
+
+## 🚀 Live Demo
+
+🎯 Try the real-time TrueWealth AI:  
+👉 [**TrueWealth AI – Click Here**](https://truewealth-ai.onrender.com/)
+
+---
+
+## Real-World Use Cases
+
+#### **1. Personal Financial Advisory**
+- Helps **individual investors** make informed decisions on stocks, bonds, and long-term investments.
+
+#### **2. Financial Education & Self-Learning**
+- Acts as a **tutor** for users reading financial books (e.g., *The Intelligent Investor*).
+
+#### **3. Real-Time Market & News Analysis**
+- Provides **up-to-date financial news** from Yahoo Finance.
+
+#### **4. Small Business Financial Consulting**
+- Assists **small business owners** in budgeting, tax planning, and investment decisions.
+
+#### **5. Retirement & Wealth Management**
+- Offers **retirement planning insights** (e.g., 401(k), Roth IRA strategies).
+
+---
+
+## **Features & Functionalities**
+
+| ✅ Step | 🧠 Feature                           | ⚙️ Tech Stack / Tool Used                                       |
+| ------ | ------------------------------------ | --------------------------------------------------------------- |
+| 1️⃣    | 🧠 **LLM-based Query Understanding** | **Groq**                                                      |
+| 2️⃣    | ✨ **Tone Personalization**           | **Prompt Engineering** + **Persona Templates**                  |
+| 3️⃣    | 📚 **RAG-based Answering**           | **LangChain** + **ChromaDB** + **Sentence Transformers**        |
+| 4️⃣    | 🔍 **Retrieval Agent**               | **RetrieverAgent** + **Vector Store Tools**                     |
+| 5️⃣    | 🧠 **Answer Generator Agent**        | **GeneratorAgent** (LLM-based factual + human-style)            |
+| 6️⃣    | 🧾 **Document QA Agent**             | **DocumentReaderAgent** + **QA Chain**                          |
+| 7️⃣    | 🔁 **ToolRouter Agent**              | **Conditional Logic** + **Tool Selection**                      |
+| 8️⃣    | 🧠 **Planner Agent**                 | **LangGraph Planner Node**                                      |
+| 9️⃣     | 🔄 **Intelligent Tool Routing**      | **Retry Logic** + **Fallback Tool** + **Score-based Selection** |
+| 🔟 | 🧠 **Short Conversational Memory**   | **LangGraph Memory Integration (short-term)**                   |
+
+---
+
+## Project Structure
 ```
 TrueWealth AI/
 ├── streamlit_app.py               # Streamlit-based user interface for financial advisor chatbot
@@ -50,35 +98,37 @@ TrueWealth AI/
 ├── README.md                      # Project overview, setup instructions, features, architecture diagram
 ```
 
-
-### **Tech Stack:**
-
-* **LLMs (Large Language Models)**: **Groq**
-* **Data Retrieval**: **LangChain**, **ChromaDB**, **Sentence Transformers**
-* **Document Parsing**: **PyPDFLoader**, **DocumentReaderAgent**
-* **Search Tools**: **Yahoo Finance API**, **DuckDuckGo API**
-* **Memory Management**: **LangGraph Memory Integration**
-* **Agent Technique**: **ToolRouter Agent**, **Planner Agent**
-* **Backend**: **FastAPI** (for RESTful APIs)
-* **Frontend**: **Streamlit** (interactive UI)
-* **Deployment**: **Docker**, **CI/CD** (GitHub Actions/Jenkins)
-
 ---
 
-## **Features & Functionalities**
+## System Architecture
 
-| ✅ Step | 🧠 Feature                           | ⚙️ Tech Stack / Tool Used                                       |
-| ------ | ------------------------------------ | --------------------------------------------------------------- |
-| 1️⃣    | 🧠 **LLM-based Query Understanding** | **Groq**                                                      |
-| 2️⃣    | ✨ **Tone Personalization**           | **Prompt Engineering** + **Persona Templates**                  |
-| 3️⃣    | 📚 **RAG-based Answering**           | **LangChain** + **ChromaDB** + **Sentence Transformers**        |
-| 4️⃣    | 🔍 **Retrieval Agent**               | **RetrieverAgent** + **Vector Store Tools**                     |
-| 5️⃣    | 🧠 **Answer Generator Agent**        | **GeneratorAgent** (LLM-based factual + human-style)            |
-| 6️⃣    | 🧾 **Document QA Agent**             | **DocumentReaderAgent** + **QA Chain**                          |
-| 7️⃣    | 🔁 **ToolRouter Agent**              | **Conditional Logic** + **Tool Selection**                      |
-| 8️⃣    | 🧠 **Planner Agent**                 | **LangGraph Planner Node**                                      |
-| 9️⃣     | 🔄 **Intelligent Tool Routing**      | **Retry Logic** + **Fallback Tool** + **Score-based Selection** |
-| 🔟 | 🧠 **Short Conversational Memory**   | **LangGraph Memory Integration (short-term)**                   |
+```mermaid
+flowchart TD
+    A[User Query] --> B[Planner]
+    B --> C[Recall Memory]
+    C --> D[LLM Direct Answer Attempt]
+    D -->|Success| E[Generate Response]
+    D -->|Failure| F[Executor: Retry Logic]
+    F --> G{Retry Count < 3?}
+    G -->|Yes| H[RAG: Search PDF Knowledge]
+    G -->|No| I[Yahoo Finance Search]
+    H -->|Found Docs| E
+    H -->|No Docs| I
+    I -->|Found News| E
+    I -->|No News| J[DuckDuckGo Web Search]
+    J --> E
+    E --> K[Store in Memory]
+    K --> L[Return Final Answer]
+
+    %% External Tools
+    H --> M[(ChromaDB)]
+    I --> N[[Yahoo Finance]]
+    J --> O[[DuckDuckGo]]
+    
+    %% LLM Core
+    D --> P[[Groq-LLaMA3]]
+    E --> P
+```
 
 ---
 
@@ -91,18 +141,6 @@ FastAPI serves as the backend for managing API requests, handling the communicat
 * **Fast API Endpoints**: API routes are built to handle financial queries, document retrieval requests, and personalized recommendations.
 * **Asynchronous Processing**: Supports asynchronous task handling for document retrieval and large LLM query processing.
 * **Integration with LangChain and RAG Pipeline**: FastAPI integrates directly with LangChain and RAG to provide on-demand data fetching and query answering.
-
----
-
-## **User Interface with Streamlit**
-
-Streamlit is used for the front-end, where users can interact with the financial advisor chatbot in a conversational format.
-
-### **UI Features**:
-
-* **Real-Time Interaction**: The Streamlit interface allows users to input queries and receive answers instantly.
-* **Tone Personalization**: Users can choose how formal or informal they want the assistant to sound.
-* **Live Data Display**: Financial data (such as stock prices, trends, and company news) is displayed dynamically.
 
 ---
 
@@ -147,11 +185,11 @@ Continuous Integration and Continuous Deployment (CI/CD) is implemented using **
 
 ---
 
-### **Personal Information**
+## **Personal Information**
 
 * **Developer:** Md Emon Hasan
 * **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)
-* **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan)
+* **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)
 * **Email:** [iconicemon01@gmail.com](mailto:iconicemon01@gmail.com)
 * **WhatsApp:** [+8801834363533](https://wa.me/8801834363533)
 
