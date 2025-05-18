@@ -479,5 +479,11 @@ with st.sidebar.expander("Debug Info", expanded=False):
         st.write("DDG Attempted:", st.session_state.conversation_state['ddg_attempted'])
 
 # Footer
+st.sidebar.markdown(
+    """
+    - [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-emon-hasan-695483237/)
+    - [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/8801834363533)
+    """
+)
 st.sidebar.markdown("---")
 st.sidebar.caption("AI Financial Advisor powered by Groq & LangGraph")
