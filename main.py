@@ -1,47 +1,34 @@
-from ingestion.pdf_loader import load_pdf
-from retrieval.splitter import split_docs
-from retrieval.vectorstore import build_vectorstore
-from retrieval.retrievers import get_retriever
-from agents.workflow import create_workflow
-from logger import logger
+# main.py
+from dotenv import load_dotenv
+from core.workflow import get_workflow_app
+from core.state import initialize_state
 
-logger.info("Starting Financial Advisor Bot")
-docs = load_pdf("data/The Intelligent Investor - BENJAMIN GRAHAM.pdf")
-splits = split_docs(docs)
-vs = build_vectorstore(splits)
-retriever = get_retriever(vs)
-app = create_workflow(retriever)
+from dotenv import load_dotenv
+load_dotenv()
 
-conversation_state = {
-    "question": "",
-    "documents": [],
-    "generation": "",
-    "source": "",
-    "search_query": None,
-    "conversation_history": [],
-    "llm_attempted": False,
-    "rag_attempted": False,
-    "yfinance_attempted": False,
-    "ddg_attempted": False,
-    "retry_count": 0,
-    "memory": []
-}
+def main():
+    load_dotenv()
+    app = get_workflow_app()
+    state = initialize_state()
 
-while True:
-    query = input("Client: ").strip()
-    if query.lower() == "exit":
-        logger.info("Session ended by user.")
-        break
+    print("=== FINANCIAL ADVISOR ===")
+    while True:
+        query = input("\nClient: ").strip()
+        if query.lower() == 'exit':
+            print("\n=== Session Ended ===")
+            break
 
-    conversation_state.update({
-        "question": query,
-        "generation": "",
-        "documents": [],
-        "source": "",
-        "retry_count": 0
-    })
+        state.update({
+            "question": query,
+            "generation": "",
+            "documents": [],
+            "source": "",
+            "retry_count": 0
+        })
 
-    result = app.invoke(conversation_state)
-    conversation_state.update(result)
+        result = app.invoke(state)
+        state.update(result)
+        print(f"\nAdvisor: {state['generation']}\n")
 
-    print(f"Consultant: {conversation_state['generation']}")
+if __name__ == "__main__":
+    main()

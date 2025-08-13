@@ -1,106 +1,140 @@
-# **💼 TrueWealth AI: Your Smart Path to Financial Freedom**
+# **💼 TrueWealth AI: Your AI-powered financial strategist**
 
-[![Image](https://github.com/user-attachments/assets/4e411f0e-500a-4e8b-819a-8d6ccf701c3b)](https://github.com/user-attachments/assets/4e411f0e-500a-4e8b-819a-8d6ccf701c3b)
-
----
-
-## Project Overview
-**TrueWealth AI** is an advanced, AI-powered financial advisor that uses cutting-edge technologies in machine learning, natural language processing (NLP), and document retrieval. By leveraging advanced LLMs, real-time data access from financial tools like Yahoo Finance, DuckDuckGo, and dynamic document retrieval systems like LangChain and ChromaDB, it provides personalized financial advice. The system is designed to simulate a real-world financial advisor, offering clear, insightful, and actionable recommendations.
+[![Image](https://github.com/user-attachments/assets/0cab61d6-0b2e-4c17-8400-ceebcfb1bd05)](https://github.com/user-attachments/assets/0cab61d6-0b2e-4c17-8400-ceebcfb1bd05)
 
 ---
 
-## 🚀 Live Demo
+## **Project Overview**
+
+**TrueWealth AI** is a **end-to-end Multi-Agent Financial Advisor AI System** that combines **LangGraph-powered orchestration**, advanced **LLM reasoning (LLaMA-3 via Groq)**, and **RAG with ChromaDB + HuggingFace embeddings** to deliver professional, context-aware financial insights. The system features **Planner, Retriever, Generator, News, Web Search, and Memory agents** with intelligent **tool routing, retry logic, and multi-source knowledge fusion** for high accuracy and reliability. It supports **PDF ingestion, financial news retrieval, and fallback web search** to ensure comprehensive answers. Built with a **modular architecture** for scalability, it provides **FastAPI APIs** for testing, a **Flask-based responsive UI (HTML, CSS, JS)** for client interaction, and is fully **Dockerized** for portability. Deployed on **Render** with an integrated **CI/CD pipeline**, it reflects enterprise-level engineering practices, making it a **industry-grade AI solution** ready for real-world deployment.
+
+---
+
+## 🚀 **Live Demo**
 
 🎯 Try the real-time TrueWealth AI:  
 👉 [**TrueWealth AI – Click Here**](https://truewealth-ai.onrender.com/)
 
 ---
 
-## Real-World Use Cases
+## **Real-World Use Cases**
 
-#### **1. Personal Financial Advisory**
+##### **1. Personal Financial Advisory**
 - Helps **individual investors** make informed decisions on stocks, bonds, and long-term investments.
 
-#### **2. Financial Education & Self-Learning**
+##### **2. Financial Education & Self-Learning**
 - Acts as a **tutor** for users reading financial books (e.g., *The Intelligent Investor*).
 
-#### **3. Real-Time Market & News Analysis**
+##### **3. Real-Time Market & News Analysis**
 - Provides **up-to-date financial news** from Yahoo Finance.
 
-#### **4. Small Business Financial Consulting**
+##### **4. Small Business Financial Consulting**
 - Assists **small business owners** in budgeting, tax planning, and investment decisions.
 
-#### **5. Retirement & Wealth Management**
+##### **5. Retirement & Wealth Management**
 - Offers **retirement planning insights** (e.g., 401(k), Roth IRA strategies).
 
 ---
 
 ## **Features & Functionalities**
-
-| ✅ Step | 🧠 Feature                           | ⚙️ Tech Stack / Tool Used                                       |
-| ------ | ------------------------------------ | --------------------------------------------------------------- |
-| 1️⃣    | 🧠 **LLM-based Query Understanding** | **Groq**                                                      |
-| 2️⃣    | ✨ **Tone Personalization**           | **Prompt Engineering** + **Persona Templates**                  |
-| 3️⃣    | 📚 **RAG-based Answering**           | **LangChain** + **ChromaDB** + **Sentence Transformers**        |
-| 4️⃣    | 🔍 **Retrieval Agent**               | **RetrieverAgent** + **Vector Store Tools**                     |
-| 5️⃣    | 🧠 **Answer Generator Agent**        | **GeneratorAgent** (LLM-based factual + human-style)            |
-| 6️⃣    | 🧾 **Document QA Agent**             | **DocumentReaderAgent** + **QA Chain**                          |
-| 7️⃣    | 🔁 **ToolRouter Agent**              | **Conditional Logic** + **Tool Selection**                      |
-| 8️⃣    | 🧠 **Planner Agent**                 | **LangGraph Planner Node**                                      |
-| 9️⃣     | 🔄 **Intelligent Tool Routing**      | **Retry Logic** + **Fallback Tool** + **Score-based Selection** |
-| 🔟 | 🧠 **Short Conversational Memory**   | **LangGraph Memory Integration (short-term)**                   |
+| ✅ Step | 🧠 Feature                                     | ⚙️ Tech Stack / Tool Used                                                    |
+| ------ | ---------------------------------------------- | ---------------------------------------------------------------------------- |
+| 1️⃣    | 🧠 **LLM-based Financial Query Understanding** | **Groq** + **LLaMA-3**                                                       |
+| 2️⃣    | ✨ **Professional Tone Personalization**        | **Prompt Engineering** + **Advisor Persona Templates**                       |
+| 3️⃣    | 📚 **RAG-based Financial Answering**           | **LangChain** + **ChromaDB** + **Sentence Transformers (all-MiniLM-L6-v2)**  |
+| 4️⃣    | 🔍 **Financial Document Retriever Agent**      | **RetrieverAgent** + **Vector Store Search**                                 |
+| 5️⃣    | 🧠 **Answer Generator Agent**                  | **GeneratorAgent** (LLM-based factual + professional financial style)        |
+| 6️⃣    | 📰 **Financial News Retrieval Agent**          | **YahooFinanceNewsTool**                                                     |
+| 7️⃣    | 🌐 **Web Search Agent (Fallback)**             | **DuckDuckGo Search Tool**                                                   |
+| 8️⃣    | 🧠 **Planner Agent**                           | **LangGraph Planner Node**                                                   |
+| 9️⃣    | 🔄 **Intelligent Tool Routing & Fallback**     | **Retry Logic** + **Conditional Branching** + **Multi-step Tool Selection**  |
+| 🔟     | 🧠 **Short-Term Conversational Memory**        | **LangGraph Memory Integration (Buffer-based)**                              |
+| 1️⃣1️⃣ | 📂 **PDF Knowledge Ingestion**                 | **PyPDFLoader** + **RecursiveCharacterTextSplitter**                         |
+| 1️⃣2️⃣ | 📊 **Vector Embedding & Storage**              | **HuggingFaceEmbeddings** + **ChromaDB**                                     |
+| 1️⃣3️⃣ | ⚙️ **State-based Multi-Agent Orchestration**   | **LangGraph StateGraph** + **Conditional Edges** + **Dynamic State Updates** |
+| 1️⃣4️⃣ | 🗂 **Multi-source Knowledge Fusion**           | **LLM + RAG + Yahoo Finance + DuckDuckGo Combined Answer Synthesis**         |
+| 1️⃣5️⃣ | 🧪 **API Testing & Integration**               | **FastAPI** (API endpoints for agent orchestration testing)                  |
+| 1️⃣6️⃣ | 🗃 **Modular Code Architecture**               | **Separation of Concerns** + **Service/Agent Modules**                       |
+| 1️⃣7️⃣ | 💻 **Responsive Web UI**                       | **Flask** + **HTML5, CSS3, JavaScript**                                      |
+| 1️⃣8️⃣ | 🌐 **Cloud Deployment**                        | **Render** (Production hosting)                                              |
+| 1️⃣9️⃣ | 🔄 **CI/CD Pipeline**                          | **GitHub Actions** / **CI/CD Workflows**                                     |
+| 2️⃣0️⃣ | 📦 **Containerization for Portability**        | **Docker** (App + Dependencies + Environment)                                |
 
 ---
 
-## Project Structure
+## **Project Structure**
 ```
 TrueWealth AI/
-├── streamlit_app.py               # Streamlit-based user interface for financial advisor chatbot
-├── notebook/
-│   └── experiment.ipynb           # Jupyter notebook for prototyping, experimentation, and testing
-├── agents/
-│   ├── __init__.py                # Package initializer for agents module
-│   ├── nodes.py                   # LangGraph nodes: agent planner, tool-caller, executor logic
-│   ├── state.py                   # Agent state and memory management during graph execution
-│   └── workflow.py                # LangGraph planner + executor orchestration for agent workflow
-├── data/
-│   └── The Intelligent Investor - BENJAMIN GRAHAM.pdf   # Sample financial PDF for RAG ingestion
-├── finance_db/
-│   └── (SQLite/Postgres DB files) # Local or remote finance database to store processed data
-├── ingestion/
-│   └── pdf_loader.py              # Document ingestion module: PDF parsing, metadata extraction, RAG prep
-├── utils/
-│   ├── __init__.py                # Package initializer for utility functions
-│   └── memory.py                  # Short-term memory store (e.g., Chroma, JSON memory, etc.)
-├── logs/
-│   └── advisor.log                # Logging outputs for all conversations, errors, or tool executions
-├── tests/
-│   ├── __init__.py                # Package initializer for test suite
-│   └── test_app.py                # Unit tests for core application components (agents, tools, API, etc.)
-├── retrieval/
-│   ├── __init__.py                # Package initializer for retrieval modules
-│   ├── retrievers.py              # Top-K retrievers using vector similarity (e.g., Chroma, FAISS)
-│   ├── splitter.py                # PDF/document chunking logic (e.g., RecursiveTextSplitter)
-│   └── vectorstore.py             # Vectorstore logic using HuggingFace embeddings + ChromaDB
-├── logger.py                      # Logger configuration for debug/info/error handling across modules
-├── config.py                      # Centralized config: API keys, constants, paths, env vars (via dotenv)
-├── main.py                        # run file for muduler package
-├── setup.py                       # Package metadata and install dependencies (for pip install)
-├── fastapi_app.py                 # FastAPI app serving REST endpoints for backend API integration
-├── app.png
-├── .gitignore                     # Files/folders ignoredetc.)
-├── Dockerfile                     # Docker image definition for containerizing the full app
-├── .github/
-│   └── workflows/
-│       └── ci.yml                 # GitHub Actions workflow for CI/CD: linting, tests, deploy
-├── requirements.txt               # Dependency list for pip install (FastAPI, LangChain, etc.)
-├── LICENSE
-├── README.md                      # Project overview, setup instructions, features, architecture diagram
+   │
+   ├── .github/
+   │   └── workflows/
+   │       └── main.yml
+   │
+   ├── agents/
+   │   ├── __init__.py
+   │   ├── duckduckgo.py
+   │   ├── executor.py
+   │   ├── generator.py
+   │   ├── llm.py
+   │   ├── memory_store.py
+   │   ├── memory.py
+   │   ├── planner.py
+   │   ├── rag.py
+   │   └── yfinance.py
+   │
+   ├── core/
+   │   ├── __init__.py
+   │   ├── config.py
+   │   ├── state.py
+   │   └── workflow.py
+   │
+   ├── data/
+   │   └── The Intelligent Investor - BENJAMIN GRAHAM.pdf
+   │
+   ├──finance_db/
+   │   └── chroma.sqlite3
+   │
+   ├── notebook/
+   │   └── experiment.ipynb
+   │
+   ├── static/
+   │   ├── css/
+   │   │   └── style.css
+   │   ├── images/
+   │   │   └── logo.png
+   │   └── js/
+   │       └── script.js
+   │
+   ├── templates/
+   │   └── index.html
+   │
+   ├── tests/
+   │   └── test_app.py
+   │
+   ├── tools/
+   │   ├── __init__.py
+   │   ├── document_loader.py
+   │   ├── llm_client.py
+   │   ├── search_tools.py
+   │   └── vector_store.py
+   │
+   ├── .gitignore
+   ├── api.py
+   ├── app.py
+   ├── app.png
+   ├── demo.mp4
+   ├── Dockerfile
+   ├── LICENSE
+   ├── main.py
+   ├── README.md
+   ├── render.yaml
+   ├── requirements.txt
+   └── setup.py
 ```
 
 ---
 
-## System Architecture
+## **System Architecture**
 
 ```mermaid
 flowchart TD
@@ -132,26 +166,56 @@ flowchart TD
 
 ---
 
-## **Backend with FastAPI**
+## **FastAPI Endpoints**
 
-FastAPI serves as the backend for managing API requests, handling the communication between the UI and the core financial advisory logic.
+#### **POST /chat**
 
-### **Other Features**:
+Process a financial question and return an AI-generated response with source information.
 
-* **Fast API Endpoints**: API routes are built to handle financial queries, document retrieval requests, and personalized recommendations.
-* **Asynchronous Processing**: Supports asynchronous task handling for document retrieval and large LLM query processing.
-* **Integration with LangChain and RAG Pipeline**: FastAPI integrates directly with LangChain and RAG to provide on-demand data fetching and query answering.
+**Request:**
+
+```
+POST /chat HTTP/1.1  
+Content-Type: application/json  
+Host: localhost:8000  
+
+{
+  "message": "What are the top performing stocks this week?",
+  "session_id": "optional_existing_id"
+}
+```
+
+**Parameters:**
+
+* `message` (**required**) → The financial question to process
+* `session_id` (**optional**) → Existing session ID for context continuity (default: `"default"`)
+
+**Response:**
+
+```json
+{
+  "response": "Based on Yahoo Finance data, the top performing stocks this week are...",
+  "session_id": "20250813123045",
+  "source": "YahooFinance"
+}
+```
+
+**Status Codes:**
+
+* `200` → Successful response
+* `400` → Invalid request (missing `message`)
+* `500` → Internal server error
 
 ---
 
 ## **Deployment Process with Docker**
 
-### **Dockerization**:
+#### **Dockerization**:
 
 1. **Service Containerization**: The entire TrueWealth AI system is broken down into microservices, each housed within its own Docker container.
 2. **Docker Compose**: Used to coordinate and manage multi-container services for local development and testing.
 
-### **Deployment Steps**:
+#### **Deployment Steps**:
 
 1. **Build Docker Image**:
 
@@ -170,7 +234,7 @@ FastAPI serves as the backend for managing API requests, handling the communicat
 
 Continuous Integration and Continuous Deployment (CI/CD) is implemented using **GitHub Actions** to automate testing, building, and deploying the project.
 
-### **CI/CD Features**:
+#### **CI/CD Features**:
 
 * **Automated Testing**: Every code push triggers automated unit and integration tests.
 * **Automated Deployment**: Successful builds are automatically deployed to production or staging environments.
