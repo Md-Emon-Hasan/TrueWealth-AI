@@ -1,24 +1,30 @@
-langchain
-langchain-community
-langchain-huggingface
-langchain-groq
-langgraph
+# Core Requirements
+fastapi
+uvicorn
 python-dotenv
-chroma
-sentence-transformers
-duckduckgo-search
-yahoo_fin
+pydantic
 tiktoken
 pypdf
 wikipedia
-yahoo-finance
 fastapi
 uvicorn
 pydantic
 sqlalchemy
 gunicorn
 pytest
-streamlit
-huggingface-hub
-langchain-core
+
+# AI/LangChain Requirements
+langchain-huggingface
 langchain-community
+langchain-groq
+langgraph
+huggingface-hub
+sentence-transformers
+langchain-core
+
+# Vector Database
+chromadb
+
+# Search Tools
+duckduckgo-search
+yahoo-finance

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueWealth AI - AI Financial Advisor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid app-container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="themeToggleBtn" class="btn btn-sm btn-theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- Status Bar (Fixed at top) -->
+        <div class="status-bar">
+            <div class="status">
+                <div class="status-indicator"></div>
+                <span>TrueWealth AI</span>
+            </div>
+            <div class="online-status">
+                <i class="fas fa-circle"></i> Online
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+                    <h1>TrueWealth AI</h1>
+                    <p class="version">Version 2.0</p>
+                </div>
+
+                <div class="developer-info">
+                    <h3>Developer</h3>
+                    <p>Md. Emon Hasan</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/8801834363533" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/Md-Emon-Hasan" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/md-emon-hasan-695483237/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mdemon.hasan2001/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+
+                    <p class="address">Dhaka, Bangladesh</p>
+                </div>
+
+                <div class="quick-actions">
+                    <button class="btn btn-new-chat" id="newChatBtn">
+                        <i class="fas fa-plus"></i> New Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- AI Analyzing Indicator -->
+            <div class="analyzing-indicator" id="analyzingIndicator">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Welcome Message -->
+            <div class="welcome-message animate__animated animate__fadeIn" id="welcomeMessage">
+                <div class="welcome-card">
+                    <h2><i class="fas fa-handshake"></i> Welcome to TrueWealth AI</h2>
+                    <p class="subtitle">Your AI-powered financial strategist</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-chart-pie"></i>
+                            <p>Portfolio Analysis</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-coins"></i>
+                            <p>Investment Tips</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-piggy-bank"></i>
+                            <p>Savings Strategies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-questions">
+                        <div class="quick-question" data-question="What's the current stock market trend?">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <span>Market Trends</span>
+                        </div>
+                        <div class="quick-question" data-question="How should I plan for retirement?">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <span>Retirement Plan</span>
+                        </div>
+                        <div class="quick-question" data-question="What are good investments for beginners?">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>Beginner Tips</span>
+                        </div>
+                        <div class="quick-question" data-question="How to optimize my tax strategy?">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Tax Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="messages-container">
+                <div class="messages" id="chatMessages"></div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <input type="text" id="userInput" placeholder="Type your financial question...">
+                    <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <p class="disclaimer">AI may produce inaccurate information. Consult a financial expert.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Circles -->
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
