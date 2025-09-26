@@ -1,4 +1,3 @@
-# Core Requirements
 fastapi
 uvicorn
 python-dotenv
@@ -13,7 +12,6 @@ sqlalchemy
 gunicorn
 pytest
 
-# AI/LangChain Requirements
 langchain-huggingface
 langchain-community
 langchain-groq
@@ -22,9 +20,6 @@ huggingface-hub
 sentence-transformers
 langchain-core
 
-# Vector Database
 chromadb
-
-# Search Tools
 duckduckgo-search
 yahoo-finance

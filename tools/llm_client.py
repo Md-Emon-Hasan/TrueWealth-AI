@@ -1,14 +1,10 @@
-# tools/llm_client.py
 from langchain_groq import ChatGroq
-
-_llm = None
+from core.config import LLM_MODEL, LLM_TEMPERATURE, LLM_MAX_TOKENS
 
 def get_llm():
-    global _llm
-    if _llm is None:
-        _llm = ChatGroq(
-            model_name="llama-3.3-70b-versatile",
-            temperature=0.3,
-            max_tokens=2048
-        )
-    return _llm
+    """Get LLM instance"""
+    return ChatGroq(
+        model_name=LLM_MODEL,
+        temperature=LLM_TEMPERATURE,
+        max_tokens=LLM_MAX_TOKENS
+    )

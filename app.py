@@ -20,18 +20,18 @@ def home():
 def chat():
     user_input = request.json['message']
     session_id = request.json.get('session_id', 'default')
-    
+   
     if not hasattr(app, 'conversation_states'):
         app.conversation_states = {}
-    
+   
     if session_id not in app.conversation_states:
         app.conversation_states[session_id] = initialize_state()
-    
+   
     state = app.conversation_states[session_id]
-    
+   
     # Simulate AI thinking animation
     time.sleep(0)
-    
+   
     state.update({
         "question": user_input,
         "generation": "",
@@ -39,10 +39,10 @@ def chat():
         "source": "",
         "retry_count": 0
     })
-    
+   
     result = ai_workflow.invoke(state)
     state.update(result)
-    
+   
     return jsonify({
         "response": state['generation'],
         "session_id": session_id,

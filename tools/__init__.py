@@ -1,14 +1,4 @@
-# tools/__init__.py
-from .document_loader import load_pdf_documents
-from .vector_store import get_retriever, initialize_vectorstore
+from .document_loader import load_documents, split_documents
 from .llm_client import get_llm
-from .search_tools import get_yfinance_tool, get_ddg_tool
-
-__all__ = [
-    'load_pdf_documents',
-    'get_retriever',
-    'initialize_vectorstore',
-    'get_llm',
-    'get_yfinance_tool',
-    'get_ddg_tool'
-]
+from .search_tools import get_duckduckgo_search, get_yahoo_finance_news
+from .vector_store import get_retriever, setup_vector_store
