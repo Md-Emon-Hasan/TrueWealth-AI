@@ -411,8 +411,8 @@ body {
     flex: 1;
     overflow-y: auto;
     padding: 1rem;
-    margin-bottom: 150px; /* Space for input area */
-    height: calc(100vh - 150px); /* Adjust based on your layout */
+    margin-bottom: 150px;
+    height: calc(100vh - 150px);
 }
 
 .messages {
@@ -602,6 +602,6 @@ body {
 
 /* ===== Scrollbar Styling for Firefox ===== */
 * {
-    scrollbar-width: thin;            /* "auto" or "thin" */
-    scrollbar-color: #ffffff00 #ffffff00;     /* thumb color | track color */
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff00 #ffffff00; 
 }

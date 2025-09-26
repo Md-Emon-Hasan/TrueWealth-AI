@@ -1,25 +1,75 @@
-# tools/vector_store.py
-from langchain_community.vectorstores import Chroma
+import os
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
-from .document_loader import load_pdf_documents
-from core.config import VECTOR_DB_DIR
+from langchain_chroma import Chroma
+from core.config import EMBEDDINGS_MODEL, VECTOR_DB_PATH, RETRIEVAL_K
+from tools.document_loader import load_documents, split_documents
 
-_embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-_vectorstore = None
+def get_embeddings():
+    return HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL)
 
-def initialize_vectorstore():
-    global _vectorstore
-    if _vectorstore is None:
-        docs = load_pdf_documents()
-        _vectorstore = Chroma.from_documents(
-            documents=docs,
-            embedding=_embeddings,
-            persist_directory=str(VECTOR_DB_DIR),
-            collection_metadata={"hnsw:space": "cosine"}
+def setup_vector_store():
+    embeddings = get_embeddings()
+    
+    # Ensure absolute path
+    abs_vector_path = os.path.abspath(VECTOR_DB_PATH)
+    print(f"Vector DB path: {abs_vector_path}")
+    
+    # Check if vector store already exists
+    if os.path.exists(abs_vector_path) and os.listdir(abs_vector_path):
+        print(f"Vector store found at: {abs_vector_path}")
+        try:
+            vectorstore = Chroma(
+                persist_directory=abs_vector_path,
+                embedding_function=embeddings,
+                collection_name="finance_docs"
+            )
+        except Exception as e:
+            print(f"Error loading existing vector store: {e}")
+            print("Creating new vector store...")
+            vectorstore = create_new_vectorstore(embeddings, abs_vector_path)
+    else:
+        print(f"Creating new vector store at: {abs_vector_path}")
+        vectorstore = create_new_vectorstore(embeddings, abs_vector_path)
+    
+    return vectorstore
+
+def create_new_vectorstore(embeddings, abs_vector_path):
+    os.makedirs(abs_vector_path, exist_ok=True)
+    
+    # Check if PDF exists
+    abs_pdf_path = os.path.abspath(PDF_PATH)
+    print(f"Looking for PDF at: {abs_pdf_path}")
+    
+    if not os.path.exists(abs_pdf_path):
+        print(f"WARNING: PDF not found at {abs_pdf_path}")
+
+        vectorstore = Chroma(
+            persist_directory=abs_vector_path,
+            embedding_function=embeddings,
+            collection_name="finance_docs"
         )
-    return _vectorstore
+        return vectorstore
+    
+    # Load and split documents
+    docs = load_documents()
+    doc_splits = split_documents(docs)
+    print(f"Loaded {len(doc_splits)} document chunks")
+    
+    # Create new vector store
+    print("Creating embeddings and storing in vector database...")
+    vectorstore = Chroma.from_documents(
+        documents=doc_splits,
+        embedding=embeddings,
+        persist_directory=abs_vector_path,
+        collection_name="finance_docs"
+    )
+    
+    print(f"Vector store created and persisted at: {abs_vector_path}")
+    print(f"Directory contents: {os.listdir(abs_vector_path) if os.path.exists(abs_vector_path) else 'Directory not found'}")
+    
+    return vectorstore
 
 def get_retriever():
-    if _vectorstore is None:
-        initialize_vectorstore()
-    return _vectorstore.as_retriever(search_kwargs={'k': 3})
+    """Get retriever from vector store"""
+    vectorstore = setup_vector_store()
+    return vectorstore.as_retriever(search_kwargs={'k': RETRIEVAL_K})

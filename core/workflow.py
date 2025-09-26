@@ -1,57 +1,67 @@
-# core/workflow.py
-from langgraph.graph import StateGraph, END
-from agents import (
-    PlannerAgent, MemoryRecallAgent, LLMAgent,
-    ExecutorAgent, RagAgent, YFinanceAgent,
-    DuckDuckGoAgent, ResponseGenerator, MemoryStoreAgent
-)
+from langgraph.graph import StateGraph
+from langgraph.graph import END
 from core.state import AgentState
+from core.config import MAX_RETRY
+
+# Import all agents
+from agents.planner import planner
+from agents.memory import recall_memory, store_memory
+from agents.llm import query_llm
+from agents.executor import executor
+from agents.rag import retrieve_docs
+from agents.yfinance import retrieve_yfinance
+from agents.duckduckgo import retrieve_duckduckgo
+from agents.generator import generate_response
 
 def get_workflow_app():
+    """Create and return compiled workflow"""
     workflow = StateGraph(AgentState)
     
-    # Add all nodes
-    workflow.add_node("planner", PlannerAgent.process)
-    workflow.add_node("recall_memory", MemoryRecallAgent.process)
-    workflow.add_node("llm_query", LLMAgent.process)
-    workflow.add_node("executor", ExecutorAgent.process)
-    workflow.add_node("rag_query", RagAgent.process)
-    workflow.add_node("yfinance_query", YFinanceAgent.process)
-    workflow.add_node("ddg_query", DuckDuckGoAgent.process)
-    workflow.add_node("generate", ResponseGenerator.process)
-    workflow.add_node("store_memory", MemoryStoreAgent.process)
-
-    # Set edges
+    # Add nodes
+    workflow.add_node("planner", planner)
+    workflow.add_node("recall_memory", recall_memory)
+    workflow.add_node("llm_query", query_llm)
+    workflow.add_node("executor", executor)
+    workflow.add_node("rag_query", retrieve_docs)
+    workflow.add_node("yfinance_query", retrieve_yfinance)
+    workflow.add_node("ddg_query", retrieve_duckduckgo)
+    workflow.add_node("generate", generate_response)
+    workflow.add_node("store_memory", store_memory)
+    
+    # Set entry point
     workflow.set_entry_point("planner")
+    
+    # Add edges
     workflow.add_edge("planner", "recall_memory")
     workflow.add_edge("recall_memory", "llm_query")
-
+    
+    # Conditional edges
     workflow.add_conditional_edges(
         "llm_query",
         lambda s: "generate" if s.get('generation') else "executor",
         {"generate": "generate", "executor": "executor"}
     )
-
+    
     workflow.add_conditional_edges(
         "executor",
-        lambda s: "rag_query" if s['retry_count'] < 3 else "yfinance_query",
+        lambda s: "rag_query" if s['retry_count'] < MAX_RETRY else "yfinance_query",
         {"rag_query": "rag_query", "yfinance_query": "yfinance_query"}
     )
-
+    
     workflow.add_conditional_edges(
         "rag_query",
         lambda s: "generate" if s['documents'] else "yfinance_query",
         {"generate": "generate", "yfinance_query": "yfinance_query"}
     )
-
+    
     workflow.add_conditional_edges(
         "yfinance_query",
         lambda s: "generate" if s['documents'] else "ddg_query",
         {"generate": "generate", "ddg_query": "ddg_query"}
     )
-
+    
     workflow.add_edge("ddg_query", "generate")
     workflow.add_edge("generate", "store_memory")
     workflow.add_edge("store_memory", END)
-
+    
     return workflow.compile()

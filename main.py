@@ -1,24 +1,19 @@
-# main.py
-from dotenv import load_dotenv
 from core.workflow import get_workflow_app
 from core.state import initialize_state
 
-from dotenv import load_dotenv
-load_dotenv()
-
 def main():
-    load_dotenv()
+    """Live test interface: simulates conversation"""
     app = get_workflow_app()
-    state = initialize_state()
-
-    print("=== FINANCIAL ADVISOR ===")
+    conversation_state = initialize_state()
+    
+    print("=== CONVERSATION LOG ===")
     while True:
-        query = input("\nClient: ").strip()
+        query = input("Client: ").strip()
         if query.lower() == 'exit':
-            print("\n=== Session Ended ===")
+            print("=== Consultation Ended ===")
             break
 
-        state.update({
+        conversation_state.update({
             "question": query,
             "generation": "",
             "documents": [],
@@ -26,9 +21,11 @@ def main():
             "retry_count": 0
         })
 
-        result = app.invoke(state)
-        state.update(result)
-        print(f"\nAdvisor: {state['generation']}\n")
+        result = app.invoke(conversation_state)
+        conversation_state.update(result)
+
+        print(f"\nClient: {query}")
+        print(f"Consultant: {conversation_state['generation']}\n")
 
 if __name__ == "__main__":
     main()

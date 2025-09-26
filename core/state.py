@@ -1,7 +1,4 @@
-# core/state.py
-from typing import TypedDict
-from typing import List
-from typing import Optional
+from typing import TypedDict, List, Optional
 from langchain.schema import Document
 
 class AgentState(TypedDict):
@@ -18,7 +15,8 @@ class AgentState(TypedDict):
     retry_count: int
     memory: List[str]
 
-def initialize_state() -> AgentState:
+def initialize_state():
+    """Initialize conversation state"""
     return {
         "question": "",
         "documents": [],
