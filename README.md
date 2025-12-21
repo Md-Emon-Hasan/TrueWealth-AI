@@ -1,4 +1,4 @@
-# **💼 TrueWealth AI: Your AI-Powered Financial Strategist**
+# **TrueWealth AI: Your AI-Powered Financial Strategist**
 
 [![Image](https://github.com/user-attachments/assets/0cab61d6-0b2e-4c17-8400-ceebcfb1bd05)](https://github.com/user-attachments/assets/0cab61d6-0b2e-4c17-8400-ceebcfb1bd05)
 
@@ -14,66 +14,9 @@ Engineered with a **modular, scalable architecture**, it includes **FastAPI APIs
 
 ---
 
-## 🚀 **Live Demo**
+## **Live Demo**
 
-🎯 Try the real-time TrueWealth AI:  
-👉 [**TrueWealth AI – Click Here**](https://truewealth-ai.onrender.com/)
-
----
-
-## **Real-World Use Cases**
-
-##### **1. Personal Financial Advisory**
-- Helps **individual investors** make informed decisions on stocks, bonds, and long-term investments.
-
-##### **2. Financial Education & Self-Learning**
-- Acts as a **tutor** for users reading financial books (e.g., *The Intelligent Investor*).
-
-##### **3. Real-Time Market & News Analysis**
-- Provides **up-to-date financial news** from Yahoo Finance.
-
-##### **4. Small Business Financial Consulting**
-- Assists **small business owners** in budgeting, tax planning, and investment decisions.
-
-##### **5. Retirement & Wealth Management**
-- Offers **retirement planning insights** (e.g., 401(k), Roth IRA strategies).
-
----
-
-## 📊 Performance Metrics
-
-| ⚡ Metric              | 📈 Value                               |
-|------------------------|----------------------------------------|
-| Mean Latency           | 2.00s                                  |
-| P95 Latency            | 3.05s                                  |
-| Query Coverage         | 99%                                    |
-
----
-
-
-## **Features & Functionalities**
-| ✅ Step | 🧠 Feature                                     | ⚙️ Tech Stack / Tool Used                                                    |
-| ------ | ---------------------------------------------- | ---------------------------------------------------------------------------- |
-| 1️⃣    | 🧠 **LLM-based Financial Query Understanding** | **Groq** + **LLaMA-3**                                                       |
-| 2️⃣    | ✨ **Professional Tone Personalization**        | **Prompt Engineering** + **Advisor Persona Templates**                       |
-| 3️⃣    | 📚 **RAG-based Financial Answering**           | **LangChain** + **ChromaDB** + **Sentence Transformers (all-MiniLM-L6-v2)**  |
-| 4️⃣    | 🔍 **Financial Document Retriever Agent**      | **RetrieverAgent** + **Vector Store Search**                                 |
-| 5️⃣    | 🧠 **Answer Generator Agent**                  | **GeneratorAgent** (LLM-based factual + professional financial style)        |
-| 6️⃣    | 📰 **Financial News Retrieval Agent**          | **YahooFinanceNewsTool**                                                     |
-| 7️⃣    | 🌐 **Web Search Agent (Fallback)**             | **DuckDuckGo Search Tool**                                                   |
-| 8️⃣    | 🧠 **Planner Agent**                           | **LangGraph Planner Node**                                                   |
-| 9️⃣    | 🔄 **Intelligent Tool Routing & Fallback**     | **Retry Logic** + **Conditional Branching** + **Multi-step Tool Selection**  |
-| 🔟     | 🧠 **Short-Term Conversational Memory**        | **LangGraph Memory Integration (Buffer-based)**                              |
-| 1️⃣1️⃣ | 📂 **PDF Knowledge Ingestion**                 | **PyPDFLoader** + **RecursiveCharacterTextSplitter**                         |
-| 1️⃣2️⃣ | 📊 **Vector Embedding & Storage**              | **HuggingFaceEmbeddings** + **ChromaDB**                                     |
-| 1️⃣3️⃣ | ⚙️ **State-based Multi-Agent Orchestration**   | **LangGraph StateGraph** + **Conditional Edges** + **Dynamic State Updates** |
-| 1️⃣4️⃣ | 🗂 **Multi-source Knowledge Fusion**           | **LLM + RAG + Yahoo Finance + DuckDuckGo Combined Answer Synthesis**         |
-| 1️⃣5️⃣ | 🧪 **API Testing & Integration**               | **FastAPI** (API endpoints for agent orchestration testing)                  |
-| 1️⃣6️⃣ | 🗃 **Modular Code Architecture**               | **Separation of Concerns** + **Service/Agent Modules**                       |
-| 1️⃣7️⃣ | 💻 **Responsive Web UI**                       | **Flask** + **HTML5, CSS3, JavaScript**                                      |
-| 1️⃣8️⃣ | 🌐 **Cloud Deployment**                        | **Render** (Production hosting)                                              |
-| 1️⃣9️⃣ | 🔄 **CI/CD Pipeline**                          | **GitHub Actions** / **CI/CD Workflows**                                     |
-| 2️⃣0️⃣ | 📦 **Containerization for Portability**        | **Docker** (App + Dependencies + Environment)                                |
+Try the real-time TrueWealth AI:  [**TrueWealth AI – Click Here**](https://truewealth-ai.onrender.com/)
 
 ---
 
@@ -145,6 +88,42 @@ TrueWealth AI/
    ├── requirements.txt
    └── setup.py
 ```
+
+---
+
+## **Features & Functionalities**
+|  Step |  Feature                                     |  Tech Stack / Tool Used                                                    |
+| ------ | ---------------------------------------------- | ---------------------------------------------------------------------------- |
+|   1  |  **LLM-based Financial Query Understanding** | **Groq** + **LLaMA-3**                                                       |
+|    2 |  **Professional Tone Personalization**        | **Prompt Engineering** + **Advisor Persona Templates**                       |
+|  3   | **RAG-based Financial Answering**           | **LangChain** + **ChromaDB** + **Sentence Transformers (all-MiniLM-L6-v2)**  |
+|  4   |  **Financial Document Retriever Agent**      | **RetrieverAgent** + **Vector Store Search**                                 |
+|  5  | **Answer Generator Agent**                  | **GeneratorAgent** (LLM-based factual + professional financial style)        |
+|  6 | **Financial News Retrieval Agent**          | **YahooFinanceNewsTool**                                                     |
+|  7   | **Web Search Agent (Fallback)**             | **DuckDuckGo Search Tool**                                                   |
+|  8  |  **Planner Agent**                           | **LangGraph Planner Node**                                                   |
+|  9  |  **Intelligent Tool Routing & Fallback**     | **Retry Logic** + **Conditional Branching** + **Multi-step Tool Selection**  |
+|   10  | **Short-Term Conversational Memory**        | **LangGraph Memory Integration (Buffer-based)**                              |
+| 11 |  **PDF Knowledge Ingestion**                 | **PyPDFLoader** + **RecursiveCharacterTextSplitter**                         |
+| 12 |  **Vector Embedding & Storage**              | **HuggingFaceEmbeddings** + **ChromaDB**                                     |
+| 13 | **State-based Multi-Agent Orchestration**   | **LangGraph StateGraph** + **Conditional Edges** + **Dynamic State Updates** |
+| 14 | **Multi-source Knowledge Fusion**           | **LLM + RAG + Yahoo Finance + DuckDuckGo Combined Answer Synthesis**         |
+| 15 | **API Testing & Integration**               | **FastAPI** (API endpoints for agent orchestration testing)                  |
+| 16 | **Modular Code Architecture**               | **Separation of Concerns** + **Service/Agent Modules**                       |
+| 17 | **Responsive Web UI**                       | **Flask** + **HTML5, CSS3, JavaScript**                                      |
+| 18 | **Cloud Deployment**                        | **Render** (Production hosting)                                              |
+| 19 | **CI/CD Pipeline**                          | **GitHub Actions** / **CI/CD Workflows**                                     |
+| 20 | **Containerization for Portability**        | **Docker** (App + Dependencies + Environment)                                |
+
+---
+
+## Performance Metrics
+
+| Metric              | Value                               |
+|------------------------|----------------------------------------|
+| Mean Latency           | 2.00s                                  |
+| P95 Latency            | 3.05s                                  |
+| Query Coverage         | 99%                                    |
 
 ---
 
