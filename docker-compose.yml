@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: truewealth-backend
+    ports:
+      - "5001:5001"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./backend:/app
+      # Exclude venv and __pycache__ mapping to avoid conflict
+      - /app/venv
+      - /app/__pycache__
+
+  frontend:
+    build: ./frontend
+    container_name: truewealth-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
