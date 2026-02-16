@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { expect, test, vi } from 'vitest';
+import { expect, test } from 'vitest';
 import Sidebar from './Sidebar';
 import StatusBar from './StatusBar';
 import React from 'react';
