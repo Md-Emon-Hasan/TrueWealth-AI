@@ -7,7 +7,7 @@ const ChatInterface = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-    const [sessionId, setSessionId] = useState(`session_${Date.now()}`);
+    const [sessionId] = useState(`session_${Date.now()}`);
     const messagesEndRef = useRef(null);
     const inputRef = useRef(null);
 
@@ -41,7 +41,7 @@ const ChatInterface = () => {
             };
 
             setMessages(prev => [...prev, aiMessage]);
-        } catch (error) {
+        } catch {
             const errorMessage = {
                 role: 'ai',
                 content: "I'm having trouble connecting to the financial servers. Please try again later.",
