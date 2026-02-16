@@ -1,19 +1,19 @@
+from app.core.config import CHUNK_OVERLAP, CHUNK_SIZE
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from app.core.config import PDF_PATH, CHUNK_SIZE, CHUNK_OVERLAP
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-def load_documents():
-    """Load and split PDF documents"""
-    loader = PyPDFLoader(PDF_PATH)
-    docs = loader.load()
-    return docs
 
-def split_documents(docs):
-    """Split documents into chunks"""
+def load_documents(pdf_path=""):
+    if not pdf_path:
+        from app.core.config import PDF_PATH
+        pdf_path = PDF_PATH
+    loader = PyPDFLoader(pdf_path)
+    return loader.load()
+
+
+def split_documents(documents):
     text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         chunk_size=CHUNK_SIZE,
-        chunk_overlap=CHUNK_OVERLAP,
-        separators=["\n\n", ". ", "\n", " "]
+        chunk_overlap=CHUNK_OVERLAP
     )
-    doc_splits = text_splitter.split_documents(docs)
-    return doc_splits
+    return text_splitter.split_documents(documents)

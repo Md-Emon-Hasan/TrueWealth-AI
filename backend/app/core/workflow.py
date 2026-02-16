@@ -1,67 +1,61 @@
-from langgraph.graph import StateGraph
-from langgraph.graph import END
-from app.core.state import AgentState
-from app.core.config import MAX_RETRY
-
-# Import all agents
-from app.agents.planner import planner
-from app.agents.memory import recall_memory, store_memory
-from app.agents.llm import query_llm
-from app.agents.executor import executor
-from app.agents.rag import retrieve_docs
-from app.agents.yfinance import retrieve_yfinance
 from app.agents.duckduckgo import retrieve_duckduckgo
 from app.agents.generator import generate_response
+from app.agents.llm import query_llm
+from app.agents.memory import recall_memory, store_memory
+from app.agents.rag import retrieve_docs
+from app.agents.yfinance import retrieve_yfinance
+from app.core.state import AgentState
+from langgraph.graph import END, StateGraph
+
+
+def decide_next_step(state: AgentState) -> str:
+    if state.get('llm_attempted') and "I don't know" not in state.get('generation', ''):
+        return "store_memory"
+
+    if state.get('retry_count', 0) == 0:
+        return "retrieve_docs"
+    elif state.get('retry_count', 0) == 1:
+        return "retrieve_yfinance"
+    elif state.get('retry_count', 0) == 2:
+        return "retrieve_duckduckgo"
+    else:
+        return "generate_response"
+
 
 def get_workflow_app():
-    """Create and return compiled workflow"""
     workflow = StateGraph(AgentState)
-    
-    # Add nodes
-    workflow.add_node("planner", planner)
+
+    # Define nodes
     workflow.add_node("recall_memory", recall_memory)
-    workflow.add_node("llm_query", query_llm)
-    workflow.add_node("executor", executor)
-    workflow.add_node("rag_query", retrieve_docs)
-    workflow.add_node("yfinance_query", retrieve_yfinance)
-    workflow.add_node("ddg_query", retrieve_duckduckgo)
-    workflow.add_node("generate", generate_response)
+    workflow.add_node("query_llm", query_llm)
+    workflow.add_node("retrieve_docs", retrieve_docs)
+    workflow.add_node("retrieve_yfinance", retrieve_yfinance)
+    workflow.add_node("retrieve_duckduckgo", retrieve_duckduckgo)
+    workflow.add_node("generate_response", generate_response)
     workflow.add_node("store_memory", store_memory)
-    
-    # Set entry point
-    workflow.set_entry_point("planner")
-    
-    # Add edges
-    workflow.add_edge("planner", "recall_memory")
-    workflow.add_edge("recall_memory", "llm_query")
-    
-    # Conditional edges
+
+    # Define edges
+    workflow.set_entry_point("recall_memory")
+    workflow.add_edge("recall_memory", "query_llm")
+
     workflow.add_conditional_edges(
-        "llm_query",
-        lambda s: "generate" if s.get('generation') else "executor",
-        {"generate": "generate", "executor": "executor"}
+        "query_llm",
+        decide_next_step,
+        {
+            "store_memory": "store_memory",
+            "retrieve_docs": "retrieve_docs",
+            "retrieve_yfinance": "retrieve_yfinance",
+            "retrieve_duckduckgo": "retrieve_duckduckgo",
+            "generate_response": "generate_response"
+        }
     )
-    
-    workflow.add_conditional_edges(
-        "executor",
-        lambda s: "rag_query" if s['retry_count'] < MAX_RETRY else "yfinance_query",
-        {"rag_query": "rag_query", "yfinance_query": "yfinance_query"}
-    )
-    
-    workflow.add_conditional_edges(
-        "rag_query",
-        lambda s: "generate" if s['documents'] else "yfinance_query",
-        {"generate": "generate", "yfinance_query": "yfinance_query"}
-    )
-    
-    workflow.add_conditional_edges(
-        "yfinance_query",
-        lambda s: "generate" if s['documents'] else "ddg_query",
-        {"generate": "generate", "ddg_query": "ddg_query"}
-    )
-    
-    workflow.add_edge("ddg_query", "generate")
-    workflow.add_edge("generate", "store_memory")
+
+    # Continue from tools back to LLM or directly to Generate if needed
+    workflow.add_edge("retrieve_docs", "generate_response")
+    workflow.add_edge("retrieve_yfinance", "generate_response")
+    workflow.add_edge("retrieve_duckduckgo", "generate_response")
+
+    workflow.add_edge("generate_response", "store_memory")
     workflow.add_edge("store_memory", END)
-    
+
     return workflow.compile()

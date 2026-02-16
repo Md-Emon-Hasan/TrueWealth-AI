@@ -1,0 +1,66 @@
+2026-02-16 16:00:21,320 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-02-16 16:01:16,432 - backend - INFO - Creating new state for session: refactor_test
+2026-02-16 16:01:16,434 - backend - INFO - Invoking workflow for session refactor_test with question: Final check...
+2026-02-16 16:13:27,904 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-02-16 16:13:27,944 - backend - INFO - Creating new state for session: test_session
+2026-02-16 16:13:27,944 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-02-16 16:13:27,948 - backend - INFO - Creating new state for session: fresh_session_123
+2026-02-16 16:13:27,948 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-02-16 16:13:27,955 - backend - INFO - Creating new state for session: default
+2026-02-16 16:13:27,955 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-02-16 16:13:27,955 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\codix\OneDrive\Desktop\my project\TrueWealth-AI\backend\app\main.py", line 52, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-02-16 16:13:48,074 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-02-16 16:13:48,155 - backend - INFO - Creating new state for session: test_session
+2026-02-16 16:13:48,155 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-02-16 16:13:48,162 - backend - INFO - Creating new state for session: fresh_session_123
+2026-02-16 16:13:48,162 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-02-16 16:13:48,174 - backend - INFO - Creating new state for session: default
+2026-02-16 16:13:48,174 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-02-16 16:13:48,175 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\codix\OneDrive\Desktop\my project\TrueWealth-AI\backend\app\main.py", line 52, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-02-16 16:33:34,412 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-02-16 16:33:34,442 - backend - INFO - Creating new state for session: test_session
+2026-02-16 16:33:34,442 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-02-16 16:33:34,447 - backend - INFO - Creating new state for session: fresh_session_123
+2026-02-16 16:33:34,447 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-02-16 16:33:34,454 - backend - INFO - Creating new state for session: default
+2026-02-16 16:33:34,454 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-02-16 16:33:34,454 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\codix\OneDrive\Desktop\my project\TrueWealth-AI\backend\app\main.py", line 54, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\codix\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+Exception: Workflow failed

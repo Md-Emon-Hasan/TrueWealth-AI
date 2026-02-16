@@ -11,7 +11,15 @@ def run_services():
     BACKEND_DIR = os.path.join(ROOT_DIR, 'backend')
     FRONTEND_DIR = os.path.join(ROOT_DIR, 'frontend')
 
-    print("🚀 Starting TrueWealth AI...")
+    print("Starting TrueWealth AI...")
+
+    # Ensure logs directory exists inside backend
+    LOGS_DIR = os.path.join(BACKEND_DIR, 'logs')
+    if not os.path.exists(LOGS_DIR):
+        os.makedirs(LOGS_DIR, exist_ok=True)
+
+    backend_log = open(os.path.join(LOGS_DIR, 'backend_startup.log'), 'a')
+    frontend_log = open(os.path.join(LOGS_DIR, 'frontend_startup.log'), 'a')
 
     # Start Backend
     print("Backend launching on http://localhost:5001...")
@@ -23,7 +31,9 @@ def run_services():
         [sys.executable, "-m", "app.main"],
         cwd=BACKEND_DIR,
         env=backend_env,
-        shell=False
+        shell=False,
+        stdout=backend_log,
+        stderr=backend_log
     )
 
     # Start Frontend
@@ -32,15 +42,17 @@ def run_services():
     frontend_process = subprocess.Popen(
         ["npm", "run", "dev", "--", "--port", "3000"],
         cwd=FRONTEND_DIR,
-        shell=True
+        shell=True,
+        stdout=frontend_log,
+        stderr=frontend_log
     )
 
     # Wait for services to start
     time.sleep(5)
     
-    print("✅ Services are running!")
-    print("👉 Frontend: http://localhost:3000")
-    print("👉 Backend:  http://localhost:5001")
+    print("Services are running!")
+    print(f"Frontend: http://localhost:3000 (Logs: {os.path.join('backend', 'logs', 'frontend_startup.log')})")
+    print(f"Backend:  http://localhost:5001 (Logs: {os.path.join('backend', 'logs', 'backend_startup.log')})")
     
     webbrowser.open("http://localhost:3000")
 
@@ -54,7 +66,7 @@ def run_services():
                 print("Frontend process ended unexpectedly.")
                 break
     except KeyboardInterrupt:
-        print("\n🛑 Shutting down services...")
+        print("\n Shutting down services...")
         backend_process.terminate()
         # Frontend is shell=True, so termination might be tricky on Windows without taskkill
         if sys.platform == 'win32':
