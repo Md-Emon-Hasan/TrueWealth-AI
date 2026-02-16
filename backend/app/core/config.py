@@ -1,26 +1,14 @@
-from dotenv import load_dotenv
 import os
 
-# Load environment variables
-load_dotenv()
-
-# LLM Configuration
-LLM_MODEL = "openai/gpt-oss-120b"
-LLM_TEMPERATURE = 0.3
-LLM_MAX_TOKENS = 2048
-
-# Embeddings Configuration
+# Model Configurations
 EMBEDDINGS_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-
-# Vector Store Configuration
-VECTOR_DB_PATH = "../finance_db"
-CHUNK_SIZE = 512
-CHUNK_OVERLAP = 128
-RETRIEVAL_K = 3
-
-# Data Configuration
-PDF_PATH = '../data/The Intelligent Investor - BENJAMIN GRAHAM.pdf'
-
-# Memory Configuration
 MEMORY_LIMIT = 10
-MAX_RETRY = 3
+
+# File Paths
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_DIR = os.path.join(BASE_DIR, "..", "db", "vectorstore")
+PDF_PATH = os.path.join(BASE_DIR, "..", "data", "financial_reports.pdf")
+
+# RAG Configurations
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 100

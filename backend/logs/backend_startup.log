@@ -1,0 +1,9 @@
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-16 16:00:21,320 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [25376]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+2026-02-16 16:01:16,432 - backend - INFO - Creating new state for session: refactor_test
+2026-02-16 16:01:16,434 - backend - INFO - Invoking workflow for session refactor_test with question: Final check...
+INFO:     127.0.0.1:60591 - "POST /api/chat HTTP/1.1" 200 OK

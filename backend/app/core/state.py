@@ -1,34 +1,34 @@
-from typing import TypedDict, Annotated, List, Union, Optional
-from langchain_core.documents import Document
-import operator
+from typing import List, TypedDict
+
 
 class AgentState(TypedDict):
     question: str
-    documents: List[Document]
     generation: str
+    documents: List[object]
     source: str
-    search_query: Optional[str]
+    retry_count: int
+    memory: List[str]
     conversation_history: List[str]
     llm_attempted: bool
     rag_attempted: bool
     yfinance_attempted: bool
     ddg_attempted: bool
     retry_count: int
-    memory: List[str]
+    search_query: str
 
-def initialize_state():
-    """Initialize conversation state"""
+
+def initialize_state() -> AgentState:
     return {
         "question": "",
-        "documents": [],
         "generation": "",
+        "documents": [],
         "source": "",
-        "search_query": None,
+        "retry_count": 0,
+        "memory": [],
         "conversation_history": [],
         "llm_attempted": False,
         "rag_attempted": False,
         "yfinance_attempted": False,
         "ddg_attempted": False,
-        "retry_count": 0,
-        "memory": []
+        "search_query": ""
     }

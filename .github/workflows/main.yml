@@ -13,18 +13,18 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.12'
 
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
+      uses: docker/setup-buildx-action@v3
 
     - name: Cache Docker layers
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: /tmp/.buildx-cache
         key: ${{ runner.os }}-buildx-${{ github.sha }}
@@ -32,7 +32,8 @@ jobs:
           ${{ runner.os }}-buildx-
 
     - name: Build Docker image
-      run: docker build -t true-wealth-ai .
+      run: docker build -t true-wealth-backend ./backend
 
     - name: Test the application (Run tests inside container)
-      run: docker run --rm true-wealth-ai pytest tests/
+      run: |
+        docker run --rm -e GROQ_API_KEY=${{ secrets.GROQ_API_KEY }} true-wealth-backend pytest tests/

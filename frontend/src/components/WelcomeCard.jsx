@@ -1,11 +1,11 @@
 import React from 'react';
-import { TrendingUp, Coins, PiggyBank, ArrowUpRight, Umbrella, Lightbulb, FileText, Zap } from 'lucide-react';
+import { TrendingUp, Coins, PiggyBank, ArrowUpRight, Umbrella, Lightbulb, FileText, Handshake } from 'lucide-react';
 
 const WelcomeCard = ({ onQuickQuestion }) => {
     const features = [
-        { icon: TrendingUp, text: "Portfolio Analysis" },
-        { icon: Coins, text: "Investment Tips" },
-        { icon: PiggyBank, text: "Savings Strategies" }
+        { icon: TrendingUp, text: "Portfolio Analysis", color: "text-blue-500", bg: "bg-blue-50" },
+        { icon: Coins, text: "Investment Tips", color: "text-purple-500", bg: "bg-purple-50" },
+        { icon: PiggyBank, text: "Savings Strategies", color: "text-pink-500", bg: "bg-pink-50" }
     ];
 
     const quickQuestions = [
@@ -16,40 +16,45 @@ const WelcomeCard = ({ onQuickQuestion }) => {
     ];
 
     return (
-        <div className="flex-1 flex items-center justify-center p-4 md:p-8 animate-fadeIn">
-            <div className="bg-white dark:bg-card-dark rounded-[2.5rem] p-8 md:p-12 w-full max-w-4xl shadow-2xl border border-gray-100 dark:border-white/5 text-center relative overflow-hidden backdrop-blur-xl">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-warning"></div>
+        <div className="flex-1 flex items-center justify-center p-6 animate-fadeIn">
+            {/* Glassmorphism Card */}
+            <div className="bg-white/80 backdrop-blur-xl rounded-[32px] p-8 md:p-12 w-full max-w-[950px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/50 text-center relative overflow-hidden">
 
-                <div className="mb-8">
-                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <Zap className="w-10 h-10 text-primary" />
-                    </div>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
-                        Welcome to TrueWealth AI
+                {/* Decorative top sheen */}
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-80"></div>
+
+                <div className="mb-10">
+                    <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600 tracking-tight flex items-center justify-center gap-4">
+                        <Handshake className="text-blue-600 hidden md:block" size={48} />
+                        <span className="text-slate-800">Welcome to TrueWealth AI</span>
                     </h2>
-                    <p className="text-gray-500 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                        Your personal AI financial strategist. Determine your path to financial freedom with data-driven insights.
+                    <p className="text-xl text-slate-500 font-medium">
+                        Your intelligent partner for financial freedom
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 px-4">
                     {features.map((feature, index) => (
-                        <div key={index} className="group bg-primary/5 dark:bg-white/5 p-6 rounded-2xl hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-lg cursor-default">
-                            <feature.icon className="w-10 h-10 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform duration-300" />
-                            <p className="font-semibold text-dark dark:text-light">{feature.text}</p>
+                        <div key={index} className={`${feature.bg} p-6 rounded-3xl border border-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer group flex flex-col items-center justify-center h-[180px]`}>
+                            <div className={`w-16 h-16 rounded-2xl ${feature.bg} brightness-95 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                                <feature.icon className={`w-8 h-8 ${feature.color}`} />
+                            </div>
+                            <p className="font-bold text-slate-700 text-lg group-hover:text-primary transition-colors">{feature.text}</p>
                         </div>
                     ))}
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-3">
                     {quickQuestions.map((item, index) => (
                         <button
                             key={index}
                             onClick={() => onQuickQuestion(item.question)}
-                            className="flex items-center gap-3 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-6 py-3 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:border-primary hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group"
+                            className="bg-white border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 rounded-full px-6 py-3 flex items-center gap-3 cursor-pointer transition-all duration-200 text-sm font-semibold text-slate-600 hover:text-blue-600 shadow-sm hover:shadow-md group"
                         >
-                            <item.icon size={18} className="text-primary group-hover:text-white transition-colors" />
-                            <span className="font-medium">{item.text}</span>
+                            <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
+                                <item.icon size={14} className="text-slate-500 group-hover:text-blue-600" />
+                            </div>
+                            <span>{item.text}</span>
                         </button>
                     ))}
                 </div>
