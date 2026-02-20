@@ -23,3 +23,164 @@
 [2m4:56:14 PM[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
 [2m4:56:14 PM[22m [36m[1m[vite][22m[39m server restarted.
 Terminate batch job (Y/N)? Terminate batch job (Y/N)? 
+> frontend@0.0.0 dev
+> vite --port 3000
+
+'vite' is not recognized as an internal or external command,
+operable program or batch file.
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m350[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3000[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m348[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3000[22m/[39m
+[2m7:40:43 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/StatusBar.jsx, /src/index.css[22m
+[2m7:40:47 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:40:49 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/WelcomeCard.jsx[22m
+[2m7:44:49 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Sidebar.jsx, /src/index.css[22m
+[2m7:44:51 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:47:49 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:48:56 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:48:56 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:12 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:12 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:12 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:12 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:48 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:49:49 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:50:24 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatInterface.jsx, /src/index.css[22m
+[2m7:52:54 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/WelcomeCard.jsx[22m
+[2m7:56:35 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Sidebar.jsx, /src/index.css[22m
+[2m7:56:37 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/WelcomeCard.jsx[22m
+[2m8:00:00 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Sidebar.jsx, /src/index.css[22m
+[2m8:00:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Sidebar.jsx, /src/index.css[22m
+[2m8:00:19 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/WelcomeCard.jsx[22m
+[2m8:00:29 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/WelcomeCard.jsx[22m
+[2m8:00:29 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Sidebar.jsx, /src/index.css[22m
+3005[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3005[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+Port 3000 is in use, trying another one...
+Port 3001 is in use, trying another one...
+Port 3002 is in use, trying another one...
+Port 3003 is in use, trying another one...
+Port 3004 is in use, trying another one...
+Port 3005 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m355[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3006[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3006[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+Port 3000 is in use, trying another one...
+Port 3001 is in use, trying another one...
+Port 3002 is in use, trying another one...
+Port 3003 is in use, trying another one...
+Port 3004 is in use, trying another one...
+Port 3005 is in use, trying another one...
+Port 3006 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m350[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3007[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3007[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+Port 3000 is in use, trying another one...
+Port 3001 is in use, trying another one...
+Port 3002 is in use, trying another one...
+Port 3003 is in use, trying another one...
+Port 3004 is in use, trying another one...
+Port 3005 is in use, trying another one...
+Port 3006 is in use, trying another one...
+Port 3007 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m277[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3008[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3008[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+[2m7:57:25 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+Port 3000 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m324[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3001[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3001[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+^C^Crontend@0.0.0 dev
+> vite --port 3000
+
+[2m7:58:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+Port 3000 is in use, trying another one...
+Port 3001 is in use, trying another one...
+Port 3002 is in use, trying another one...
+Port 3003 is in use, trying another one...
+Port 3004 is in use, trying another one...
+Port 3005 is in use, trying another one...
+Port 3006 is in use, trying another one...
+Port 3007 is in use, trying another one...
+Port 3008 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m341[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3009[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3009[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --port 3000
+
+[2m8:02:01 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+Port 3000 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m344[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3001[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3001[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+^C
+> frontend@0.0.0 dev
+> vite --port 3000
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m613[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3000[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m8:11:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:/Users/emon1/Desktop/New folder/TrueWealth-AI/frontend/src/components/Sidebar.jsx, /@fs/C:/Users/emon1/Desktop/New folder/TrueWealth-AI/frontend/src/index.css[22m
+^C^C
+> frontend@0.0.0 dev
+> vite --port 3000
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m275[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.111:[1m3000[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+^C^C

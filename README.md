@@ -1,7 +1,5 @@
 # **TrueWealth AI: Your AI-Powered Financial Strategist**
 
-[![Image](https://github.com/user-attachments/assets/0cab61d6-0b2e-4c17-8400-ceebcfb1bd05)](https://github.com/user-attachments/assets/0cab61d6-0b2e-4c17-8400-ceebcfb1bd05)
-
 ---
 
 ## **Project Overview**
@@ -11,6 +9,22 @@
 Engineered with a **modular, scalable architecture**, it includes a high-performance **FastAPI backend** for agent orchestration, a **Vite + React responsive UI (Vite, React, Tailwind CSS)** for a premium client experience, and full **Dockerization** for portability. Deployed with a **CI/CD pipeline**, it adheres to enterprise software practices.
 
 **Achievements:** Benchmarked on 100+ financial queries, the system achieved **99% query coverage with <3s P95 latency** reducing manual research effort by ~40% while ensuring **enterprise-level reliability, scalability, and real-world deployment readiness**.
+
+
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/ce941c51-aa8e-47b3-8124-02d1b21bd9b7" width="100%" controls>
+    Your browser does not support the video tag.
+  </video>
+</div>
+<hr>
+<div align="center">
+  <img src="demo.png" alt="BookSage-AI" width="100%">
+</div>
+<hr>
+<div align="center">
+  <img src="demo-1.png" alt="BookSage-AI" width="100%">
+</div>
 
 ---
 
@@ -27,6 +41,7 @@ TrueWealth-AI/
 │   └── workflows/
 │       ├── ci.yml              # Backend & Frontend Testing Workflow
 │       └── main.yml            # Docker Build & Deployment Workflow
+|
 ├── backend/
 │   ├── app/
 │   │   ├── agents/             # Multi-agent Logic
@@ -66,9 +81,10 @@ TrueWealth-AI/
 │   │   ├── test_vector_store.py
 │   │   ├── test_workflow.py
 │   │   └── test_yfinance_agent.py
-│   ├── .env                    # Environment Variables (ignored)
+│   ├── .env.example            # Reference for required API keys
 │   ├── Dockerfile              # Python 3.12 Slim Environment
 │   └── requirements.txt        # Pegged Backend Dependencies
+|
 ├── frontend/
 │   ├── src/
 │   │   ├── api/                # Axios Client for FastAPI
@@ -88,6 +104,10 @@ TrueWealth-AI/
 │   ├── package.json            # Frontend Dependencies & ESLint
 │   ├── tailwind.config.js      # DaisyUI & Theme Config
 │   └── vite.config.js          # Vite & Proxy Configuration
+|
+├── app.png                     # Demo picture
+├── app-1.png                   # Demo picture
+├── demo.mp4                    # Demo video
 ├── docker-compose.yml          # Unified Container Orchestration
 ├── LICENSE                     # MIT License
 ├── README.md                   # Project Documentation
@@ -220,7 +240,7 @@ GitHub Actions handles the full lifecycle:
    cd TrueWealth-AI
    ```
 2. **Environment**:
-   Set `GROQ_API_KEY` in `backend/.env`.
+   Copy `backend/.env.example` to `backend/.env` and set your `GROQ_API_KEY`.
 3. **Launch**:
    ```bash
    python run.py
@@ -231,7 +251,9 @@ GitHub Actions handles the full lifecycle:
 ---
 
 ## **Developer**
-- **Md Emon Hasan**
-- **GitHub**: [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)
-- **LinkedIn**: [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)
-- **Contact**: iconicemon01@gmail.com
+**Md Emon Hasan**  
+- **Email:** [emon.mlengineer@gmail.com](mailto:emon.mlengineer@gmail.com)
+- **WhatsApp:** [+8801834363533](https://wa.me/8801834363533)  
+- **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)  
+- **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)  
+- **Facebook:** [Md Emon Hasan](https://www.facebook.com/mdemon.hasan2001/)

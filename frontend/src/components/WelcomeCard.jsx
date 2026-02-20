@@ -1,5 +1,6 @@
 import React from 'react';
 import { TrendingUp, Coins, PiggyBank, ArrowUpRight, Umbrella, Lightbulb, FileText, Handshake } from 'lucide-react';
+import Logo from '../assets/logo.png';
 
 const WelcomeCard = ({ onQuickQuestion }) => {
     const features = [
@@ -23,23 +24,22 @@ const WelcomeCard = ({ onQuickQuestion }) => {
                 {/* Decorative top sheen */}
                 <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-80"></div>
 
-                <div className="mb-10">
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600 tracking-tight flex items-center justify-center gap-4">
-                        <Handshake className="text-blue-600 hidden md:block" size={48} />
-                        <span className="text-slate-800">Welcome to TrueWealth AI</span>
+                <div className="mb-8 md:mb-10 px-2">
+                    <h2 className="text-3xl md:text-5xl font-extrabold mb-3 md:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600 tracking-tight flex flex-col items-center justify-center gap-3 md:gap-4">
+                        <img src={Logo} alt="TrueWealth AI Logo" className="w-20 h-20 md:w-24 md:h-24 object-contain mb-4 drop-shadow-md" />
+                        <span className="text-slate-800 leading-tight">Welcome to TrueWealth AI</span>
                     </h2>
-                    <p className="text-xl text-slate-500 font-medium">
+                    <p className="text-lg md:text-xl text-slate-500 font-medium px-4">
                         Your intelligent partner for financial freedom
                     </p>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 px-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 px-2 md:px-4">
                     {features.map((feature, index) => (
-                        <div key={index} className={`${feature.bg} p-6 rounded-3xl border border-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer group flex flex-col items-center justify-center h-[180px]`}>
-                            <div className={`w-16 h-16 rounded-2xl ${feature.bg} brightness-95 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                                <feature.icon className={`w-8 h-8 ${feature.color}`} />
+                        <div key={index} className={`${feature.bg} p-5 md:p-6 rounded-3xl border border-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer group flex flex-col items-center justify-center h-[160px] md:h-[180px]`}>
+                            <div className={`w-14 h-14 md:w-16 md:h-16 rounded-2xl ${feature.bg} brightness-95 flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform`}>
+                                <feature.icon className={`w-6 h-6 md:w-8 md:h-8 ${feature.color}`} />
                             </div>
-                            <p className="font-bold text-slate-700 text-lg group-hover:text-primary transition-colors">{feature.text}</p>
+                            <p className="font-bold text-slate-700 text-base md:text-lg group-hover:text-primary transition-colors">{feature.text}</p>
                         </div>
                     ))}
                 </div>

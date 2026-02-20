@@ -5,6 +5,41 @@ import time
 import signal
 import webbrowser
 
+def check_dependencies():
+    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+    BACKEND_DIR = os.path.join(ROOT_DIR, 'backend')
+    FRONTEND_DIR = os.path.join(ROOT_DIR, 'frontend')
+
+    print("Checking dependencies...")
+
+    # Check for Node.js/NPM (required for frontend)
+    try:
+        subprocess.check_call(["npm", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        print("Error: npm is not installed or not in PATH. Please install Node.js.")
+        sys.exit(1)
+
+    # Check for frontend node_modules
+    if not os.path.exists(os.path.join(FRONTEND_DIR, 'node_modules')):
+        print("frontend/node_modules not found. Installing frontend dependencies...")
+        try:
+            subprocess.check_call(["npm", "install"], cwd=FRONTEND_DIR, shell=True)
+            print("Frontend dependencies installed successfully.")
+        except subprocess.CalledProcessError:
+            print("Error: Failed to install frontend dependencies.")
+            sys.exit(1)
+
+    # Check for backend dependencies
+    # We'll run a quick check by trying to install them. 
+    # This is safer for a "just run it" experience.
+    print("Checking backend dependencies...")
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", os.path.join(BACKEND_DIR, 'requirements.txt')], shell=False)
+        print("Backend dependencies are ready.")
+    except subprocess.CalledProcessError:
+        print("Error: Failed to install/verify backend dependencies.")
+        sys.exit(1)
+
 def run_services():
     # Define paths
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -12,6 +47,9 @@ def run_services():
     FRONTEND_DIR = os.path.join(ROOT_DIR, 'frontend')
 
     print("Starting TrueWealth AI...")
+
+    # Check and install dependencies before launching
+    check_dependencies()
 
     # Ensure logs directory exists inside backend
     LOGS_DIR = os.path.join(BACKEND_DIR, 'logs')
