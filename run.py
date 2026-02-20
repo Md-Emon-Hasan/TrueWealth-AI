@@ -30,8 +30,6 @@ def check_dependencies():
             sys.exit(1)
 
     # Check for backend dependencies
-    # We'll run a quick check by trying to install them. 
-    # This is safer for a "just run it" experience.
     print("Checking backend dependencies...")
     try:
         subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", os.path.join(BACKEND_DIR, 'requirements.txt')], shell=False)
