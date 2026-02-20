@@ -63,15 +63,15 @@ const ChatInterface = () => {
     };
 
     return (
-        <div className="flex-1 flex flex-col h-full relative overflow-hidden">
+        <div className="flex-1 flex flex-col h-full relative overflow-hidden bg-transparent">
             {/* Messages Area */}
-            <div className="flex-1 overflow-y-auto p-4 md:p-8 pt-20 md:pt-24 pb-4 scroll-smooth" id="chatMessages">
+            <div className="flex-1 overflow-y-auto p-4 md:p-8 pt-4 pb-4 scroll-smooth" id="chatMessages">
                 {messages.length === 0 ? (
-                    <div className="max-w-5xl mx-auto h-full flex items-center justify-center">
+                    <div className="max-w-5xl mx-auto h-full min-h-[calc(100vh-160px)] flex items-start justify-center pt-4 md:pt-8 pb-12">
                         <WelcomeCard onQuickQuestion={handleSend} />
                     </div>
                 ) : (
-                    <div className="max-w-5xl mx-auto space-y-6">
+                    <div className="max-w-4xl mx-auto space-y-6">
                         {messages.map((msg, index) => (
                             <div
                                 key={index}

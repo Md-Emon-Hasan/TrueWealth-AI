@@ -7,3 +7,160 @@ INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
 2026-02-16 16:01:16,432 - backend - INFO - Creating new state for session: refactor_test
 2026-02-16 16:01:16,434 - backend - INFO - Invoking workflow for session refactor_test with question: Final check...
 INFO:     127.0.0.1:60591 - "POST /api/chat HTTP/1.1" 200 OK
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:25:41,178 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [15496]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FF95085C203  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF951EF7374  Unknown               Unknown  Unknown
+ntdll.dll          00007FF952F7CC91  Unknown               Unknown  Unknown
+): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:32:58,557 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [10716]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+2026-02-20 19:36:11,370 - backend - INFO - Creating new state for session: session_1771594373762
+2026-02-20 19:36:11,370 - backend - INFO - Invoking workflow for session session_1771594373762 with question: What are good investments for beginners?...
+INFO:     127.0.0.1:49352 - "POST /api/chat HTTP/1.1" 200 OK
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:40:40,967 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [17780]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:41:10,557 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [5096]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:41:52,716 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [10608]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+2026-02-20 19:43:32,851 - backend - INFO - Creating new state for session: session_1771595003949
+2026-02-20 19:43:32,852 - backend - INFO - Invoking workflow for session session_1771595003949 with question: How should I plan for retirement?...
+INFO:     127.0.0.1:49672 - "POST /api/chat HTTP/1.1" 200 OK
+2026-02-20 19:47:21,612 - backend - INFO - Creating new state for session: session_1771595238914
+2026-02-20 19:47:21,612 - backend - INFO - Invoking workflow for session session_1771595238914 with question: What's the current stock market trend?...
+INFO:     127.0.0.1:49930 - "POST /api/chat HTTP/1.1" 200 OK
+it to identify your requests.
+2026-02-20 19:45:12,827 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [3584]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:47:24,050 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [12372]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:48:06,102 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [13008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:48:38,571 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [15368]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:50:39,710 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [1584]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:56:55,595 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [13008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:57:33,552 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [18020]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 19:58:22,143 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [11024]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 20:02:10,182 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [5420]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5001): only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 20:04:38,590 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [14908]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+2026-02-20 20:12:45,262 - backend - INFO - Creating new state for session: session_1771596759256
+2026-02-20 20:12:45,263 - backend - INFO - Invoking workflow for session session_1771596759256 with question: What's the current stock market trend?...
+INFO:     127.0.0.1:50372 - "POST /api/chat HTTP/1.1" 200 OK
+2026-02-20 20:12:50,646 - backend - INFO - Invoking workflow for session session_1771596759256 with question: ohh...
+INFO:     127.0.0.1:50376 - "POST /api/chat HTTP/1.1" 200 OK
+forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FFCEC9CC203  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFCEDC07374  Unknown               Unknown  Unknown
+ntdll.dll          00007FFCEF11CC91  Unknown               Unknown  Unknown
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 20:15:43,785 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [16704]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+2026-02-20 20:16:54,764 - backend - INFO - Creating new state for session: session_1771596964906
+2026-02-20 20:16:54,765 - backend - INFO - Invoking workflow for session session_1771596964906 with question: What are good investments for beginners?...
+INFO:     127.0.0.1:50494 - "POST /api/chat HTTP/1.1" 200 OK
+2026-02-20 20:17:00,876 - backend - INFO - Invoking workflow for session session_1771596964906 with question: any other tips...
+INFO:     127.0.0.1:50500 - "POST /api/chat HTTP/1.1" 200 OK
+2026-02-20 20:17:10,930 - backend - INFO - Creating new state for session: session_1771597026224
+2026-02-20 20:17:10,931 - backend - INFO - Invoking workflow for session session_1771597026224 with question: what is trending now on social market...
+INFO:     127.0.0.1:50507 - "POST /api/chat HTTP/1.1" 200 OK
+2026-02-20 20:18:49,324 - backend - INFO - Creating new state for session: session_1771596940108
+2026-02-20 20:18:49,324 - backend - INFO - Invoking workflow for session session_1771596940108 with question: How to optimize my tax strategy?...
+INFO:     127.0.0.1:50535 - "POST /api/chat HTTP/1.1" 200 OK
+forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FFCEC9CC203  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFCEDC07374  Unknown               Unknown  Unknown
+ntdll.dll          00007FFCEF11CC91  Unknown               Unknown  Unknown

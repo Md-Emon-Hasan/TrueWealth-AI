@@ -1,10 +1,11 @@
 import React from 'react';
-import { MessageSquare, Github, Linkedin, Facebook, Phone, Plus, X, Command, Mail } from 'lucide-react';
-// import Logo from '../../assets/images/logo.png';
+import { X, Mail, Phone, Github, Linkedin, Facebook, Plus } from 'lucide-react';
+import Logo from '../assets/logo.png';
+
 
 const Sidebar = ({ onNewChat, isOpen, onClose }) => {
     return (
-        <div className={`w-[280px] md:w-[320px] h-screen bg-gradient-to-b from-[#4361ee] to-[#3a0ca3] text-white fixed left-0 top-0 z-50 flex flex-col shadow-2xl overflow-y-auto transition-transform duration-500 cubic-bezier(0.2, 0.8, 0.2, 1) ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+        <div className={`w-[280px] md:w-[320px] h-screen bg-gradient-to-b from-[#4361ee] to-[#3a0ca3] text-white fixed left-0 top-0 z-50 flex flex-col shadow-2xl overflow-y-auto overflow-x-hidden transition-transform duration-500 cubic-bezier(0.2, 0.8, 0.2, 1) ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
 
             {/* Shine Overlay */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent)] pointer-events-none z-0"></div>
@@ -23,8 +24,8 @@ const Sidebar = ({ onNewChat, isOpen, onClose }) => {
             <div className="p-8 flex flex-col h-full relative z-10 font-sans">
                 {/* Brand Section */}
                 <div className="text-center mb-12 mt-8 md:mt-0">
-                    <div className="w-20 h-20 mx-auto mb-6 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-inner border border-white/30">
-                        <span className="text-3xl font-bold tracking-tighter">TW</span>
+                    <div className="mx-auto mb-6 flex items-center justify-center">
+                        <img src={Logo} alt="TrueWealth AI Logo" className="w-20 h-20 object-contain drop-shadow-lg scale-110 active:scale-100 transition-transform cursor-pointer" />
                     </div>
 
                     <h1 className="text-2xl font-bold tracking-tight mb-1">TrueWealth AI</h1>
