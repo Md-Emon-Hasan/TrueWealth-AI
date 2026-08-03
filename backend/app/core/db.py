@@ -13,6 +13,10 @@ _ADDED_COLUMNS = [
     ("fallback_used", "BOOLEAN DEFAULT 0"),
     ("compliance_violations", "TEXT"),
     ("verification_risk", "TEXT"),
+    ("needs_review", "BOOLEAN DEFAULT 0"),
+    ("review_status", "TEXT DEFAULT 'none'"),
+    ("human_verdict", "TEXT"),
+    ("reviewed_at", "DATETIME"),
 ]
 
 
@@ -34,6 +38,10 @@ class QueryLog(SQLModel, table=True):
     fallback_used: bool = False
     compliance_violations: Optional[str] = None
     verification_risk: Optional[str] = None
+    needs_review: bool = False
+    review_status: str = "none"
+    human_verdict: Optional[str] = None
+    reviewed_at: Optional[datetime] = None
     created_at: datetime = Field(default_factory=_utcnow)
 
 
@@ -52,7 +60,7 @@ def init_db():
 
 def log_query(session_id, question, answer, source, agents_run, latency_ms, tokens_used=None,
               degraded=None, model_used=None, fallback_used=False, compliance_violations=None,
-              verification_risk=None):
+              verification_risk=None, needs_review=False):
     with Session(engine) as session:
         entry = QueryLog(
             session_id=session_id,
@@ -67,6 +75,8 @@ def log_query(session_id, question, answer, source, agents_run, latency_ms, toke
             fallback_used=fallback_used,
             compliance_violations=",".join(compliance_violations) if compliance_violations else None,
             verification_risk=verification_risk,
+            needs_review=needs_review,
+            review_status="pending" if needs_review else "none",
         )
         session.add(entry)
         session.commit()
@@ -92,6 +102,29 @@ def get_session_history(session_id, limit=10):
     return list(reversed(rows))
 
 
+def get_review_queue(limit=50, offset=0, status="pending"):
+    with Session(engine) as session:
+        stmt = select(QueryLog).where(QueryLog.needs_review.is_(True))
+        if status:
+            stmt = stmt.where(QueryLog.review_status == status)
+        stmt = stmt.order_by(QueryLog.id.desc()).offset(offset).limit(limit)
+        return session.exec(stmt).all()
+
+
+def submit_review(query_id, verdict):
+    with Session(engine) as session:
+        entry = session.get(QueryLog, query_id)
+        if entry is None:
+            return None
+        entry.human_verdict = verdict
+        entry.review_status = "reviewed"
+        entry.reviewed_at = _utcnow()
+        session.add(entry)
+        session.commit()
+        session.refresh(entry)
+        return entry
+
+
 def get_stats():
     with Session(engine) as session:
         rows = session.exec(select(QueryLog)).all()
@@ -109,6 +142,12 @@ def get_stats():
         if r.model_used:
             model_counts[r.model_used] = model_counts.get(r.model_used, 0) + 1
 
+    reviewed = [r for r in rows if r.review_status == "reviewed"]
+    review_pending_count = sum(1 for r in rows if r.review_status == "pending")
+    review_completed_count = len(reviewed)
+    approved_count = sum(1 for r in reviewed if r.human_verdict == "approved")
+    human_agreement_rate = approved_count / review_completed_count if review_completed_count else None
+
     return {
         "total_queries": count,
         "avg_latency_ms": avg_latency_ms,
@@ -118,4 +157,7 @@ def get_stats():
         "high_risk_count": high_risk_count,
         "source_counts": source_counts,
         "model_counts": model_counts,
+        "review_pending_count": review_pending_count,
+        "review_completed_count": review_completed_count,
+        "human_agreement_rate": human_agreement_rate,
     }

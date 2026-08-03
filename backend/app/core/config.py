@@ -54,3 +54,11 @@ PORTFOLIO_CONCENTRATION_THRESHOLD_PCT = float(os.getenv("PORTFOLIO_CONCENTRATION
 # semantic memory, on top of the MEMORY_LIMIT recency buffer above
 SEMANTIC_MEMORY_TOP_K = int(os.getenv("SEMANTIC_MEMORY_TOP_K", 3))
 MEMORY_COLLECTION_NAME = "conversation_memory"
+
+# human review queue triggers, unvalidated starting points
+REVIEW_ON_HIGH_RISK = os.getenv("REVIEW_ON_HIGH_RISK", "true").lower() == "true"
+REVIEW_ON_COMPLIANCE_VIOLATION = os.getenv("REVIEW_ON_COMPLIANCE_VIOLATION", "true").lower() == "true"
+REVIEW_ON_UNSUPPORTED_FIGURES = os.getenv("REVIEW_ON_UNSUPPORTED_FIGURES", "true").lower() == "true"
+REVIEW_ON_MARKET_DATA_UNAVAILABLE = os.getenv("REVIEW_ON_MARKET_DATA_UNAVAILABLE", "true").lower() == "true"
+# violations that auto-fix themselves (the disclaimer gets appended regardless) don't need a human
+REVIEW_IGNORED_VIOLATIONS = {"missing_disclaimer"}
