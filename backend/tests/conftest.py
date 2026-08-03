@@ -1,9 +1,13 @@
 import os
 import sys
+import tempfile
 from unittest.mock import MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
+
+os.environ["RATE_LIMIT_ENABLED"] = "false"
+os.environ["SQLITE_PATH"] = os.path.join(tempfile.gettempdir(), "truewealth_test.sqlite3")
 
 
 # Mock dependencies that might be missing in the environment
@@ -68,6 +72,15 @@ def client():
 def mock_workflow():
     with patch('app.main.ai_workflow') as mock:
         yield mock
+
+
+@pytest.fixture(autouse=True)
+def clear_caches():
+    from app.core import cache
+    for c in (cache.embedding_cache, cache.rag_cache, cache.market_quote_cache,
+              cache.news_cache, cache.ddg_cache, cache.answer_cache):
+        c.clear()
+    yield
 
 
 @pytest.fixture

@@ -48,6 +48,8 @@ coverage.xml
 frontend/coverage/
 
 # Database
+*.sqlite3
+!backend/app/finance_db/chroma.sqlite3
 
 # Node.js
 node_modules/

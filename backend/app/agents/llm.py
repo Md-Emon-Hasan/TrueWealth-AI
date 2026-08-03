@@ -1,5 +1,5 @@
 from app.core.state import AgentState
-from app.tools.llm_client import get_llm
+from app.tools.llm_client import extract_tokens, get_llm
 
 
 def query_llm(state: AgentState):
@@ -18,7 +18,8 @@ Client's Query:
 Respond like an experienced financial advisor in 2–3 sentences. Be professional, concise, and confident. \
 Avoid mentioning data sources or expressing uncertainty."""
 
-    res = llm.invoke(prompt).content
+    message = llm.invoke(prompt)
+    res = message.content
 
     state['conversation_history'] += [
         f"Client: {state['question']}",
@@ -28,7 +29,8 @@ Avoid mentioning data sources or expressing uncertainty."""
     state.update({
         "generation": res.strip(),
         "source": "llm_knowledge",
-        "llm_attempted": True
+        "llm_attempted": True,
+        "tokens_used": state.get('tokens_used', 0) + extract_tokens(message)
     })
 
     return state

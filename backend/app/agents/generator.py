@@ -1,5 +1,5 @@
 from app.core.state import AgentState
-from app.tools.llm_client import get_llm
+from app.tools.llm_client import extract_tokens, get_llm
 
 
 def generate_response(state: AgentState):
@@ -28,12 +28,15 @@ Guidelines:
 2. Do not mention sources, tools, or uncertainty.
 """
 
-        res = llm.invoke(prompt).content
+        message = llm.invoke(prompt)
+        res = message.content
         state['generation'] = res.strip()
         state['conversation_history'] += [f"Advisor: {res.strip()}"]
+        state['tokens_used'] = state.get('tokens_used', 0) + extract_tokens(message)
         return state
 
-    # Fallback response if nothing found
+    # nothing retrieved, either the source has no relevant passage or a fetch degraded upstream
     state['generation'] = "I couldn't find enough financial data to provide a confident answer right now."
     state['conversation_history'] += [state.get('generation', '')]
+    state['degraded'] = state.get('degraded') or 'no_relevant_documents'
     return state

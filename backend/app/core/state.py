@@ -15,6 +15,8 @@ class AgentState(TypedDict):
     ddg_attempted: bool
     retry_count: int
     search_query: str
+    degraded: str
+    tokens_used: int
 
 
 def initialize_state() -> AgentState:
@@ -30,5 +32,7 @@ def initialize_state() -> AgentState:
         "rag_attempted": False,
         "yfinance_attempted": False,
         "ddg_attempted": False,
-        "search_query": ""
+        "search_query": "",
+        "degraded": "",
+        "tokens_used": 0
     }
