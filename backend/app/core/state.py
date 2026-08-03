@@ -23,6 +23,7 @@ class AgentState(TypedDict):
     verification: Optional[dict]
     portfolio_input: Optional[list]
     portfolio_analysis: Optional[dict]
+    session_id: str
 
 
 def initialize_state() -> AgentState:
@@ -46,5 +47,6 @@ def initialize_state() -> AgentState:
         "compliance": None,
         "verification": None,
         "portfolio_input": None,
-        "portfolio_analysis": None
+        "portfolio_analysis": None,
+        "session_id": ""
     }

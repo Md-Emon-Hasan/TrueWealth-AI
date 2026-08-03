@@ -50,3 +50,7 @@ DUE_DILIGENCE_MAX_REVISIONS = int(os.getenv("DUE_DILIGENCE_MAX_REVISIONS", 1))
 # portfolio analysis
 PORTFOLIO_HISTORY_PERIOD = os.getenv("PORTFOLIO_HISTORY_PERIOD", "6mo")
 PORTFOLIO_CONCENTRATION_THRESHOLD_PCT = float(os.getenv("PORTFOLIO_CONCENTRATION_THRESHOLD_PCT", 40))
+
+# semantic memory, on top of the MEMORY_LIMIT recency buffer above
+SEMANTIC_MEMORY_TOP_K = int(os.getenv("SEMANTIC_MEMORY_TOP_K", 3))
+MEMORY_COLLECTION_NAME = "conversation_memory"
