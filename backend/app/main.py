@@ -104,7 +104,8 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             "compliance": None,
             "verification": None,
             "portfolio_input": chat_request.portfolio,
-            "portfolio_analysis": None
+            "portfolio_analysis": None,
+            "session_id": session_id
         })
 
         # Invoke workflow

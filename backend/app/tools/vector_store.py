@@ -1,7 +1,7 @@
 import os
 
 from app.core.cache import cache_get, cache_set, embedding_cache
-from app.core.config import DB_DIR, EMBEDDINGS_MODEL, PDF_PATH
+from app.core.config import DB_DIR, EMBEDDINGS_MODEL, MEMORY_COLLECTION_NAME, PDF_PATH
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 
@@ -63,3 +63,12 @@ def setup_vector_store():
 def get_retriever():
     vectorstore = setup_vector_store()
     return vectorstore.as_retriever(search_kwargs={"k": 3})
+
+
+def get_memory_store():
+    """Separate Chroma collection in the same persist directory, reusing the same embeddings model"""
+    return Chroma(
+        collection_name=MEMORY_COLLECTION_NAME,
+        persist_directory=DB_DIR,
+        embedding_function=get_embeddings()
+    )

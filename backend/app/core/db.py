@@ -80,6 +80,18 @@ def get_history(limit=50, offset=0):
         return session.exec(stmt).all()
 
 
+def get_session_history(session_id, limit=10):
+    with Session(engine) as session:
+        stmt = (
+            select(QueryLog)
+            .where(QueryLog.session_id == session_id)
+            .order_by(QueryLog.id.desc())
+            .limit(limit)
+        )
+        rows = session.exec(stmt).all()
+    return list(reversed(rows))
+
+
 def get_stats():
     with Session(engine) as session:
         rows = session.exec(select(QueryLog)).all()
