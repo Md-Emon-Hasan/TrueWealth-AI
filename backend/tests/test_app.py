@@ -112,3 +112,46 @@ def test_stats_endpoint_returns_aggregates(client):
     body = response.json()
     assert "total_queries" in body
     assert "source_counts" in body
+    assert "review_pending_count" in body
+
+
+def test_chat_flags_high_risk_answer_for_review(client, mock_workflow, mock_initialize_state):
+    mock_workflow.ainvoke.return_value = {
+        "generation": "The fund returned 42% last year.",
+        "source": "rag_documents",
+        "verification": {"risk": "high", "unsupported_figures": ["42%"]},
+    }
+    payload = {"message": "unique review-flag question", "session_id": "s1"}
+    client.post("/api/chat", json=payload)
+
+    queue = client.get("/api/review?status=pending").json()
+    assert any(row["question"] == "unique review-flag question" for row in queue)
+
+
+def test_submit_review_endpoint_records_verdict(client, mock_workflow, mock_initialize_state):
+    mock_workflow.ainvoke.return_value = {
+        "generation": "risky answer",
+        "source": "rag_documents",
+        "verification": {"risk": "high"},
+    }
+    payload = {"message": "unique verdict question", "session_id": "s1"}
+    client.post("/api/chat", json=payload)
+
+    queue = client.get("/api/review?status=pending").json()
+    entry_id = next(row["id"] for row in queue if row["question"] == "unique verdict question")
+
+    response = client.post(f"/api/review/{entry_id}", json={"verdict": "approved"})
+
+    assert response.status_code == 200
+    assert response.json()["human_verdict"] == "approved"
+    assert response.json()["answer"] == "risky answer"
+
+
+def test_submit_review_endpoint_rejects_invalid_verdict(client):
+    response = client.post("/api/review/1", json={"verdict": "not_a_real_verdict"})
+    assert response.status_code == 422
+
+
+def test_submit_review_endpoint_missing_id_returns_404(client):
+    response = client.post("/api/review/999999", json={"verdict": "approved"})
+    assert response.status_code == 404

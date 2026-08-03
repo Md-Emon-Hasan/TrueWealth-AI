@@ -1,4 +1,5 @@
-from app.core.db import get_history, get_stats, init_db, log_query
+from app.core.db import (get_history, get_review_queue, get_stats, init_db,
+                          log_query, submit_review)
 
 
 def setup_function():
@@ -35,6 +36,40 @@ def test_get_stats_tracks_model_and_fallback_usage():
     stats = get_stats()
     assert stats["fallback_count"] >= 1
     assert "llama-3.3-70b-versatile" in stats["model_counts"]
+
+
+def test_review_queue_contains_flagged_entries():
+    entry = log_query("s1", "risky q", "risky a", "llm_knowledge", ["llm"], 10.0, needs_review=True)
+    queue = get_review_queue(status="pending")
+    assert any(row.id == entry.id for row in queue)
+    assert entry.review_status == "pending"
+
+
+def test_review_queue_excludes_unflagged_entries():
+    entry = log_query("s1", "clean q", "clean a", "llm_knowledge", ["llm"], 10.0, needs_review=False)
+    queue = get_review_queue(status="pending")
+    assert not any(row.id == entry.id for row in queue)
+
+
+def test_submit_review_records_verdict_without_overwriting_answer():
+    entry = log_query("s1", "risky q2", "original answer", "llm_knowledge", ["llm"], 10.0, needs_review=True)
+    updated = submit_review(entry.id, "approved")
+    assert updated.human_verdict == "approved"
+    assert updated.review_status == "reviewed"
+    assert updated.answer == "original answer"
+    assert updated.reviewed_at is not None
+
+
+def test_submit_review_missing_id_returns_none():
+    assert submit_review(999999, "approved") is None
+
+
+def test_stats_reports_review_and_agreement_rate():
+    entry = log_query("s1", "q", "a", "llm_knowledge", ["llm"], 10.0, needs_review=True)
+    submit_review(entry.id, "approved")
+    stats = get_stats()
+    assert stats["review_completed_count"] >= 1
+    assert stats["human_agreement_rate"] is not None
 
 
 def test_init_db_migrates_missing_columns(tmp_path):
