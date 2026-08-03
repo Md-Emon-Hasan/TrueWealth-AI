@@ -17,6 +17,8 @@ class AgentState(TypedDict):
     search_query: str
     degraded: str
     tokens_used: int
+    model_used: str
+    fallback_used: bool
 
 
 def initialize_state() -> AgentState:
@@ -34,5 +36,7 @@ def initialize_state() -> AgentState:
         "ddg_attempted": False,
         "search_query": "",
         "degraded": "",
-        "tokens_used": 0
+        "tokens_used": 0,
+        "model_used": "",
+        "fallback_used": False
     }

@@ -33,3 +33,10 @@ RATE_LIMIT = os.getenv("RATE_LIMIT", "20/minute")
 # Outbound tool network behavior
 TOOL_TIMEOUT_SECONDS = float(os.getenv("TOOL_TIMEOUT_SECONDS", 8))
 TOOL_RETRY_LIMIT = int(os.getenv("TOOL_RETRY_LIMIT", 1))
+
+# Model gateway, all Groq-hosted, tiered by task cost/quality tradeoff
+MODEL_ANSWER = os.getenv("MODEL_ANSWER", "openai/gpt-oss-120b")
+MODEL_REASONING = os.getenv("MODEL_REASONING", "llama-3.3-70b-versatile")
+MODEL_CLASSIFY = os.getenv("MODEL_CLASSIFY", "llama-3.1-8b-instant")
+GATEWAY_CACHE_TTL = int(os.getenv("GATEWAY_CACHE_TTL", 300))
+GATEWAY_RETRY_LIMIT = int(os.getenv("GATEWAY_RETRY_LIMIT", 1))

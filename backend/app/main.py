@@ -90,7 +90,9 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             "source": "",
             "retry_count": 0,
             "degraded": "",
-            "tokens_used": 0
+            "tokens_used": 0,
+            "model_used": "",
+            "fallback_used": False
         })
 
         # Invoke workflow
@@ -121,7 +123,9 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             agents_run=agents_run,
             latency_ms=latency_ms,
             tokens_used=state.get('tokens_used') or None,
-            degraded=degraded
+            degraded=degraded,
+            model_used=state.get('model_used') or None,
+            fallback_used=state.get('fallback_used', False)
         )
 
         if not used_live_market_data(source):
