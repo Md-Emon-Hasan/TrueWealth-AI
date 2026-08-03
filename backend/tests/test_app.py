@@ -71,3 +71,44 @@ def test_chat_endpoint_internal_error(client, mock_workflow):
 
     assert response.status_code == 500
     assert "Workflow failed" in response.json()["detail"]
+
+
+def test_chat_endpoint_caches_non_market_answer(client, mock_workflow, mock_initialize_state):
+    mock_workflow.invoke.return_value = {"generation": "cached answer", "source": "rag_documents"}
+    payload = {"message": "unique cache test question", "session_id": "s1"}
+
+    client.post("/api/chat", json=payload)
+    second = client.post("/api/chat", json=payload)
+
+    assert second.json()["response"] == "cached answer"
+    mock_workflow.invoke.assert_called_once()
+
+
+def test_chat_endpoint_never_caches_live_market_answer(client, mock_workflow, mock_initialize_state):
+    mock_workflow.invoke.return_value = {"generation": "AAPL is at $123", "source": "yfinance"}
+    payload = {"message": "unique market data question", "session_id": "s1"}
+
+    client.post("/api/chat", json=payload)
+    client.post("/api/chat", json=payload)
+
+    assert mock_workflow.invoke.call_count == 2
+
+
+def test_history_endpoint_returns_recorded_query(client, mock_workflow, mock_initialize_state):
+    mock_workflow.invoke.return_value = {"generation": "history answer", "source": "llm_knowledge"}
+    payload = {"message": "unique history question", "session_id": "s1"}
+    client.post("/api/chat", json=payload)
+
+    response = client.get("/api/history?limit=5")
+
+    assert response.status_code == 200
+    assert any(row["question"] == "unique history question" for row in response.json())
+
+
+def test_stats_endpoint_returns_aggregates(client):
+    response = client.get("/api/stats")
+
+    assert response.status_code == 200
+    body = response.json()
+    assert "total_queries" in body
+    assert "source_counts" in body

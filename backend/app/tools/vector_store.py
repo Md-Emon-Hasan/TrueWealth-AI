@@ -1,12 +1,31 @@
 import os
 
+from app.core.cache import cache_get, cache_set, embedding_cache
 from app.core.config import DB_DIR, EMBEDDINGS_MODEL, PDF_PATH
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 
 
+class CachedEmbeddings:
+    """Wraps HuggingFaceEmbeddings, caching per-query vectors (deterministic, never change)"""
+
+    def __init__(self, inner):
+        self._inner = inner
+
+    def embed_query(self, text):
+        cached = cache_get(embedding_cache, text)
+        if cached is not None:
+            return cached
+        vector = self._inner.embed_query(text)
+        cache_set(embedding_cache, text, vector)
+        return vector
+
+    def embed_documents(self, texts):
+        return self._inner.embed_documents(texts)
+
+
 def get_embeddings():
-    return HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL)
+    return CachedEmbeddings(HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL))
 
 
 def create_new_vectorstore(embeddings, persist_directory):

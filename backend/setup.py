@@ -33,6 +33,9 @@ setup(
         "pytest-cov==7.0.0",
         "flake8==7.3.0",
         "isort==7.0.0",
+        "sqlmodel==0.0.39",
+        "cachetools==7.1.7",
+        "slowapi==0.1.10",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

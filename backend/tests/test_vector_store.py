@@ -1,13 +1,35 @@
 from unittest.mock import MagicMock, patch
 
-from app.tools.vector_store import (get_embeddings, get_retriever,
-                                    setup_vector_store)
+from app.tools.vector_store import (CachedEmbeddings, get_embeddings,
+                                    get_retriever, setup_vector_store)
 
 
 def test_vector_store_getters():
     with patch('app.tools.vector_store.HuggingFaceEmbeddings') as mock_emb:
         get_embeddings()
         mock_emb.assert_called_once()
+
+
+def test_cached_embeddings_embed_query_caches():
+    inner = MagicMock()
+    inner.embed_query.return_value = [0.1, 0.2]
+    wrapped = CachedEmbeddings(inner)
+
+    wrapped.embed_query("hello")
+    wrapped.embed_query("hello")
+
+    inner.embed_query.assert_called_once()
+
+
+def test_cached_embeddings_embed_documents_passthrough():
+    inner = MagicMock()
+    inner.embed_documents.return_value = [[0.1], [0.2]]
+    wrapped = CachedEmbeddings(inner)
+
+    result = wrapped.embed_documents(["a", "b"])
+
+    assert result == [[0.1], [0.2]]
+    inner.embed_documents.assert_called_once_with(["a", "b"])
 
     with patch('app.tools.vector_store.Chroma') as mock_chroma:
         with patch('app.tools.vector_store.get_embeddings'):
