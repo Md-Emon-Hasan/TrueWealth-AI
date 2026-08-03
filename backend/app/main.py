@@ -215,5 +215,5 @@ async def api_submit_review(request: Request, query_id: int, submission: ReviewS
     return entry.model_dump()
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     uvicorn.run(app, host="0.0.0.0", port=5001)

@@ -102,6 +102,51 @@ def test_all_tickers_unavailable_degrades_gracefully():
     assert result["documents"] == []
 
 
+def test_ticker_fetch_exception_is_excluded_not_fatal():
+    state = initialize_state()
+    state["portfolio_input"] = [{"ticker": "AAPL", "shares": 10}, {"ticker": "BADTICK", "shares": 5}]
+    state["question"] = "my portfolio"
+
+    def ticker_side_effect(symbol):
+        if symbol == "BADTICK":
+            raise Exception("network error")
+        mock = MagicMock()
+        mock.history.return_value = _history([100, 101, 102, 103, 104])
+        return mock
+
+    with patch('app.agents.portfolio_analyst_agent.yf.Ticker', side_effect=ticker_side_effect):
+        with patch('app.agents.portfolio_analyst_agent.get_llm') as mock_llm:
+            mock_llm.return_value = MagicMock(invoke=MagicMock(
+                return_value=MagicMock(content="Partial data.", model_used="m", fallback_used=False, degraded=None)
+            ))
+            result = _run(state)
+
+    assert "BADTICK" in result["degraded"]
+    assert result["portfolio_analysis"]["total_value"] == 10 * 104
+
+
+def test_no_concentration_when_holdings_balanced():
+    state = initialize_state()
+    state["portfolio_input"] = [
+        {"ticker": "AAPL", "shares": 1}, {"ticker": "MSFT", "shares": 1}, {"ticker": "GOOG", "shares": 1}
+    ]
+    state["question"] = "my portfolio"
+
+    histories = {
+        "AAPL": _history([100, 100, 100, 100, 100]),
+        "MSFT": _history([100, 100, 100, 100, 100]),
+        "GOOG": _history([100, 100, 100, 100, 100]),
+    }
+    with patch('app.agents.portfolio_analyst_agent.yf.Ticker', side_effect=_mock_ticker_side_effect(histories)):
+        with patch('app.agents.portfolio_analyst_agent.get_llm') as mock_llm:
+            mock_llm.return_value = MagicMock(invoke=MagicMock(
+                return_value=MagicMock(content="Balanced.", model_used="m", fallback_used=False, degraded=None)
+            ))
+            result = _run(state)
+
+    assert result["portfolio_analysis"]["concentrated_in"] is None
+
+
 def test_concentration_flagged_when_one_holding_dominates():
     state = initialize_state()
     state["portfolio_input"] = [{"ticker": "AAPL", "shares": 100}, {"ticker": "MSFT", "shares": 1}]

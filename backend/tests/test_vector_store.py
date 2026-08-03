@@ -1,13 +1,21 @@
 from unittest.mock import MagicMock, patch
 
 from app.tools.vector_store import (CachedEmbeddings, get_embeddings,
-                                    get_retriever, setup_vector_store)
+                                    get_memory_store, get_retriever,
+                                    setup_vector_store)
 
 
 def test_vector_store_getters():
     with patch('app.tools.vector_store.HuggingFaceEmbeddings') as mock_emb:
         get_embeddings()
         mock_emb.assert_called_once()
+
+    with patch('app.tools.vector_store.Chroma') as mock_chroma:
+        with patch('app.tools.vector_store.get_embeddings'):
+            with patch('os.path.exists', return_value=True):
+                with patch('os.listdir', return_value=['index']):
+                    setup_vector_store()
+                    mock_chroma.assert_called_once()
 
 
 def test_cached_embeddings_embed_query_caches():
@@ -31,12 +39,13 @@ def test_cached_embeddings_embed_documents_passthrough():
     assert result == [[0.1], [0.2]]
     inner.embed_documents.assert_called_once_with(["a", "b"])
 
+
+def test_get_memory_store_uses_separate_collection():
     with patch('app.tools.vector_store.Chroma') as mock_chroma:
         with patch('app.tools.vector_store.get_embeddings'):
-            with patch('os.path.exists', return_value=True):
-                with patch('os.listdir', return_value=['index']):
-                    setup_vector_store()
-                    mock_chroma.assert_called_once()
+            get_memory_store()
+            _, kwargs = mock_chroma.call_args
+            assert kwargs['collection_name'] == 'conversation_memory'
 
 
 def test_get_retriever():

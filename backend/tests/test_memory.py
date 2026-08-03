@@ -28,6 +28,14 @@ def test_recall_rehydrates_from_db_when_memory_empty():
     assert "Advisor: a debt security" in result["conversation_history"]
 
 
+def test_recall_rehydrate_degrades_gracefully_on_db_error():
+    state = initialize_state()
+    state["session_id"] = "s1"
+    with patch('app.core.db.get_session_history', side_effect=Exception("db down")):
+        result = recall_memory(state)
+    assert result["conversation_history"] == []
+
+
 def test_recall_skips_rehydrate_when_memory_present():
     state = initialize_state()
     state["memory"] = ["Client: x", "Advisor: y"]

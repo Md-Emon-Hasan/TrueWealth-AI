@@ -75,6 +75,18 @@ def test_market_desk_treats_ticker_not_found_as_no_data():
         assert result["documents"][0].page_content == "Tesla web content"
 
 
+def test_market_desk_duckduckgo_empty_content_is_no_data():
+    state = initialize_state()
+    state["question"] = "AAPL news"
+    with patch('app.agents.market_desk_agent.get_yahoo_finance_news') as mock_yf, \
+         patch('app.agents.market_desk_agent.get_duckduckgo_search') as mock_ddg:
+        mock_yf.return_value = MagicMock(invoke=MagicMock(return_value="Apple news content"))
+        mock_ddg.return_value = MagicMock(invoke=MagicMock(return_value="   "))
+        result = _run(state)
+        assert len(result["documents"]) == 1
+        assert result["degraded"] == "duckduckgo_no_data"
+
+
 def test_market_desk_uses_cache_on_second_call():
     state = initialize_state()
     state["question"] = "AAPL news"
