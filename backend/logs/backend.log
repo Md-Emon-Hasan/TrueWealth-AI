@@ -99,3 +99,1593 @@ Exception: Workflow failed
 2026-02-20 20:18:49,324 - backend - INFO - Creating new state for session: session_1771596940108
 2026-02-20 20:18:49,324 - backend - INFO - Invoking workflow for session session_1771596940108 with question: How to optimize my tax strategy?...
 2026-02-20 21:07:44,708 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-02-20 21:13:10,489 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-02-20 21:13:15,519 - backend - INFO - Creating new state for session: session_1771600390877
+2026-02-20 21:13:15,519 - backend - INFO - Invoking workflow for session session_1771600390877 with question: What's the current stock market trend?...
+2026-08-03 12:22:19,245 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:22:19,340 - backend - INFO - Creating new state for session: test_session
+2026-08-03 12:22:19,340 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 12:22:19,350 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 12:22:19,350 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 12:22:19,367 - backend - INFO - Creating new state for session: default
+2026-08-03 12:22:19,367 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 12:22:19,367 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 54, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 12:34:39,375 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:34:39,508 - backend - INFO - Creating new state for session: test_session
+2026-08-03 12:34:39,509 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 12:34:39,520 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 12:34:39,520 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 12:34:39,541 - backend - INFO - Creating new state for session: default
+2026-08-03 12:34:39,542 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 12:34:39,542 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 54, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 12:40:44,187 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:40:44,393 - backend - INFO - Creating new state for session: test_session
+2026-08-03 12:40:44,394 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 12:40:44,455 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 12:40:44,462 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 12:40:44,516 - backend - INFO - Creating new state for session: default
+2026-08-03 12:40:44,518 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 12:40:44,518 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 99, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 12:42:17,988 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:42:18,100 - backend - INFO - Creating new state for session: test_session
+2026-08-03 12:42:18,100 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 12:42:18,131 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 12:42:18,131 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 12:42:18,150 - backend - INFO - Creating new state for session: default
+2026-08-03 12:42:18,150 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 12:42:18,150 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 99, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 12:42:18,166 - backend - INFO - Creating new state for session: s1
+2026-08-03 12:42:18,166 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 12:42:18,193 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 12:42:18,205 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 12:42:18,218 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 12:56:30,896 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:56:30,947 - backend - INFO - Creating new state for session: bench1
+2026-08-03 12:56:30,947 - backend - INFO - Invoking workflow for session bench1 with question: What is a mutual fund?...
+2026-08-03 12:57:11,552 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:57:11,598 - backend - INFO - Creating new state for session: bench2
+2026-08-03 12:57:11,599 - backend - INFO - Invoking workflow for session bench2 with question: According to The Intelligent Investor, what does G...
+2026-08-03 12:57:30,999 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:57:31,118 - backend - INFO - Creating new state for session: test_session
+2026-08-03 12:57:31,118 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 12:57:31,143 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 12:57:31,144 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 12:57:31,168 - backend - INFO - Creating new state for session: default
+2026-08-03 12:57:31,169 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 12:57:31,169 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 99, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 12:57:31,182 - backend - INFO - Creating new state for session: s1
+2026-08-03 12:57:31,183 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 12:57:31,210 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 12:57:31,222 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 12:57:31,238 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 12:57:53,236 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 12:57:53,341 - backend - INFO - Creating new state for session: test_session
+2026-08-03 12:57:53,341 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 12:57:53,368 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 12:57:53,369 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 12:57:53,393 - backend - INFO - Creating new state for session: default
+2026-08-03 12:57:53,394 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 12:57:53,394 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 99, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 12:57:53,408 - backend - INFO - Creating new state for session: s1
+2026-08-03 12:57:53,408 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 12:57:53,439 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 12:57:53,453 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 12:57:53,468 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:04:07,560 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:04:07,661 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:04:07,662 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:04:07,682 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:04:07,687 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:04:07,708 - backend - INFO - Creating new state for session: default
+2026-08-03 13:04:07,708 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:04:07,708 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 99, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:04:07,722 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:04:07,723 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:04:07,749 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:04:07,764 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:04:07,782 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:19:45,064 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:19:45,216 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:19:45,216 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:19:45,224 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('test_session', 'Hello', 'Test response', 'Test source', '', 0.049899999794433825, None, None, None, 0, '2026-08-03 07:19:45.219916')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('test_session', 'Hello', 'Test response', 'Test source', '', 0.049899999794433825, None, None, None, 0, '2026-08-03 07:19:45.219916')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:46,745 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:19:46,746 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:19:46,749 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('fresh_session_123', 'Start', 'New session response', 'New source', '', 0.07499999992433004, None, None, None, 0, '2026-08-03 07:19:46.747387')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('fresh_session_123', 'Start', 'New session response', 'New source', '', 0.07499999992433004, None, None, None, 0, '2026-08-03 07:19:46.747387')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:46,788 - backend - INFO - Creating new state for session: default
+2026-08-03 13:19:46,789 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:19:46,789 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 101, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:19:46,807 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:19:46,808 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:19:46,811 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique cache test question', 'cached answer', 'rag_documents', '', 0.08720000005268957, None, None, None, 0, '2026-08-03 07:19:46.809440')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique cache test question', 'cached answer', 'rag_documents', '', 0.08720000005268957, None, None, None, 0, '2026-08-03 07:19:46.809440')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:46,825 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:19:46,826 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique cache test question', 'cached answer', 'rag_documents', '', 0.05929999952059006, None, None, None, 0, '2026-08-03 07:19:46.825439')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique cache test question', 'cached answer', 'rag_documents', '', 0.05929999952059006, None, None, None, 0, '2026-08-03 07:19:46.825439')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:46,853 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:19:46,856 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique market data question', 'AAPL is at $123', 'yfinance', '', 0.07929999992484227, None, None, None, 0, '2026-08-03 07:19:46.854496')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique market data question', 'AAPL is at $123', 'yfinance', '', 0.07929999992484227, None, None, None, 0, '2026-08-03 07:19:46.854496')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:46,866 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:19:46,870 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique market data question', 'AAPL is at $123', 'yfinance', '', 0.11170000016136328, None, None, None, 0, '2026-08-03 07:19:46.868032')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique market data question', 'AAPL is at $123', 'yfinance', '', 0.11170000016136328, None, None, None, 0, '2026-08-03 07:19:46.868032')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:46,886 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:19:46,888 - backend - ERROR - Error in api_chat: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique history question', 'history answer', 'llm_knowledge', '', 0.06269999994401587, None, None, None, 0, '2026-08-03 07:19:46.886030')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table querylog has no column named model_used
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 118, in api_chat
+    log_query(
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\core\db.py", line 51, in log_query
+    session.commit()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table querylog has no column named model_used
+[SQL: INSERT INTO querylog (session_id, question, answer, source, agents_run, latency_ms, tokens_used, degraded, model_used, fallback_used, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('s1', 'unique history question', 'history answer', 'llm_knowledge', '', 0.06269999994401587, None, None, None, 0, '2026-08-03 07:19:46.886030')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 13:19:53,930 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:19:53,935 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:19:53,939 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:21:00,639 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:21:01,275 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:21:01,275 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:21:01,305 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:21:01,305 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:21:01,333 - backend - INFO - Creating new state for session: default
+2026-08-03 13:21:01,333 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:21:01,333 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 101, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:21:01,345 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:21:01,345 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:21:01,377 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:21:01,391 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:21:01,408 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:21:01,557 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:21:01,565 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:21:01,567 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:22:13,957 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:22:14,073 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:22:14,073 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:22:14,319 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:22:14,319 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:22:14,350 - backend - INFO - Creating new state for session: default
+2026-08-03 13:22:14,350 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:22:14,352 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 101, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:22:14,362 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:22:14,362 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:22:14,395 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:22:14,408 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:22:14,428 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:22:14,647 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:22:14,651 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:22:14,656 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:23:22,574 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:23:22,658 - backend - INFO - Creating new state for session: gw1
+2026-08-03 13:23:22,658 - backend - INFO - Invoking workflow for session gw1 with question: What is a P/E ratio?...
+2026-08-03 13:25:07,814 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:25:07,865 - backend - INFO - Creating new state for session: gw1
+2026-08-03 13:25:07,866 - backend - INFO - Invoking workflow for session gw1 with question: What is a P/E ratio?...
+2026-08-03 13:33:30,376 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:33:30,520 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:33:30,520 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:33:30,555 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:33:30,556 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:33:30,591 - backend - INFO - Creating new state for session: default
+2026-08-03 13:33:30,591 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:33:30,591 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 105, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:33:30,609 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:33:30,609 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:33:30,652 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:33:30,671 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:33:30,694 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:33:31,046 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:33:31,060 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:33:31,063 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:34:10,928 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:34:11,072 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:34:11,072 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:34:11,107 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:34:11,107 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:34:11,137 - backend - INFO - Creating new state for session: default
+2026-08-03 13:34:11,137 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:34:11,137 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 105, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:34:11,150 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:34:11,150 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:34:11,181 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:34:11,193 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:34:11,210 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:34:11,551 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:34:11,560 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:34:11,563 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:35:23,958 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:35:24,093 - backend - INFO - Creating new state for session: c1
+2026-08-03 13:35:24,093 - backend - INFO - Invoking workflow for session c1 with question: Should I buy Tesla stock right now?...
+2026-08-03 13:36:28,384 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:36:28,446 - backend - INFO - Creating new state for session: c2
+2026-08-03 13:36:28,446 - backend - INFO - Invoking workflow for session c2 with question: Should I buy Tesla stock right now?...
+2026-08-03 13:37:29,265 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:37:29,412 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:37:29,413 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:37:29,452 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:37:29,453 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:37:29,489 - backend - INFO - Creating new state for session: default
+2026-08-03 13:37:29,490 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:37:29,490 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 105, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:37:29,508 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:37:29,508 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:37:29,570 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:37:29,751 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:37:29,845 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:37:30,642 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:37:30,689 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:37:30,723 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:38:57,793 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:38:57,840 - backend - INFO - Creating new state for session: c3
+2026-08-03 13:38:57,840 - backend - INFO - Invoking workflow for session c3 with question: Should I buy Tesla stock right now?...
+2026-08-03 13:44:31,093 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:44:31,223 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:44:31,224 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:44:31,248 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:44:31,248 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:44:31,278 - backend - INFO - Creating new state for session: default
+2026-08-03 13:44:31,278 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:44:31,278 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 109, in api_chat
+    result = ai_workflow.invoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:44:31,291 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:44:31,291 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:44:31,337 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:44:31,364 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:44:31,388 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:44:31,982 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:44:32,004 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:44:32,013 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:45:42,140 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:45:42,197 - backend - INFO - Creating new state for session: dd1
+2026-08-03 13:45:42,197 - backend - INFO - Invoking workflow for session dd1 with question: What was Apple stock trading at in 2015, exactly t...
+2026-08-03 13:57:38,563 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:57:38,740 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:57:38,741 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:57:38,742 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,565 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:57:40,565 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:57:40,566 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,599 - backend - INFO - Creating new state for session: default
+2026-08-03 13:57:40,600 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:57:40,601 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,622 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:57:40,623 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:57:40,624 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,630 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:57:40,631 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,652 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:57:40,653 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,661 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:57:40,662 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:40,681 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:57:40,683 - backend - ERROR - Error in api_chat: object MagicMock can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object MagicMock can't be used in 'await' expression
+2026-08-03 13:57:41,011 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:57:41,015 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:57:41,020 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:58:42,595 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 13:58:42,728 - backend - INFO - Creating new state for session: test_session
+2026-08-03 13:58:42,729 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 13:58:42,767 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 13:58:42,768 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 13:58:42,797 - backend - INFO - Creating new state for session: default
+2026-08-03 13:58:42,797 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 13:58:42,797 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 13:58:42,813 - backend - INFO - Creating new state for session: s1
+2026-08-03 13:58:42,813 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 13:58:42,845 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:58:42,858 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 13:58:42,877 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 13:58:43,190 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 13:58:43,199 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 13:58:43,203 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:00:28,828 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:00:28,994 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:00:28,994 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:00:29,026 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:00:29,026 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:00:29,051 - backend - INFO - Creating new state for session: default
+2026-08-03 14:00:29,051 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:00:29,051 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:00:29,070 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:00:29,070 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:00:29,099 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:00:29,112 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:00:29,129 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:00:29,474 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:00:29,481 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:00:29,486 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:01:16,878 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:01:16,993 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:01:16,994 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:01:17,027 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:01:17,028 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:01:17,058 - backend - INFO - Creating new state for session: default
+2026-08-03 14:01:17,058 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:01:17,058 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:01:17,071 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:01:17,071 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:01:17,101 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:01:17,113 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:01:17,131 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:01:17,498 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:01:17,503 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:01:17,509 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:02:06,814 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:02:06,882 - backend - INFO - Creating new state for session: m1
+2026-08-03 14:02:06,882 - backend - INFO - Invoking workflow for session m1 with question: Any recent news on TSLA?...
+2026-08-03 14:05:59,371 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:05:59,437 - backend - INFO - Creating new state for session: m2
+2026-08-03 14:05:59,437 - backend - INFO - Invoking workflow for session m2 with question: Any recent news on TSLA?...
+2026-08-03 14:11:00,967 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:11:01,249 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:11:01,250 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:11:01,313 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:11:01,314 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:11:01,362 - backend - INFO - Creating new state for session: default
+2026-08-03 14:11:01,363 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:11:01,363 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:11:01,397 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:11:01,397 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:11:01,438 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:11:01,455 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:11:01,476 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:11:01,958 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:11:01,965 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:11:01,970 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:12:53,334 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:12:53,458 - backend - INFO - Creating new state for session: m3
+2026-08-03 14:12:53,459 - backend - INFO - Invoking workflow for session m3 with question: Any recent news on TSLA?...
+2026-08-03 14:17:07,143 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:17:07,358 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:17:07,360 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:17:07,411 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:17:07,411 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:17:07,441 - backend - INFO - Creating new state for session: default
+2026-08-03 14:17:07,441 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:17:07,441 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 113, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:17:07,459 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:17:07,459 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:17:07,496 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:17:07,512 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:17:07,538 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:17:08,056 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:17:08,067 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:17:08,078 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:22:16,630 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:22:17,146 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:22:17,146 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:22:17,235 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:22:17,236 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:22:17,368 - backend - INFO - Creating new state for session: default
+2026-08-03 14:22:17,368 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:22:17,372 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 114, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:22:17,433 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:22:17,442 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:22:17,497 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:22:17,522 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:22:17,563 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:22:18,451 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:22:18,457 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:22:18,464 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:23:31,524 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:23:31,694 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:23:31,694 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:23:31,726 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:23:31,726 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:23:31,751 - backend - INFO - Creating new state for session: default
+2026-08-03 14:23:31,751 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:23:31,751 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 114, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:23:31,765 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:23:31,766 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:23:31,797 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:23:31,810 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:23:31,827 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:23:32,210 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:23:32,215 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:23:32,219 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:24:26,184 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:24:26,264 - backend - INFO - Creating new state for session: restart_test
+2026-08-03 14:24:26,264 - backend - INFO - Invoking workflow for session restart_test with question: My name is Fahim and I prefer low-risk index funds...
+2026-08-03 14:24:39,248 - backend - INFO - Creating new state for session: restart_test
+2026-08-03 14:24:39,248 - backend - INFO - Invoking workflow for session restart_test with question: What kind of funds did I say I prefer?...
+2026-08-03 14:29:38,272 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:29:38,437 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:29:38,437 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:29:38,477 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:29:38,477 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:29:38,511 - backend - INFO - Creating new state for session: default
+2026-08-03 14:29:38,511 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:29:38,511 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:29:38,527 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:29:38,528 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:29:38,564 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:29:38,578 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:29:38,597 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:29:39,141 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:29:39,146 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:29:39,149 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:32:00,361 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:32:00,511 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:32:00,511 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:32:00,560 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:32:00,561 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:32:00,592 - backend - INFO - Creating new state for session: default
+2026-08-03 14:32:00,592 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:32:00,592 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:32:00,608 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:32:00,608 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:32:00,641 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:32:00,656 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:32:00,674 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:32:00,728 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:32:00,761 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:32:27,322 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:32:27,488 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:32:27,488 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:32:28,215 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:32:28,216 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:32:28,248 - backend - INFO - Creating new state for session: default
+2026-08-03 14:32:28,248 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:32:28,248 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:32:28,265 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:32:28,265 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:32:28,301 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:32:28,320 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:32:28,341 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:32:28,401 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:32:28,434 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:32:29,055 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:32:29,071 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:32:29,076 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:33:11,305 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:33:11,513 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:33:11,513 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:33:11,558 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:33:11,558 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:33:11,597 - backend - INFO - Creating new state for session: default
+2026-08-03 14:33:11,597 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:33:11,597 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:33:11,620 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:33:11,620 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:33:11,666 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:33:11,686 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:33:11,713 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:33:11,785 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:33:11,821 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:33:12,585 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:33:12,599 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:33:12,605 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:34:13,992 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:34:14,066 - backend - INFO - Creating new state for session: rv1
+2026-08-03 14:34:14,066 - backend - INFO - Invoking workflow for session rv1 with question: What was Apple stock trading at in 2015, exactly t...
+2026-08-03 14:36:09,257 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:36:09,391 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:36:09,392 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:36:09,423 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:36:09,423 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:36:09,452 - backend - INFO - Creating new state for session: default
+2026-08-03 14:36:09,454 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:36:09,454 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:36:09,468 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:36:09,468 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:36:09,503 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:36:09,514 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:36:09,531 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:36:09,580 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:36:09,609 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:36:10,103 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:36:10,109 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:36:10,112 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:37:17,166 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:37:17,485 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:37:17,485 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:37:17,541 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:37:17,542 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:37:17,592 - backend - INFO - Creating new state for session: default
+2026-08-03 14:37:17,592 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:37:17,592 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:37:17,619 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:37:17,619 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:37:17,682 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:37:17,701 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:37:17,735 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:37:17,833 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:37:17,885 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:37:19,017 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:37:19,031 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:37:19,040 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:43:02,065 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:43:02,594 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:43:02,595 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:43:02,685 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:43:02,686 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:43:02,752 - backend - INFO - Creating new state for session: default
+2026-08-03 14:43:02,753 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:43:02,753 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:43:02,791 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:43:02,793 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:43:02,866 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:43:02,886 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:43:02,924 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:43:03,059 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:43:03,121 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:43:05,765 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:43:05,782 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:43:05,795 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:44:15,507 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:44:15,919 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:44:15,919 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:44:16,074 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:44:16,077 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:44:16,196 - backend - INFO - Creating new state for session: default
+2026-08-03 14:44:16,197 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:44:16,197 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:44:16,260 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:44:16,264 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:44:16,397 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:44:16,439 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:44:16,499 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:44:16,731 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:44:16,831 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:44:19,804 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:44:19,813 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:44:19,830 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:45:52,160 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:45:52,339 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:45:52,339 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:45:52,374 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:45:52,375 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:45:52,404 - backend - INFO - Creating new state for session: default
+2026-08-03 14:45:52,404 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:45:52,404 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:45:52,422 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:45:52,422 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:45:52,453 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:45:52,471 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:45:52,488 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:45:52,545 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:45:52,576 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:45:53,215 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:45:53,222 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:45:53,223 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:47:13,111 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:47:13,361 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:47:13,361 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:47:13,411 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:47:13,411 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:47:13,453 - backend - INFO - Creating new state for session: default
+2026-08-03 14:47:13,453 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:47:13,453 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:47:13,475 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:47:13,475 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:47:13,522 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:47:13,538 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:47:13,571 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:47:13,661 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:47:13,705 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:47:15,052 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:47:15,065 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:47:15,070 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:50:04,355 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:50:04,453 - backend - INFO - Creating new state for session: s_gen1
+2026-08-03 14:50:04,454 - backend - INFO - Invoking workflow for session s_gen1 with question: What is diversification in investing?...
+2026-08-03 14:50:17,276 - backend - INFO - Creating new state for session: s_gen2
+2026-08-03 14:50:17,276 - backend - INFO - Invoking workflow for session s_gen2 with question: What is a P/E ratio?...
+2026-08-03 14:50:28,163 - backend - INFO - Creating new state for session: s_gen3
+2026-08-03 14:50:28,163 - backend - INFO - Invoking workflow for session s_gen3 with question: Explain the concept of compound interest....
+2026-08-03 14:50:38,201 - backend - INFO - Creating new state for session: s_gen4
+2026-08-03 14:50:38,201 - backend - INFO - Invoking workflow for session s_gen4 with question: What is a mutual fund?...
+2026-08-03 14:50:48,915 - backend - INFO - Creating new state for session: s_gen5
+2026-08-03 14:50:48,915 - backend - INFO - Invoking workflow for session s_gen5 with question: What does Benjamin Graham say about Mr. Market?...
+2026-08-03 14:50:59,514 - backend - INFO - Creating new state for session: s_mkt1
+2026-08-03 14:50:59,514 - backend - INFO - Invoking workflow for session s_mkt1 with question: What is the current price of AAPL?...
+2026-08-03 14:51:26,757 - backend - INFO - Creating new state for session: s_mkt2
+2026-08-03 14:51:26,758 - backend - INFO - Invoking workflow for session s_mkt2 with question: Any recent news on MSFT?...
+2026-08-03 14:51:55,140 - backend - INFO - Creating new state for session: s_mkt3
+2026-08-03 14:51:55,141 - backend - INFO - Invoking workflow for session s_mkt3 with question: What's the stock price of TSLA today?...
+2026-08-03 14:52:28,029 - backend - INFO - Creating new state for session: s_pf1
+2026-08-03 14:52:28,029 - backend - INFO - Invoking workflow for session s_pf1 with question: How is my portfolio doing? I hold 10 shares of AAP...
+2026-08-03 14:52:39,719 - backend - INFO - Creating new state for session: s_pf2
+2026-08-03 14:52:39,719 - backend - INFO - Invoking workflow for session s_pf2 with question: What is my risk exposure? I hold 20 shares of GOOG...
+2026-08-03 14:52:50,650 - backend - INFO - Creating new state for session: s_gen6
+2026-08-03 14:52:50,650 - backend - INFO - Invoking workflow for session s_gen6 with question: What is a bond?...
+2026-08-03 14:53:00,384 - backend - INFO - Creating new state for session: s_gen7
+2026-08-03 14:53:00,384 - backend - INFO - Invoking workflow for session s_gen7 with question: Should I buy index funds?...
+2026-08-03 14:53:10,089 - backend - INFO - Creating new state for session: s_gen1_repeat
+2026-08-03 14:53:10,089 - backend - INFO - Invoking workflow for session s_gen1_repeat with question: What is a P/E ratio?...
+2026-08-03 14:53:20,861 - backend - INFO - Creating new state for session: s_gen1_repeat2
+2026-08-03 14:53:20,861 - backend - INFO - Invoking workflow for session s_gen1_repeat2 with question: What is diversification in investing?...
+2026-08-03 14:53:30,944 - backend - INFO - Creating new state for session: s_gen8
+2026-08-03 14:53:30,944 - backend - INFO - Invoking workflow for session s_gen8 with question: What is an ETF?...
+2026-08-03 14:56:42,559 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:56:43,925 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:56:43,926 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:56:44,132 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:56:44,133 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:56:44,281 - backend - INFO - Creating new state for session: default
+2026-08-03 14:56:44,283 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:56:44,284 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:56:44,357 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:56:44,359 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:56:44,492 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:56:44,550 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:56:44,620 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:56:44,866 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:56:45,023 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:56:48,779 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:56:48,810 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:56:48,828 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:58:30,301 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 14:58:31,367 - backend - INFO - Creating new state for session: test_session
+2026-08-03 14:58:31,368 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 14:58:31,556 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 14:58:31,559 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 14:58:31,635 - backend - INFO - Creating new state for session: default
+2026-08-03 14:58:31,636 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 14:58:31,638 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 14:58:31,683 - backend - INFO - Creating new state for session: s1
+2026-08-03 14:58:31,684 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 14:58:31,768 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:58:31,830 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 14:58:31,946 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 14:58:32,167 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 14:58:32,304 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 14:58:35,220 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 14:58:35,246 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 14:58:35,275 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 15:00:39,462 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:00:39,593 - backend - INFO - Creating new state for session: b2_1
+2026-08-03 15:00:39,593 - backend - INFO - Invoking workflow for session b2_1 with question: What is diversification in investing?...
+2026-08-03 15:00:48,139 - backend - INFO - Creating new state for session: b2_2
+2026-08-03 15:00:48,140 - backend - INFO - Invoking workflow for session b2_2 with question: What is a P/E ratio?...
+2026-08-03 15:00:49,181 - backend - INFO - Creating new state for session: b2_3
+2026-08-03 15:00:49,182 - backend - INFO - Invoking workflow for session b2_3 with question: Explain the concept of compound interest....
+2026-08-03 15:00:50,120 - backend - INFO - Creating new state for session: b2_4
+2026-08-03 15:00:50,120 - backend - INFO - Invoking workflow for session b2_4 with question: What is a mutual fund?...
+2026-08-03 15:00:51,698 - backend - INFO - Creating new state for session: b2_5
+2026-08-03 15:00:51,698 - backend - INFO - Invoking workflow for session b2_5 with question: What is a bond?...
+2026-08-03 15:02:34,317 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:02:34,476 - backend - INFO - Creating new state for session: s_gen1
+2026-08-03 15:02:34,476 - backend - INFO - Invoking workflow for session s_gen1 with question: What is diversification in investing?...
+2026-08-03 15:02:45,246 - backend - INFO - Creating new state for session: s_gen2
+2026-08-03 15:02:45,246 - backend - INFO - Invoking workflow for session s_gen2 with question: What is a P/E ratio?...
+2026-08-03 15:02:46,606 - backend - INFO - Creating new state for session: s_gen3
+2026-08-03 15:02:46,606 - backend - INFO - Invoking workflow for session s_gen3 with question: Explain the concept of compound interest....
+2026-08-03 15:02:48,078 - backend - INFO - Creating new state for session: s_gen4
+2026-08-03 15:02:48,078 - backend - INFO - Invoking workflow for session s_gen4 with question: What is a mutual fund?...
+2026-08-03 15:02:49,657 - backend - INFO - Creating new state for session: s_gen5
+2026-08-03 15:02:49,657 - backend - INFO - Invoking workflow for session s_gen5 with question: What does Benjamin Graham say about Mr. Market?...
+2026-08-03 15:02:51,210 - backend - INFO - Creating new state for session: s_mkt1
+2026-08-03 15:02:51,210 - backend - INFO - Invoking workflow for session s_mkt1 with question: What is the current price of AAPL?...
+2026-08-03 15:03:15,163 - backend - INFO - Creating new state for session: s_mkt2
+2026-08-03 15:03:15,164 - backend - INFO - Invoking workflow for session s_mkt2 with question: Any recent news on MSFT?...
+2026-08-03 15:03:33,672 - backend - INFO - Creating new state for session: s_mkt3
+2026-08-03 15:03:33,673 - backend - INFO - Invoking workflow for session s_mkt3 with question: What's the stock price of TSLA today?...
+2026-08-03 15:03:48,610 - backend - INFO - Creating new state for session: s_pf1
+2026-08-03 15:03:48,610 - backend - INFO - Invoking workflow for session s_pf1 with question: How is my portfolio doing? I hold 10 shares of AAP...
+2026-08-03 15:03:51,185 - backend - INFO - Creating new state for session: s_pf2
+2026-08-03 15:03:51,185 - backend - INFO - Invoking workflow for session s_pf2 with question: What is my risk exposure? I hold 20 shares of GOOG...
+2026-08-03 15:03:53,077 - backend - INFO - Creating new state for session: s_gen6
+2026-08-03 15:03:53,078 - backend - INFO - Invoking workflow for session s_gen6 with question: What is a bond?...
+2026-08-03 15:03:54,648 - backend - INFO - Creating new state for session: s_gen7
+2026-08-03 15:03:54,648 - backend - INFO - Invoking workflow for session s_gen7 with question: Should I buy index funds?...
+2026-08-03 15:03:55,637 - backend - INFO - Creating new state for session: s_gen1_repeat
+2026-08-03 15:03:55,638 - backend - INFO - Invoking workflow for session s_gen1_repeat with question: What is a P/E ratio?...
+2026-08-03 15:03:56,807 - backend - INFO - Creating new state for session: s_gen1_repeat2
+2026-08-03 15:03:56,807 - backend - INFO - Invoking workflow for session s_gen1_repeat2 with question: What is diversification in investing?...
+2026-08-03 15:03:58,238 - backend - INFO - Creating new state for session: s_gen8
+2026-08-03 15:03:58,239 - backend - INFO - Invoking workflow for session s_gen8 with question: What is an ETF?...
+2026-08-03 15:05:18,015 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:05:18,467 - backend - INFO - Creating new state for session: test_session
+2026-08-03 15:05:18,467 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 15:05:18,527 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 15:05:18,528 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 15:05:18,578 - backend - INFO - Creating new state for session: default
+2026-08-03 15:05:18,579 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 15:05:18,579 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 15:05:18,625 - backend - INFO - Creating new state for session: s1
+2026-08-03 15:05:18,626 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 15:05:18,680 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 15:05:18,700 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 15:05:18,730 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 15:05:18,834 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 15:05:18,891 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 15:05:20,386 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 15:05:20,404 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 15:05:20,417 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 15:08:39,592 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:08:40,008 - backend - INFO - Creating new state for session: test_session
+2026-08-03 15:08:40,010 - backend - INFO - Invoking workflow for session test_session with question: Hello...
+2026-08-03 15:08:40,068 - backend - INFO - Creating new state for session: fresh_session_123
+2026-08-03 15:08:40,068 - backend - INFO - Invoking workflow for session fresh_session_123 with question: Start...
+2026-08-03 15:08:40,115 - backend - INFO - Creating new state for session: default
+2026-08-03 15:08:40,116 - backend - INFO - Invoking workflow for session default with question: Crash me...
+2026-08-03 15:08:40,116 - backend - ERROR - Error in api_chat: Workflow failed
+Traceback (most recent call last):
+  File "C:\Users\emon1\Desktop\project\TrueWealth-AI\backend\app\main.py", line 120, in api_chat
+    result = await ai_workflow.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emon1\AppData\Local\Programs\Python\Python311\Lib\unittest\mock.py", line 2240, in _execute_mock_call
+    raise effect
+Exception: Workflow failed
+2026-08-03 15:08:40,148 - backend - INFO - Creating new state for session: s1
+2026-08-03 15:08:40,149 - backend - INFO - Invoking workflow for session s1 with question: unique cache test question...
+2026-08-03 15:08:40,199 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 15:08:40,223 - backend - INFO - Invoking workflow for session s1 with question: unique market data question...
+2026-08-03 15:08:40,268 - backend - INFO - Invoking workflow for session s1 with question: unique history question...
+2026-08-03 15:08:40,373 - backend - INFO - Invoking workflow for session s1 with question: unique review-flag question...
+2026-08-03 15:08:40,420 - backend - INFO - Invoking workflow for session s1 with question: unique verdict question...
+2026-08-03 15:08:41,438 - backend - INFO - model_gateway: openai/gpt-oss-120b rate limited, dropping a tier
+2026-08-03 15:08:41,450 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 15:08:41,457 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: groq down
+2026-08-03 15:18:51,241 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:19:11,862 - backend - INFO - Creating new state for session: debug1
+2026-08-03 15:19:11,863 - backend - INFO - Invoking workflow for session debug1 with question: tell me about stock market...
+2026-08-03 15:19:18,801 - backend - ERROR - model_gateway: openai/gpt-oss-120b failed: litellm.BadRequestError: GroqException - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-08-03 15:19:19,144 - backend - ERROR - model_gateway: llama-3.3-70b-versatile failed: litellm.BadRequestError: GroqException - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-08-03 15:19:19,451 - backend - ERROR - model_gateway: llama-3.1-8b-instant failed: litellm.BadRequestError: GroqException - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-08-03 15:23:13,892 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:33:45,365 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:36:53,818 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:38:24,571 - backend - INFO - Creating new state for session: verify1
+2026-08-03 15:38:24,572 - backend - INFO - Invoking workflow for session verify1 with question: tell me about stock market...
+2026-08-03 15:41:36,012 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:41:46,996 - backend - INFO - Creating new state for session: session_1785750101913
+2026-08-03 15:41:46,997 - backend - INFO - Invoking workflow for session session_1785750101913 with question: How to optimize my tax strategy?...
+2026-08-03 15:42:10,947 - backend - INFO - Invoking workflow for session session_1785750101913 with question: any other idea...
+2026-08-03 15:52:07,102 - backend - INFO - Initializing TrueWealth AI Workflow...
+2026-08-03 15:52:11,623 - backend - INFO - Creating new state for session: verify2
+2026-08-03 15:52:11,624 - backend - INFO - Invoking workflow for session verify2 with question: what is a bond?...

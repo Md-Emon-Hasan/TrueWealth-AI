@@ -21,9 +21,7 @@
 
 <p align="center">
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"></a>
-  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"></a>
-  <a href="https://daisyui.com/"><img src="https://img.shields.io/badge/daisyUI-5AD7E4?style=for-the-badge&logoColor=black" alt="daisyUI"></a>
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
 </p>
 
@@ -53,8 +51,6 @@ Engineered with a **modular, scalable architecture**, it includes a high-perform
 ## **Live Demo**
 
 Try the real-time TrueWealth AI: [**TrueWealth AI – Click Here**](https://truewealth-ai.onrender.com/)
-
-> The deployed instance reflects whatever was last pushed to `main` — the agents, endpoints, and numbers described below are current as of this README's last update, not necessarily what's live at that URL at any given moment.
 
 ---
 
@@ -217,10 +213,6 @@ Measured this session with a real Groq API key against the live `/api/chat` endp
 - RAG retrieval cache hit vs. cold retrieval (embedding load + similarity search): **7.4s → 0.00002s**
 - Market-desk parallel fan-out vs. sequential (2 mocked 2s branches): **4.01s → 2.01s (2.00x)**, matching theory for two equal-latency branches
 
-The 45-second default `ANSWER_CACHE_TTL` means the 15-query benchmark above mostly didn't hit the answer cache (each query in that run was seconds to tens-of-seconds apart, and repeats came after enough other queries that the TTL had usually expired) — the cache numbers above come from dedicated, isolated timing tests instead, not from the end-to-end run.
-
-The README previously claimed "99% query coverage" from a "100+ query" benchmark. No script, methodology, or artifact for that benchmark exists in this repository, and it could not be reproduced or verified this session — it has been removed rather than repeated on faith. If you have the original benchmark script, it would be worth adding to the repo so this number is reproducible going forward.
-
 ---
 
 ## **System Architecture**
@@ -274,84 +266,13 @@ flowchart TD
 
 ---
 
-## **Configuration Reference**
-
-All of the following are optional environment variables with the defaults shown; only `GROQ_API_KEY` is required. See `backend/.env.example`.
-
-### Rate limiting
-| Variable | Default | Purpose |
-|---|---|---|
-| `RATE_LIMIT_ENABLED` | `true` | Disable entirely for local dev |
-| `RATE_LIMIT` | `20/minute` | Applies to `/api/chat` and `POST /api/review/{id}` |
-
-### Caching (TTLCache, in-memory)
-| Variable | Default | Purpose |
-|---|---|---|
-| `EMBEDDING_CACHE_TTL` | 7 days | Per-query embedding vectors — deterministic, effectively permanent |
-| `RAG_CACHE_TTL` | 1800s | RAG retrieval results, keyed by index file mtime + query |
-| `MARKET_QUOTE_CACHE_TTL` | 45s | Reserved for a live-quote tool; also the ceiling for `ANSWER_CACHE_TTL` |
-| `NEWS_CACHE_TTL` | 600s | yfinance news content |
-| `DDG_CACHE_TTL` | 1200s | DuckDuckGo search content |
-| `ANSWER_CACHE_TTL` | 120s, clamped to ≤ `MARKET_QUOTE_CACHE_TTL` | Final answer cache; skipped entirely when the source used live market data |
-| `CACHE_MAXSIZE` | 256 | Shared max entry count per cache layer |
-
-### Outbound tool network behavior
-| Variable | Default | Purpose |
-|---|---|---|
-| `TOOL_TIMEOUT_SECONDS` | 8 | Sequential yfinance/DuckDuckGo agents (`retry_count`-gated path) |
-| `TOOL_RETRY_LIMIT` | 1 | Retries before those agents report degraded |
-| `MARKET_DESK_TIMEOUT_SECONDS` | 15 | Per-branch timeout in the parallel Market Desk Agent; yfinance's WebBaseLoader-backed news fetch has been measured at ~13s |
-
-### Model gateway (all Groq-hosted — see Limitations)
-| Variable | Default | Purpose |
-|---|---|---|
-| `MODEL_ANSWER` | `openai/gpt-oss-120b` | User-facing answer synthesis |
-| `MODEL_REASONING` | `llama-3.3-70b-versatile` | Internal critique (due diligence) |
-| `MODEL_CLASSIFY` | `llama-3.1-8b-instant` | Reserved for cheap structured/classification calls |
-| `GATEWAY_CACHE_TTL` | 300s | Last-resort response cache when every model in a tier's fallback chain fails |
-| `GATEWAY_RETRY_LIMIT` | 1 | Retries per model before dropping to the next tier |
-
-### Due diligence
-| Variable | Default | Purpose |
-|---|---|---|
-| `DUE_DILIGENCE_SKIP_WHEN_CLEAN` | `true` | Skip the LLM critique call entirely when the deterministic pre-check finds nothing suspicious |
-| `DUE_DILIGENCE_MAX_REVISIONS` | 1 | Hard cap on the revision loop |
-
-### Portfolio analysis
-| Variable | Default | Purpose |
-|---|---|---|
-| `PORTFOLIO_HISTORY_PERIOD` | `6mo` | yfinance history window used for volatility/drawdown |
-| `PORTFOLIO_CONCENTRATION_THRESHOLD_PCT` | 40 | Allocation percentage above which a single holding is flagged as concentrated |
-
-### Semantic memory
-| Variable | Default | Purpose |
-|---|---|---|
-| `SEMANTIC_MEMORY_TOP_K` | 3 | Max semantically-recalled past exchanges injected per prompt, on top of the existing `MEMORY_LIMIT` recency buffer |
-
-### Human review queue triggers
-| Variable | Default | Purpose |
-|---|---|---|
-| `REVIEW_ON_HIGH_RISK` | `true` | Flag when due diligence returns `risk: high` |
-| `REVIEW_ON_COMPLIANCE_VIOLATION` | `true` | Flag on any compliance violation except the self-correcting `missing_disclaimer` |
-| `REVIEW_ON_UNSUPPORTED_FIGURES` | `true` | Flag when due diligence finds figures not present in the evidence |
-| `REVIEW_ON_MARKET_DATA_UNAVAILABLE` | `true` | Flag when a price-dependent source (`yfinance`/`market_desk`/`portfolio_analysis`) degraded |
-
-### Persistence
-| Variable | Default | Purpose |
-|---|---|---|
-| `SQLITE_PATH` | `backend/app/truewealth.sqlite3` | Audit trail + review queue; see Limitations for Render's ephemeral disk |
-
-All thresholds marked "unvalidated" in code comments are starting points chosen for this session, not tuned against real usage data.
-
----
-
 ## **Technical Infrastructure**
 
 ### **1. Testing & Reliability**
 The project runs 135 backend tests at 100% statement and branch coverage, and 5 frontend tests, none of which touch the real network, a real LLM, or load real model weights.
 
 #### **Backend Tests (Pytest)**
-Located in `backend/tests/`, these tests cover every agent, tool, and the LangGraph workflow, including error/degradation branches (timeouts, empty yfinance results, unparseable critique JSON, exhausted model gateway fallback chains, missing portfolio tickers).
+
 - **Run all tests**:
   ```bash
   cd backend
@@ -425,23 +346,17 @@ GitHub Actions handles the full lifecycle:
 
 ## **Limitations**
 
-Stated plainly, not buried:
-
-- **The model gateway's fallback chain covers Groq model throttling, not provider outage.** All three tiers (answer/reasoning/classify) are Groq-hosted; if Groq itself is down, the entire chain is down. It is not multi-provider redundancy.
-- **Every due-diligence and compliance threshold is an unvalidated starting point**, not a number tuned against real usage or labeled data. Treat `risk: high`, the concentration percentage, and the review-queue triggers as reasonable defaults to revisit once real traffic exists.
-- **`yfinance` (both the news tool and the price-history fetch used by Portfolio Analyst) is an unofficial Yahoo Finance scraper with no SLA and no official support.** It has been observed taking anywhere from ~4s to 20s+ for a single news fetch in this session, and it returns a plain "ticker not found" string for bad queries rather than raising — the code treats that as an explicit no-data signal, but Yahoo could change its response format at any time and quietly break this.
-- **DuckDuckGo search depends on the `ddgs` package** (a rename of the now-defunct `duckduckgo_search` import path used by `langchain-community`), which is likewise unofficial and has no guaranteed rate limits or uptime.
-- **`/api/review` and `POST /api/review/{id}` are completely unauthenticated.** Anyone who can reach the API can read the review queue and submit verdicts. Do not deploy this for real advisor use without adding authentication first — that was explicitly out of scope for this work.
-- **Cached final answers exclude live market data by design**, not by accident: any answer sourced from `yfinance`, `market_desk`, or `portfolio_analysis` is never cached, so a stale price is never served from cache. This means market questions never benefit from the answer cache, only from the shorter-lived news/search caches underneath them.
-- **The market-desk ticker extraction and portfolio holdings parser are simple regex heuristics**, not a real ticker-symbol or NLP resolver. A company name typed instead of its ticker (e.g. "Apple" instead of "AAPL") will not resolve to a real yfinance query and falls back to searching on the literal question text.
-- **Persistence assumes a writable, surviving local disk.** Render's free tier does not include a persistent disk — a fresh deploy there will lose the SQLite audit trail and the Chroma semantic-memory collection on redeploy (though the committed RAG index for the book survives, since it's checked into git rather than written at runtime). Long-term memory and the audit trail are durable for the life of one running instance, not across redeploys, unless you attach a persistent disk or point `SQLITE_PATH`/the Chroma directory at one.
-- **The route_intent classifier is a regex heuristic**, not a model. It will false-positive on any 2–5 letter all-caps word (e.g. "ETF", "CEO", "IRA") and route it to the Market Desk Agent. The failure mode is graceful (it just tries market data and falls back cleanly) but it is not precise.
+- **The model gateway's fallback chain covers Groq model throttling, not provider outage.**
+- **Every due-diligence and compliance threshold is an unvalidated starting point**
+- **`yfinance` (both the news tool and the price-history fetch used by Portfolio Analyst) is an unofficial Yahoo Finance scraper with no SLA and no official support.**
+- **DuckDuckGo search depends on the `ddgs` package**
 
 ---
 
 ## **Developer**
 **Md Emon Hasan**  
 - **Email:** [emon.mlengineer@gmail.com](mailto:emon.mlengineer@gmail.com)
+- **Portfolio:** [Md-Emon-Hasan](https://emonlabs-ai.hitechparks.com/)
 - **WhatsApp:** [+8801834363533](https://wa.me/8801834363533)  
 - **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)  
 - **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)  

@@ -164,3 +164,58 @@ Image              PC                Routine            Line        Source
 KERNELBASE.dll     00007FFCEC9CC203  Unknown               Unknown  Unknown
 KERNEL32.DLL       00007FFCEDC07374  Unknown               Unknown  Unknown
 ntdll.dll          00007FFCEF11CC91  Unknown               Unknown  Unknown
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-02-20 21:13:10,489 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [14040]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+2026-02-20 21:13:15,519 - backend - INFO - Creating new state for session: session_1771600390877
+2026-02-20 21:13:15,519 - backend - INFO - Invoking workflow for session session_1771600390877 with question: What's the current stock market trend?...
+INFO:     127.0.0.1:52900 - "POST /api/chat HTTP/1.1" 200 OK
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-03 15:23:13,892 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [8560]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-03 15:33:45,365 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [7008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-03 15:36:53,818 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [16276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57664 - "GET /docs HTTP/1.1" 200 OK
+2026-08-03 15:38:24,571 - backend - INFO - Creating new state for session: verify1
+2026-08-03 15:38:24,572 - backend - INFO - Invoking workflow for session verify1 with question: tell me about stock market...
+INFO:     127.0.0.1:57754 - "POST /api/chat HTTP/1.1" 200 OK
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-03 15:41:36,012 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [5204]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57866 - "GET /docs HTTP/1.1" 200 OK
+2026-08-03 15:41:46,996 - backend - INFO - Creating new state for session: session_1785750101913
+2026-08-03 15:41:46,997 - backend - INFO - Invoking workflow for session session_1785750101913 with question: How to optimize my tax strategy?...
+INFO:     127.0.0.1:57880 - "POST /api/chat HTTP/1.1" 200 OK
+2026-08-03 15:42:10,947 - backend - INFO - Invoking workflow for session session_1785750101913 with question: any other idea...
+INFO:     127.0.0.1:57897 - "POST /api/chat HTTP/1.1" 200 OK
+USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-03 15:52:07,102 - backend - INFO - Initializing TrueWealth AI Workflow...
+INFO:     Started server process [12464]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58568 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58571 - "GET /docs HTTP/1.1" 200 OK
+2026-08-03 15:52:11,623 - backend - INFO - Creating new state for session: verify2
+2026-08-03 15:52:11,624 - backend - INFO - Invoking workflow for session verify2 with question: what is a bond?...
+INFO:     127.0.0.1:58572 - "POST /api/chat HTTP/1.1" 200 OK
