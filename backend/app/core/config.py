@@ -33,6 +33,8 @@ RATE_LIMIT = os.getenv("RATE_LIMIT", "20/minute")
 # Outbound tool network behavior
 TOOL_TIMEOUT_SECONDS = float(os.getenv("TOOL_TIMEOUT_SECONDS", 8))
 TOOL_RETRY_LIMIT = int(os.getenv("TOOL_RETRY_LIMIT", 1))
+# yfinance news fetches and renders full article pages via WebBaseLoader, measured ~13s in practice
+MARKET_DESK_TIMEOUT_SECONDS = float(os.getenv("MARKET_DESK_TIMEOUT_SECONDS", 15))
 
 # Model gateway, all Groq-hosted, tiered by task cost/quality tradeoff
 MODEL_ANSWER = os.getenv("MODEL_ANSWER", "openai/gpt-oss-120b")
@@ -44,3 +46,7 @@ GATEWAY_RETRY_LIMIT = int(os.getenv("GATEWAY_RETRY_LIMIT", 1))
 # due diligence, thresholds below are unvalidated starting points
 DUE_DILIGENCE_SKIP_WHEN_CLEAN = os.getenv("DUE_DILIGENCE_SKIP_WHEN_CLEAN", "true").lower() == "true"
 DUE_DILIGENCE_MAX_REVISIONS = int(os.getenv("DUE_DILIGENCE_MAX_REVISIONS", 1))
+
+# portfolio analysis
+PORTFOLIO_HISTORY_PERIOD = os.getenv("PORTFOLIO_HISTORY_PERIOD", "6mo")
+PORTFOLIO_CONCENTRATION_THRESHOLD_PCT = float(os.getenv("PORTFOLIO_CONCENTRATION_THRESHOLD_PCT", 40))

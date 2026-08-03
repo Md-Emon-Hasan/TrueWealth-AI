@@ -42,6 +42,7 @@ conversation_states = {}
 class ChatRequest(BaseModel):
     message: str
     session_id: str = "default"
+    portfolio: Optional[list] = None
 
 
 class ChatResponse(BaseModel):
@@ -51,6 +52,7 @@ class ChatResponse(BaseModel):
     degraded: Optional[str] = None
     compliance: Optional[dict] = None
     verification: Optional[dict] = None
+    portfolio_analysis: Optional[dict] = None
 
 
 @app.post("/api/chat", response_model=ChatResponse)
@@ -100,13 +102,15 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             "model_used": "",
             "fallback_used": False,
             "compliance": None,
-            "verification": None
+            "verification": None,
+            "portfolio_input": chat_request.portfolio,
+            "portfolio_analysis": None
         })
 
         # Invoke workflow
         logger.info(f"Invoking workflow for session {session_id} with question: {user_input[:50]}...")
         start = time.perf_counter()
-        result = ai_workflow.invoke(state)
+        result = await ai_workflow.ainvoke(state)
         latency_ms = (time.perf_counter() - start) * 1000
         state.update(result)
 
@@ -115,6 +119,7 @@ async def api_chat(request: Request, chat_request: ChatRequest):
         degraded = state.get('degraded') or None
         compliance = state.get('compliance')
         verification = state.get('verification')
+        portfolio_analysis = state.get('portfolio_analysis')
 
         agents_run = [
             name for name, attempted in (
@@ -122,6 +127,8 @@ async def api_chat(request: Request, chat_request: ChatRequest):
                 ("rag", state.get('rag_attempted')),
                 ("yfinance", state.get('yfinance_attempted')),
                 ("duckduckgo", state.get('ddg_attempted')),
+                ("portfolio_analyst", source == 'portfolio_analysis'),
+                ("market_desk", source == 'market_desk'),
             ) if attempted
         ]
 
@@ -152,7 +159,8 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             source=source,
             degraded=degraded,
             compliance=compliance,
-            verification=verification
+            verification=verification,
+            portfolio_analysis=portfolio_analysis
         )
     except Exception as e:
         logger.error(f"Error in api_chat: {str(e)}", exc_info=True)

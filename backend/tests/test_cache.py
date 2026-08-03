@@ -15,6 +15,11 @@ def test_used_live_market_data_true_for_yfinance():
     assert used_live_market_data("yfinance") is True
 
 
+def test_used_live_market_data_true_for_market_desk_and_portfolio():
+    assert used_live_market_data("market_desk") is True
+    assert used_live_market_data("portfolio_analysis") is True
+
+
 def test_used_live_market_data_false_for_other_sources():
     assert used_live_market_data("rag_documents") is False
     assert used_live_market_data("llm_knowledge") is False

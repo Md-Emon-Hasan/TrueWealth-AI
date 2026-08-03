@@ -1,4 +1,4 @@
-from app.core.workflow import decide_next_step
+from app.core.workflow import decide_next_step, route_intent
 
 
 def test_decide_next_step_success():
@@ -29,3 +29,28 @@ def test_decide_next_step_fallback():
 def test_decide_next_step_initial():
     state = {"llm_attempted": False, "retry_count": 0}
     assert decide_next_step(state) == "retrieve_docs"
+
+
+def test_route_intent_portfolio_keyword():
+    state = {"question": "what's my portfolio allocation looking like"}
+    assert route_intent(state) == "portfolio_analyst_agent"
+
+
+def test_route_intent_structured_portfolio_input():
+    state = {"question": "how am I doing", "portfolio_input": [{"ticker": "AAPL", "shares": 1}]}
+    assert route_intent(state) == "portfolio_analyst_agent"
+
+
+def test_route_intent_market_keyword():
+    state = {"question": "what's the current price of gold"}
+    assert route_intent(state) == "market_desk_agent"
+
+
+def test_route_intent_ticker_like_token():
+    state = {"question": "any updates on TSLA"}
+    assert route_intent(state) == "market_desk_agent"
+
+
+def test_route_intent_general_question():
+    state = {"question": "what is diversification"}
+    assert route_intent(state) == "query_llm"

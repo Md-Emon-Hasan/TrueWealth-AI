@@ -18,6 +18,8 @@ langchain-core==1.2.13
 chromadb==1.5.0
 langchain-chroma==1.1.0
 duckduckgo-search==8.1.1
+# langchain-community's DuckDuckGoSearchRun now imports ddgs, not duckduckgo_search, at runtime
+ddgs==9.14.4
 yahoo-finance==1.4.0
 langchain-text-splitters==1.1.0
 pytest-cov==7.0.0
@@ -27,3 +29,7 @@ sqlmodel==0.0.39
 cachetools==7.1.7
 slowapi==0.1.10
 litellm==1.95.0
+pandas==3.0.5
+numpy==2.4.6
+# already required at runtime by YahooFinanceNewsTool, just never declared here
+yfinance==1.5.2

@@ -37,4 +37,4 @@ RAG_INDEX_VERSION = _index_version()
 
 
 def used_live_market_data(source):
-    return source == "yfinance"
+    return source in ("yfinance", "market_desk", "portfolio_analysis")
