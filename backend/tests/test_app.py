@@ -6,7 +6,7 @@ def test_health_check(client):
 
 def test_chat_endpoint_success(client, mock_workflow, mock_initialize_state):
     # Setup mock return
-    mock_workflow.invoke.return_value = {
+    mock_workflow.ainvoke.return_value = {
         "generation": "Test response",
         "source": "Test source"
     }
@@ -25,11 +25,11 @@ def test_chat_endpoint_success(client, mock_workflow, mock_initialize_state):
     assert data["source"] == "Test source"
 
     # Verify mock calls
-    mock_workflow.invoke.assert_called_once()
+    mock_workflow.ainvoke.assert_called_once()
 
 
 def test_chat_endpoint_new_session(client, mock_workflow, mock_initialize_state):
-    mock_workflow.invoke.return_value = {
+    mock_workflow.ainvoke.return_value = {
         "generation": "New session response",
         "source": "New source"
     }
@@ -61,7 +61,7 @@ def test_chat_endpoint_validation_error(client):
 
 def test_chat_endpoint_internal_error(client, mock_workflow):
     # Simulate workflow failure
-    mock_workflow.invoke.side_effect = Exception("Workflow failed")
+    mock_workflow.ainvoke.side_effect = Exception("Workflow failed")
 
     payload = {
         "message": "Crash me"
@@ -74,28 +74,28 @@ def test_chat_endpoint_internal_error(client, mock_workflow):
 
 
 def test_chat_endpoint_caches_non_market_answer(client, mock_workflow, mock_initialize_state):
-    mock_workflow.invoke.return_value = {"generation": "cached answer", "source": "rag_documents"}
+    mock_workflow.ainvoke.return_value = {"generation": "cached answer", "source": "rag_documents"}
     payload = {"message": "unique cache test question", "session_id": "s1"}
 
     client.post("/api/chat", json=payload)
     second = client.post("/api/chat", json=payload)
 
     assert second.json()["response"] == "cached answer"
-    mock_workflow.invoke.assert_called_once()
+    mock_workflow.ainvoke.assert_called_once()
 
 
 def test_chat_endpoint_never_caches_live_market_answer(client, mock_workflow, mock_initialize_state):
-    mock_workflow.invoke.return_value = {"generation": "AAPL is at $123", "source": "yfinance"}
+    mock_workflow.ainvoke.return_value = {"generation": "AAPL is at $123", "source": "yfinance"}
     payload = {"message": "unique market data question", "session_id": "s1"}
 
     client.post("/api/chat", json=payload)
     client.post("/api/chat", json=payload)
 
-    assert mock_workflow.invoke.call_count == 2
+    assert mock_workflow.ainvoke.call_count == 2
 
 
 def test_history_endpoint_returns_recorded_query(client, mock_workflow, mock_initialize_state):
-    mock_workflow.invoke.return_value = {"generation": "history answer", "source": "llm_knowledge"}
+    mock_workflow.ainvoke.return_value = {"generation": "history answer", "source": "llm_knowledge"}
     payload = {"message": "unique history question", "session_id": "s1"}
     client.post("/api/chat", json=payload)
 

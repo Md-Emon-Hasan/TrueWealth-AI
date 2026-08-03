@@ -21,6 +21,8 @@ class AgentState(TypedDict):
     fallback_used: bool
     compliance: Optional[dict]
     verification: Optional[dict]
+    portfolio_input: Optional[list]
+    portfolio_analysis: Optional[dict]
 
 
 def initialize_state() -> AgentState:
@@ -42,5 +44,7 @@ def initialize_state() -> AgentState:
         "model_used": "",
         "fallback_used": False,
         "compliance": None,
-        "verification": None
+        "verification": None,
+        "portfolio_input": None,
+        "portfolio_analysis": None
     }

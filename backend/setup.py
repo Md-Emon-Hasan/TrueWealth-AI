@@ -28,6 +28,7 @@ setup(
         "chromadb==1.5.0",
         "langchain-chroma==1.1.0",
         "duckduckgo-search==8.1.1",
+        "ddgs==9.14.4",
         "yahoo-finance==1.4.0",
         "langchain-text-splitters==1.1.0",
         "pytest-cov==7.0.0",
@@ -37,6 +38,9 @@ setup(
         "cachetools==7.1.7",
         "slowapi==0.1.10",
         "litellm==1.95.0",
+        "pandas==3.0.5",
+        "numpy==2.4.6",
+        "yfinance==1.5.2",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

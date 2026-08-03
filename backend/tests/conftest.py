@@ -1,7 +1,7 @@
 import os
 import sys
 import tempfile
-from unittest.mock import MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
@@ -71,6 +71,7 @@ def client():
 @pytest.fixture
 def mock_workflow():
     with patch('app.main.ai_workflow') as mock:
+        mock.ainvoke = AsyncMock()
         yield mock
 
 
