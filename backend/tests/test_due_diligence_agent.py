@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock, patch
 
-from app.agents.due_diligence_agent import due_diligence_agent
+from app.agents.due_diligence_agent import _parse_verdict, due_diligence_agent
 from app.core.state import initialize_state
 
 
@@ -90,6 +90,13 @@ def test_falls_back_to_pre_check_on_unparseable_critique():
 
     assert result["verification"]["risk"] == "high"
     assert result["degraded"] == "due_diligence_critique_unparseable"
+
+
+def test_parse_verdict_strips_markdown_fence():
+    fenced = '```json\n{"grounded": true, "citations_valid": true, "unsupported_figures": [], ' \
+             '"needs_revision": false, "risk": "low"}\n```'
+    verdict = _parse_verdict(fenced)
+    assert verdict["risk"] == "low"
 
 
 def test_gateway_degradation_propagates():

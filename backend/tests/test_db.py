@@ -64,6 +64,13 @@ def test_submit_review_missing_id_returns_none():
     assert submit_review(999999, "approved") is None
 
 
+def test_review_queue_status_none_returns_all_flagged():
+    entry = log_query("s1", "risky q3", "risky a", "llm_knowledge", ["llm"], 10.0, needs_review=True)
+    submit_review(entry.id, "approved")
+    queue = get_review_queue(status=None)
+    assert any(row.id == entry.id for row in queue)
+
+
 def test_stats_reports_review_and_agreement_rate():
     entry = log_query("s1", "q", "a", "llm_knowledge", ["llm"], 10.0, needs_review=True)
     submit_review(entry.id, "approved")
