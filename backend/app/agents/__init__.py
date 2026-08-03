@@ -1,5 +1,6 @@
 from .compliance_officer_agent import compliance_officer_agent  # noqa: F401
 from .duckduckgo import retrieve_duckduckgo  # noqa: F401
+from .due_diligence_agent import due_diligence_agent  # noqa: F401
 from .executor import executor  # noqa: F401
 from .generator import generate_response  # noqa: F401
 from .llm import query_llm  # noqa: F401

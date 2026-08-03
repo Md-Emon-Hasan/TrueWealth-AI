@@ -20,6 +20,7 @@ class AgentState(TypedDict):
     model_used: str
     fallback_used: bool
     compliance: Optional[dict]
+    verification: Optional[dict]
 
 
 def initialize_state() -> AgentState:
@@ -40,5 +41,6 @@ def initialize_state() -> AgentState:
         "tokens_used": 0,
         "model_used": "",
         "fallback_used": False,
-        "compliance": None
+        "compliance": None,
+        "verification": None
     }
