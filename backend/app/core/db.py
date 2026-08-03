@@ -12,6 +12,7 @@ _ADDED_COLUMNS = [
     ("model_used", "TEXT"),
     ("fallback_used", "BOOLEAN DEFAULT 0"),
     ("compliance_violations", "TEXT"),
+    ("verification_risk", "TEXT"),
 ]
 
 
@@ -32,6 +33,7 @@ class QueryLog(SQLModel, table=True):
     model_used: Optional[str] = None
     fallback_used: bool = False
     compliance_violations: Optional[str] = None
+    verification_risk: Optional[str] = None
     created_at: datetime = Field(default_factory=_utcnow)
 
 
@@ -49,7 +51,8 @@ def init_db():
 
 
 def log_query(session_id, question, answer, source, agents_run, latency_ms, tokens_used=None,
-              degraded=None, model_used=None, fallback_used=False, compliance_violations=None):
+              degraded=None, model_used=None, fallback_used=False, compliance_violations=None,
+              verification_risk=None):
     with Session(engine) as session:
         entry = QueryLog(
             session_id=session_id,
@@ -63,6 +66,7 @@ def log_query(session_id, question, answer, source, agents_run, latency_ms, toke
             model_used=model_used,
             fallback_used=fallback_used,
             compliance_violations=",".join(compliance_violations) if compliance_violations else None,
+            verification_risk=verification_risk,
         )
         session.add(entry)
         session.commit()
@@ -85,6 +89,7 @@ def get_stats():
     degraded_count = sum(1 for r in rows if r.degraded)
     fallback_count = sum(1 for r in rows if r.fallback_used)
     compliance_violation_count = sum(1 for r in rows if r.compliance_violations)
+    high_risk_count = sum(1 for r in rows if r.verification_risk == "high")
     source_counts = {}
     model_counts = {}
     for r in rows:
@@ -98,6 +103,7 @@ def get_stats():
         "degraded_count": degraded_count,
         "fallback_count": fallback_count,
         "compliance_violation_count": compliance_violation_count,
+        "high_risk_count": high_risk_count,
         "source_counts": source_counts,
         "model_counts": model_counts,
     }

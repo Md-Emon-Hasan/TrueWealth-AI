@@ -40,3 +40,7 @@ MODEL_REASONING = os.getenv("MODEL_REASONING", "llama-3.3-70b-versatile")
 MODEL_CLASSIFY = os.getenv("MODEL_CLASSIFY", "llama-3.1-8b-instant")
 GATEWAY_CACHE_TTL = int(os.getenv("GATEWAY_CACHE_TTL", 300))
 GATEWAY_RETRY_LIMIT = int(os.getenv("GATEWAY_RETRY_LIMIT", 1))
+
+# due diligence, thresholds below are unvalidated starting points
+DUE_DILIGENCE_SKIP_WHEN_CLEAN = os.getenv("DUE_DILIGENCE_SKIP_WHEN_CLEAN", "true").lower() == "true"
+DUE_DILIGENCE_MAX_REVISIONS = int(os.getenv("DUE_DILIGENCE_MAX_REVISIONS", 1))
