@@ -9,8 +9,9 @@ def test_retrieve_docs():
     state["question"] = "test"
     with patch('app.agents.rag.get_retriever') as mock_retriever:
         mock_instance = MagicMock()
-        mock_instance.invoke.return_value = ["Doc1"]
+        doc = MagicMock(page_content="Doc1")
+        mock_instance.invoke.return_value = [doc]
         mock_retriever.return_value = mock_instance
         result = retrieve_docs(state)
         assert result["rag_attempted"] is True
-        assert result["documents"] == ["Doc1"]
+        assert result["documents"][0].page_content == "Doc1"

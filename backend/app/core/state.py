@@ -1,4 +1,4 @@
-from typing import List, TypedDict
+from typing import List, Optional, TypedDict
 
 
 class AgentState(TypedDict):
@@ -19,6 +19,7 @@ class AgentState(TypedDict):
     tokens_used: int
     model_used: str
     fallback_used: bool
+    compliance: Optional[dict]
 
 
 def initialize_state() -> AgentState:
@@ -38,5 +39,6 @@ def initialize_state() -> AgentState:
         "degraded": "",
         "tokens_used": 0,
         "model_used": "",
-        "fallback_used": False
+        "fallback_used": False,
+        "compliance": None
     }

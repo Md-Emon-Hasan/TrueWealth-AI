@@ -11,6 +11,7 @@ from app.core.config import SQLITE_PATH
 _ADDED_COLUMNS = [
     ("model_used", "TEXT"),
     ("fallback_used", "BOOLEAN DEFAULT 0"),
+    ("compliance_violations", "TEXT"),
 ]
 
 
@@ -30,6 +31,7 @@ class QueryLog(SQLModel, table=True):
     degraded: Optional[str] = None
     model_used: Optional[str] = None
     fallback_used: bool = False
+    compliance_violations: Optional[str] = None
     created_at: datetime = Field(default_factory=_utcnow)
 
 
@@ -47,7 +49,7 @@ def init_db():
 
 
 def log_query(session_id, question, answer, source, agents_run, latency_ms, tokens_used=None,
-              degraded=None, model_used=None, fallback_used=False):
+              degraded=None, model_used=None, fallback_used=False, compliance_violations=None):
     with Session(engine) as session:
         entry = QueryLog(
             session_id=session_id,
@@ -60,6 +62,7 @@ def log_query(session_id, question, answer, source, agents_run, latency_ms, toke
             degraded=degraded,
             model_used=model_used,
             fallback_used=fallback_used,
+            compliance_violations=",".join(compliance_violations) if compliance_violations else None,
         )
         session.add(entry)
         session.commit()
@@ -81,6 +84,7 @@ def get_stats():
     avg_latency_ms = sum(r.latency_ms for r in rows) / count if count else 0
     degraded_count = sum(1 for r in rows if r.degraded)
     fallback_count = sum(1 for r in rows if r.fallback_used)
+    compliance_violation_count = sum(1 for r in rows if r.compliance_violations)
     source_counts = {}
     model_counts = {}
     for r in rows:
@@ -93,6 +97,7 @@ def get_stats():
         "avg_latency_ms": avg_latency_ms,
         "degraded_count": degraded_count,
         "fallback_count": fallback_count,
+        "compliance_violation_count": compliance_violation_count,
         "source_counts": source_counts,
         "model_counts": model_counts,
     }
