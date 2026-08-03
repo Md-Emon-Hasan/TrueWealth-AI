@@ -3,7 +3,7 @@ from app.core.workflow import decide_next_step
 
 def test_decide_next_step_success():
     state = {"llm_attempted": True, "generation": "I can help with that."}
-    assert decide_next_step(state) == "store_memory"
+    assert decide_next_step(state) == "compliance_officer_agent"
 
 
 def test_decide_next_step_rag():

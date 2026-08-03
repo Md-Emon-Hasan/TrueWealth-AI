@@ -1,6 +1,9 @@
+from app.agents.compliance_officer_agent import ComplianceOfficerAgent
 from app.core.cache import RAG_INDEX_VERSION, cache_get, cache_set, rag_cache
 from app.core.state import AgentState
 from app.tools.vector_store import get_retriever
+
+_compliance = ComplianceOfficerAgent()
 
 
 def retrieve_docs(state: AgentState):
@@ -13,6 +16,8 @@ def retrieve_docs(state: AgentState):
     if docs is None:
         retriever = get_retriever()
         docs = retriever.invoke(query)
+        for doc in docs:
+            doc.page_content = _compliance.sanitize_input(doc.page_content)
         cache_set(rag_cache, cache_key, docs)
 
     state['documents'] = docs

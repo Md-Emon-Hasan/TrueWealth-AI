@@ -1,3 +1,4 @@
+from .compliance_officer_agent import compliance_officer_agent  # noqa: F401
 from .duckduckgo import retrieve_duckduckgo  # noqa: F401
 from .executor import executor  # noqa: F401
 from .generator import generate_response  # noqa: F401

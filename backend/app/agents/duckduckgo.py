@@ -1,8 +1,11 @@
+from app.agents.compliance_officer_agent import ComplianceOfficerAgent
 from app.core.cache import cache_get, cache_set, ddg_cache
 from app.core.resilience import call_with_timeout
 from app.core.state import AgentState
 from app.tools.search_tools import get_duckduckgo_search
 from langchain_core.documents import Document
+
+_compliance = ComplianceOfficerAgent()
 
 
 def retrieve_duckduckgo(state: AgentState):
@@ -20,6 +23,7 @@ def retrieve_duckduckgo(state: AgentState):
             degraded = "duckduckgo_unavailable"
 
         if content and content.strip():
+            content = _compliance.sanitize_input(content)
             cache_set(ddg_cache, query, content)
         else:
             content = ""

@@ -49,6 +49,7 @@ class ChatResponse(BaseModel):
     session_id: str
     source: str
     degraded: Optional[str] = None
+    compliance: Optional[dict] = None
 
 
 @app.post("/api/chat", response_model=ChatResponse)
@@ -68,13 +69,15 @@ async def api_chat(request: Request, chat_request: ChatRequest):
                 source=cached['source'],
                 agents_run=["cache"],
                 latency_ms=0.0,
-                degraded=cached.get('degraded') or None
+                degraded=cached.get('degraded') or None,
+                compliance_violations=(cached.get('compliance') or {}).get('violations')
             )
             return ChatResponse(
                 response=cached['generation'],
                 session_id=session_id,
                 source=cached['source'],
-                degraded=cached.get('degraded') or None
+                degraded=cached.get('degraded') or None,
+                compliance=cached.get('compliance')
             )
 
         if session_id not in conversation_states:
@@ -92,7 +95,8 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             "degraded": "",
             "tokens_used": 0,
             "model_used": "",
-            "fallback_used": False
+            "fallback_used": False,
+            "compliance": None
         })
 
         # Invoke workflow
@@ -105,6 +109,7 @@ async def api_chat(request: Request, chat_request: ChatRequest):
         generation = state.get('generation', '')
         source = state.get('source', '')
         degraded = state.get('degraded') or None
+        compliance = state.get('compliance')
 
         agents_run = [
             name for name, attempted in (
@@ -125,19 +130,21 @@ async def api_chat(request: Request, chat_request: ChatRequest):
             tokens_used=state.get('tokens_used') or None,
             degraded=degraded,
             model_used=state.get('model_used') or None,
-            fallback_used=state.get('fallback_used', False)
+            fallback_used=state.get('fallback_used', False),
+            compliance_violations=(compliance or {}).get('violations')
         )
 
         if not used_live_market_data(source):
             cache_set(answer_cache, user_input, {
-                'generation': generation, 'source': source, 'degraded': degraded
+                'generation': generation, 'source': source, 'degraded': degraded, 'compliance': compliance
             })
 
         return ChatResponse(
             response=generation,
             session_id=session_id,
             source=source,
-            degraded=degraded
+            degraded=degraded,
+            compliance=compliance
         )
     except Exception as e:
         logger.error(f"Error in api_chat: {str(e)}", exc_info=True)
