@@ -1,5 +1,6 @@
 from app.core.state import AgentState
-from app.tools.llm_client import extract_tokens, get_llm
+from app.tools.llm_client import extract_tokens
+from app.tools.model_gateway import get_llm
 
 
 def generate_response(state: AgentState):
@@ -8,7 +9,7 @@ def generate_response(state: AgentState):
         return state
 
     if state.get('documents'):
-        llm = get_llm()
+        llm = get_llm("answer")
         content = "\n".join(doc.page_content for doc in state['documents'])
 
         prompt = f"""You are a trusted and insightful AI-powered financial advisor assisting a client with \
@@ -33,6 +34,9 @@ Guidelines:
         state['generation'] = res.strip()
         state['conversation_history'] += [f"Advisor: {res.strip()}"]
         state['tokens_used'] = state.get('tokens_used', 0) + extract_tokens(message)
+        state['model_used'] = message.model_used or state.get('model_used', '')
+        state['fallback_used'] = state.get('fallback_used', False) or message.fallback_used
+        state['degraded'] = message.degraded or state.get('degraded', '')
         return state
 
     # nothing retrieved, either the source has no relevant passage or a fetch degraded upstream

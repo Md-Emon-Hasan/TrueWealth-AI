@@ -1,10 +1,11 @@
 from app.core.state import AgentState
-from app.tools.llm_client import extract_tokens, get_llm
+from app.tools.llm_client import extract_tokens
+from app.tools.model_gateway import get_llm
 
 
 def query_llm(state: AgentState):
     """Initial attempt with LLM knowledge"""
-    llm = get_llm()
+    llm = get_llm("answer")
     ctx = "\n".join(state['conversation_history'])
 
     prompt = f"""You are a trusted, knowledgeable, and insightful AI-powered financial advisor.
@@ -30,7 +31,10 @@ Avoid mentioning data sources or expressing uncertainty."""
         "generation": res.strip(),
         "source": "llm_knowledge",
         "llm_attempted": True,
-        "tokens_used": state.get('tokens_used', 0) + extract_tokens(message)
+        "tokens_used": state.get('tokens_used', 0) + extract_tokens(message),
+        "model_used": message.model_used or state.get('model_used', ''),
+        "fallback_used": state.get('fallback_used', False) or message.fallback_used,
+        "degraded": message.degraded or state.get('degraded', '')
     })
 
     return state

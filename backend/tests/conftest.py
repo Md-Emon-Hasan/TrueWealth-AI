@@ -77,8 +77,10 @@ def mock_workflow():
 @pytest.fixture(autouse=True)
 def clear_caches():
     from app.core import cache
+    from app.tools import model_gateway
     for c in (cache.embedding_cache, cache.rag_cache, cache.market_quote_cache,
-              cache.news_cache, cache.ddg_cache, cache.answer_cache):
+              cache.news_cache, cache.ddg_cache, cache.answer_cache,
+              model_gateway._response_cache):
         c.clear()
     yield
 

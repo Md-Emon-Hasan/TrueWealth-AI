@@ -27,3 +27,36 @@ def test_get_stats_aggregates():
     assert stats["total_queries"] >= 1
     assert stats["degraded_count"] >= 1
     assert "rag_documents" in stats["source_counts"]
+
+
+def test_get_stats_tracks_model_and_fallback_usage():
+    log_query("s1", "q", "a", "llm_knowledge", ["llm"], 30.0,
+              model_used="llama-3.3-70b-versatile", fallback_used=True)
+    stats = get_stats()
+    assert stats["fallback_count"] >= 1
+    assert "llama-3.3-70b-versatile" in stats["model_counts"]
+
+
+def test_init_db_migrates_missing_columns(tmp_path):
+    import app.core.db as db_module
+    from sqlmodel import create_engine
+
+    old_path = tmp_path / "legacy.sqlite3"
+    old_engine = create_engine(f"sqlite:///{old_path}")
+    with old_engine.connect() as conn:
+        conn.exec_driver_sql("""
+            CREATE TABLE querylog (
+                id INTEGER PRIMARY KEY, session_id TEXT, question TEXT, answer TEXT,
+                source TEXT, agents_run TEXT, latency_ms FLOAT,
+                tokens_used INTEGER, degraded TEXT, created_at DATETIME
+            )
+        """)
+        conn.commit()
+
+    original_engine = db_module.engine
+    db_module.engine = old_engine
+    try:
+        db_module.init_db()
+        db_module.log_query("s1", "q", "a", "llm_knowledge", ["llm"], 10.0, model_used="m", fallback_used=True)
+    finally:
+        db_module.engine = original_engine

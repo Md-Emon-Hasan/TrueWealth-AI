@@ -36,6 +36,7 @@ setup(
         "sqlmodel==0.0.39",
         "cachetools==7.1.7",
         "slowapi==0.1.10",
+        "litellm==1.95.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
