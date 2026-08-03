@@ -24,8 +24,15 @@ class CachedEmbeddings:
         return self._inner.embed_documents(texts)
 
 
+_embeddings_singleton = None
+
+
 def get_embeddings():
-    return CachedEmbeddings(HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL))
+    """Loading the SentenceTransformer model is expensive, do it once per process, not once per call"""
+    global _embeddings_singleton
+    if _embeddings_singleton is None:
+        _embeddings_singleton = CachedEmbeddings(HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL))
+    return _embeddings_singleton
 
 
 def create_new_vectorstore(embeddings, persist_directory):

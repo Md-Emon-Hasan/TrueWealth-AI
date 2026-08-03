@@ -1,13 +1,24 @@
 from unittest.mock import MagicMock, patch
 
+import app.tools.vector_store as vector_store
 from app.tools.vector_store import (CachedEmbeddings, get_embeddings,
                                     get_memory_store, get_retriever,
                                     setup_vector_store)
 
 
 def test_vector_store_getters():
+    vector_store._embeddings_singleton = None
     with patch('app.tools.vector_store.HuggingFaceEmbeddings') as mock_emb:
         get_embeddings()
+        mock_emb.assert_called_once()
+
+
+def test_get_embeddings_reuses_singleton_across_calls():
+    vector_store._embeddings_singleton = None
+    with patch('app.tools.vector_store.HuggingFaceEmbeddings') as mock_emb:
+        first = get_embeddings()
+        second = get_embeddings()
+        assert first is second
         mock_emb.assert_called_once()
 
     with patch('app.tools.vector_store.Chroma') as mock_chroma:
