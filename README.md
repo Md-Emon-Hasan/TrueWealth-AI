@@ -26,11 +26,12 @@
 </p>
 
 
-**TrueWealth AI** is an **end-to-end Multi-Agent Financial Advisor AI System** that delivers **reliable, real-time investment insights** by combining **LangGraph-powered orchestration**, advanced **LLM reasoning (GPT-OSS-120B via Groq, routed through a LiteLLM gateway)**, and **RAG with ChromaDB + HuggingFace embeddings**. It features **Planner, Retriever, Generator, Market Desk, Portfolio Analyst, Due Diligence, Compliance Officer, News, Web Search, and Memory agents**, with a rule-based compliance layer, a single-call hallucination/grounding check, real (pandas/numpy-computed) portfolio risk analysis, and a human-in-the-loop review queue for anything the system itself flags as risky.
+**TrueWealth AI** lets you chat with an AI financial advisor the way you'd talk to a human one — ask about a stock, your portfolio's risk, or a general investing question, and get a clear answer in seconds. Every answer is fact-checked and compliance-screened before it reaches you, and anything the system itself considers risky is held back for a human expert to sign off on first.
 
-Engineered with a **modular, scalable architecture**, it includes a high-performance **FastAPI backend** for agent orchestration, a **Vite + React responsive UI (Vite, React, Tailwind CSS)** for a premium client experience, and full **Dockerization** for portability. Deployed with a **CI/CD pipeline**, it adheres to enterprise software practices.
+It's an **end-to-end Multi-Agent Financial Advisor AI System** that delivers **reliable, real-time investment insights** by combining **LangGraph-powered orchestration**, multi-tier **LLM reasoning (GPT-OSS-120B, Llama 3.3, and Llama 3.1 via Groq, routed through a LiteLLM gateway)**, and **RAG with ChromaDB + HuggingFace embeddings**. It features **Retriever, Generator, Market Desk, Portfolio Analyst, Due Diligence, Compliance Officer, News, Web Search, and Memory agents**, with a rule-based compliance layer, a single-call hallucination/grounding check, real (pandas/numpy-computed) portfolio risk analysis, and a human-in-the-loop review queue for anything the system itself flags as risky.
 
-**Measured this session:** 15 real end-to-end queries against live Groq/Yahoo Finance/DuckDuckGo — **5.91s mean latency, 18.51s P95** (see [Performance Metrics](#performance-metrics) for the full breakdown by query type; general knowledge questions run ~1–1.5s once the embedding model is warm, live-market and portfolio queries carry real external network latency on top of that). **100% backend statement and branch coverage** (135 tests, mocked network/LLM calls), **77.23% frontend statement coverage** (vitest, 5 tests). See [Limitations](#limitations) for what these numbers don't cover.
+Engineered with a **modular, scalable architecture**, it includes a high-performance **FastAPI backend** for agent orchestration, a **React responsive UI (React, Tailwind CSS)** for a premium client experience, and full **Dockerization** for portability. Deployed with a **CI/CD pipeline**, it adheres to enterprise software practices.
+
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/ce941c51-aa8e-47b3-8124-02d1b21bd9b7" width="100%" controls>
@@ -355,8 +356,8 @@ GitHub Actions handles the full lifecycle:
 
 ## **Developer**
 **Md Emon Hasan**  
-- **Email:** [emon.mlengineer@gmail.com](mailto:emon.mlengineer@gmail.com)
-- **Portfolio:** [Md-Emon-Hasan](https://emonlabs-ai.hitechparks.com/)
+- **Email:** [emon.mlengineer@gmail.com](mailto:emon.mlengineer@gmail.com)  
+- **Portfolio:** [Md-Emon-Hasan](https://emonlabs-ai.hitechparks.com/)  
 - **WhatsApp:** [+8801834363533](https://wa.me/8801834363533)  
 - **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)  
 - **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)  

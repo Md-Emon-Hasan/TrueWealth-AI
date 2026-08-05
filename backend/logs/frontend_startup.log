@@ -279,3 +279,17 @@ AggregateError [ECONNREFUSED]:
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.108:[1m3000[22m/[39m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/index.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/postcss.config.js.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/tailwind.config.js.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/App.jsx.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/index.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/main.jsx.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/api/client.js.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/api/index.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/components/ChatInterface.jsx.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/components/index.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/components/Sidebar.jsx.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/components/StatusBar.jsx.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/frontend/src/components/WelcomeCard.jsx.html[22m
+[2m4:04:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mcoverage/index.html[22m
